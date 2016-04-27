@@ -132,4 +132,7 @@
   <data name="TituloGrupo" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="MenuClientes" xml:space="preserve">
+    <value>Client</value>
+  </data>
 </root>

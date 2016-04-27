@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace PROTOTIPO_C.C
 {
-    public partial class frmPrincipalClienteIngreso : Form
+    public partial class frmPrincipalFacturaProveedores : Form
     {
-        public frmPrincipalClienteIngreso()
+        public frmPrincipalFacturaProveedores()
         {
             InitializeComponent();
-        }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            frmIngresoCliente temp = new frmIngresoCliente();
-            temp.Show();
         }
     }
 }

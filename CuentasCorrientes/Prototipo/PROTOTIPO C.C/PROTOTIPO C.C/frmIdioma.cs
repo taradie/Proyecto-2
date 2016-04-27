@@ -22,6 +22,9 @@ namespace PROTOTIPO_C.C
 
         private void AplicarIdioma()
         {
+
+            frmMenuPrincipal frm = new frmMenuPrincipal();
+            frm.cuentasCorrientesToolStripMenuItem.Text = StringResources.MenuClientes;
             btnAceptar.Text = StringResources.ButtonLabel1;
             label1.Text = StringResources.String1;
             rbEspanol.Text = StringResources.rbEspanol;
@@ -31,7 +34,7 @@ namespace PROTOTIPO_C.C
         }
         private void frmIdioma_Load(object sender, EventArgs e)
         {
-            
+            AplicarIdioma();
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -42,7 +45,7 @@ namespace PROTOTIPO_C.C
             }
             else
             {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("ES-CO");
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("");
                 AplicarIdioma();
             }
         }

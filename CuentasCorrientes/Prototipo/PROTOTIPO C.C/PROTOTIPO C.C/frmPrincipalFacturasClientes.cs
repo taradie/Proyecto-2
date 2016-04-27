@@ -19,6 +19,8 @@ namespace PROTOTIPO_C.C
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            frmFacturaCliente ver = new frmFacturaCliente();
+            ver.Show();
         }
     }
 }

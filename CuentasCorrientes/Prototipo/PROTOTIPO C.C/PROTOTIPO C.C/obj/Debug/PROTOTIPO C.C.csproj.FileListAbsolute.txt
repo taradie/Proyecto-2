@@ -24,3 +24,8 @@ C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debu
 C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\ES-CO\PROTOTIPO C.C.resources.dll
 C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.ES-CO.resources
 C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\ES-CO\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmIngresoProveedores.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalIngresoProveedores.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturaProveedores.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturaCliente.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmIngresoCliente.resources

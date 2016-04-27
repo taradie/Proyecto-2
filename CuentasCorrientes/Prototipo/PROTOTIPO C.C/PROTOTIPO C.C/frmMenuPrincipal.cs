@@ -22,7 +22,7 @@ namespace PROTOTIPO_C.C
             frmPrincipalClienteIngreso temp = new frmPrincipalClienteIngreso();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
-            pictureBox1.Visible = false;
+            //pictureBox1.Visible = false;
             temp.Show();
         }
 
@@ -31,7 +31,7 @@ namespace PROTOTIPO_C.C
             frmPrincipalFacturasClientes temp = new frmPrincipalFacturasClientes();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
-            pictureBox1.Visible = false;
+            //pictureBox1.Visible = false;
             temp.Show();
         }
 
@@ -52,7 +52,8 @@ namespace PROTOTIPO_C.C
 
         private void pagoProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmPagos temp = new frmPagos();
+            temp.Show();
         }
 
         private void pagoAEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,7 +66,7 @@ namespace PROTOTIPO_C.C
             frmPrincipalPagosClientes temp = new frmPrincipalPagosClientes();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
-            pictureBox1.Visible = false;
+            //pictureBox1.Visible = false;
             temp.Show();
         }
 
@@ -73,7 +74,7 @@ namespace PROTOTIPO_C.C
         {
             frmMoneda temp = new frmMoneda();
             temp.MdiParent = this;
-            pictureBox1.Visible = false;
+            //pictureBox1.Visible = false;
             temp.Show();
         }
 
@@ -81,13 +82,35 @@ namespace PROTOTIPO_C.C
         {
             frmIdioma temp = new frmIdioma();
             temp.MdiParent = this;
-            pictureBox1.Visible = false;
+            //pictureBox1.Visible = false;
             temp.Show();
         }
 
         private void configuracionToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalIngresoProveedores temp = new frmPrincipalIngresoProveedores();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void deudasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmPrincipalFacturaProveedores temp = new frmPrincipalFacturaProveedores();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void prestamosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmPrestamos temp = new frmPrestamos();
+            temp.Show();
         }
     }
 }

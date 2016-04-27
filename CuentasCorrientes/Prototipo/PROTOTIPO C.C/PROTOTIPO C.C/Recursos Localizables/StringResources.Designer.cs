@@ -70,6 +70,15 @@ namespace PROTOTIPO_C.C.Recursos_Localizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Clientes.
+        /// </summary>
+        public static string MenuClientes {
+            get {
+                return ResourceManager.GetString("MenuClientes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Español.
         /// </summary>
         public static string rbEspanol {
