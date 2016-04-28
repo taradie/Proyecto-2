@@ -19,7 +19,7 @@ namespace PROTOTIPO_C.C
 
         private void cobrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrincipalClienteIngreso temp = new frmPrincipalClienteIngreso();
+            frmPrincipalIngresoClientes temp = new frmPrincipalIngresoClientes();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             //pictureBox1.Visible = false;

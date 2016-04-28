@@ -102,6 +102,12 @@
     <Compile Include="frmPrincipalFacturaProveedores.Designer.cs">
       <DependentUpon>frmPrincipalFacturaProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipalIngresoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalIngresoClientes.Designer.cs">
+      <DependentUpon>frmPrincipalIngresoClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipalIngresoProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalFacturasClientes.resx">
       <DependentUpon>frmPrincipalFacturasClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalIngresoClientes.resx">
+      <DependentUpon>frmPrincipalIngresoClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalIngresoProveedores.resx">
       <DependentUpon>frmPrincipalIngresoProveedores.cs</DependentUpon>
