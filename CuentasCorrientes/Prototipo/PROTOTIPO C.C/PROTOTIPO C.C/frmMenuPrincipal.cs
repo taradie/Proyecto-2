@@ -112,5 +112,13 @@ namespace PROTOTIPO_C.C
             frmPrestamos temp = new frmPrestamos();
             temp.Show();
         }
+
+        private void formasDePagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalFormaPago temp = new frmPrincipalFormaPago();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
     }
 }

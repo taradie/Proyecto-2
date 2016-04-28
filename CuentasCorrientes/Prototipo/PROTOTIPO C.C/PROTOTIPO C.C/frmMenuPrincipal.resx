@@ -228,7 +228,7 @@
 </value>
   </data>
   <data name="clienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>159, 22</value>
   </data>
   <data name="clienteToolStripMenuItem.Text" xml:space="preserve">
     <value>Ingreso</value>
@@ -249,7 +249,7 @@
 </value>
   </data>
   <data name="deudasToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>159, 22</value>
   </data>
   <data name="deudasToolStripMenuItem1.Text" xml:space="preserve">
     <value>Facturas </value>
@@ -271,10 +271,16 @@
 </value>
   </data>
   <data name="pagoProveedoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>159, 22</value>
   </data>
   <data name="pagoProveedoresToolStripMenuItem.Text" xml:space="preserve">
     <value>Pagos</value>
+  </data>
+  <data name="formasDePagoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
+  </data>
+  <data name="formasDePagoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Formas de Pago</value>
   </data>
   <data name="reportesToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4499,6 +4505,12 @@
   </data>
   <data name="&gt;&gt;toolStripLabel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formasDePagoToolStripMenuItem.Name" xml:space="preserve">
+    <value>formasDePagoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formasDePagoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMenuPrincipal</value>

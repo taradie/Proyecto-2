@@ -11,46 +11,27 @@ using Navegador;
 
 namespace PROTOTIPO_C.C
 {
-    public partial class frmIngresoProveedores : Form
+    public partial class frmFormasPago : Form
     {
         string sCod;
         string estado = "";
-        public frmIngresoProveedores()
+        public frmFormasPago()
         {
             InitializeComponent();
         }
 
-        public frmIngresoProveedores(string sCodP, string sNombre, string sDireccion, string sNit, string sTelefono, string sDescripcion, string sCuenta)
+        public frmFormasPago(string sCodF, string sNombre)
         {
             InitializeComponent();
-            txtNombreProveedor.Text = sNombre;
-            txtDireccionProveedor.Text = sDireccion;
-            txtNitProveedor.Text = sNit;
-            txtTelefonoProveedor.Text = sTelefono;
-            txtDescripcionProveedor.Text = sDescripcion;
-            txtCuentaProveedor.Text = sCuenta;
-            sCod = sCodP;
-
-            btnGuardar.Enabled = false;
-            btnCancelar.Enabled = false;
+            txtDescripcionProveedor.Text = sNombre;
+            sCod = sCodF;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            txtNombreProveedor.Clear();
-            txtDireccionProveedor.Clear();
-            txtNitProveedor.Clear();
-            txtTelefonoProveedor.Clear();
             txtDescripcionProveedor.Clear();
-            txtCuentaProveedor.Clear();
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funactivarDesactivarTextbox(txtNombreProveedor, true);
-            cnegocio.funactivarDesactivarTextbox(txtDireccionProveedor, true);
-            cnegocio.funactivarDesactivarTextbox(txtNitProveedor, true);
-            cnegocio.funactivarDesactivarTextbox(txtTelefonoProveedor, true);
             cnegocio.funactivarDesactivarTextbox(txtDescripcionProveedor, true);
-            cnegocio.funactivarDesactivarTextbox(txtCuentaProveedor, true);
-
             btnGuardar.Enabled = true;
             btnCancelar.Enabled = true;
             btnNuevo.Enabled = false;
@@ -64,12 +45,7 @@ namespace PROTOTIPO_C.C
         {
             estado = "editar";
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funactivarDesactivarTextbox(txtNombreProveedor, true);
-            cnegocio.funactivarDesactivarTextbox(txtDireccionProveedor, true);
-            cnegocio.funactivarDesactivarTextbox(txtNitProveedor, true);
-            cnegocio.funactivarDesactivarTextbox(txtTelefonoProveedor, true);
             cnegocio.funactivarDesactivarTextbox(txtDescripcionProveedor, true);
-            cnegocio.funactivarDesactivarTextbox(txtCuentaProveedor, true);
             //txtNombre.Clear();
             btnGuardar.Enabled = true;
             btnCancelar.Enabled = true;
@@ -84,12 +60,7 @@ namespace PROTOTIPO_C.C
         {
             estado = "eliminar";
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funactivarDesactivarTextbox(txtNombreProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtDireccionProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtNitProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtTelefonoProveedor, false);
             cnegocio.funactivarDesactivarTextbox(txtDescripcionProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtCuentaProveedor, false);
             btnGuardar.Enabled = true;
             btnCancelar.Enabled = true;
             btnNuevo.Enabled = false;
@@ -103,14 +74,14 @@ namespace PROTOTIPO_C.C
         {
             clasnegocio cn = new clasnegocio();
             Boolean bPermiso = true;
-            string sTabla = "proveedor";
-            string sCodigo = "codproveedor";
+            string sTabla = "formas_pago";
+            string sCodigo = "codigo_forma";
             string sCampoEstado = "estado";
 
             if (estado.Equals("editar"))
             {
 
-                TextBox[] aDatosEdit = { txtNombreProveedor, txtDireccionProveedor, txtNitProveedor, txtTelefonoProveedor, txtDescripcionProveedor, txtCuentaProveedor };
+                TextBox[] aDatosEdit = { txtDescripcionProveedor};
                 cn.EditarObjetos(sTabla, bPermiso, aDatosEdit, sCod, sCodigo);
                 //claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Editar", sTabla);
                 this.Close();
@@ -125,26 +96,16 @@ namespace PROTOTIPO_C.C
             }
             else if (estado.Equals(""))
             {
-                TextBox[] aDatos = { txtNombreProveedor, txtDireccionProveedor, txtNitProveedor, txtTelefonoProveedor, txtDescripcionProveedor, txtCuentaProveedor, txtEstado };
+                TextBox[] aDatos = { txtDescripcionProveedor, txtTipo};
                 cn.AsignarObjetos(sTabla, bPermiso, aDatos);
                 //claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insertar", sTabla);
                 this.Close();
             }
 
             estado = "";
-            txtNombreProveedor.Clear();
-            txtDireccionProveedor.Clear();
-            txtNitProveedor.Clear();
-            txtTelefonoProveedor.Clear();
             txtDescripcionProveedor.Clear();
-            txtCuentaProveedor.Clear();
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funactivarDesactivarTextbox(txtNombreProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtDireccionProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtNitProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtTelefonoProveedor, false);
             cnegocio.funactivarDesactivarTextbox(txtDescripcionProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtCuentaProveedor, false);
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
             btnNuevo.Enabled = true;
@@ -156,20 +117,9 @@ namespace PROTOTIPO_C.C
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funactivarDesactivarTextbox(txtNombreProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtDireccionProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtNitProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtTelefonoProveedor, false);
             cnegocio.funactivarDesactivarTextbox(txtDescripcionProveedor, false);
-            cnegocio.funactivarDesactivarTextbox(txtCuentaProveedor, false);
-            txtNombreProveedor.Clear();
-            txtDireccionProveedor.Clear();
-            txtNitProveedor.Clear();
-            txtTelefonoProveedor.Clear();
             txtDescripcionProveedor.Clear();
-            txtCuentaProveedor.Clear();
 
             /*
             Boolean[] permisos;
@@ -189,11 +139,6 @@ namespace PROTOTIPO_C.C
         }
 
         private void btnRefrescar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
         {
 
         }
