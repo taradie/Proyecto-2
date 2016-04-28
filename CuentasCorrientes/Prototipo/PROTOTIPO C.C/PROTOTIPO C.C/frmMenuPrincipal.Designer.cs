@@ -61,6 +61,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.formasDePagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -111,7 +112,8 @@
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clienteToolStripMenuItem,
             this.deudasToolStripMenuItem1,
-            this.pagoProveedoresToolStripMenuItem});
+            this.pagoProveedoresToolStripMenuItem,
+            this.formasDePagoToolStripMenuItem});
             resources.ApplyResources(this.reportesToolStripMenuItem, "reportesToolStripMenuItem");
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             // 
@@ -277,6 +279,12 @@
             this.toolStripLabel2.Name = "toolStripLabel2";
             resources.ApplyResources(this.toolStripLabel2, "toolStripLabel2");
             // 
+            // formasDePagoToolStripMenuItem
+            // 
+            this.formasDePagoToolStripMenuItem.Name = "formasDePagoToolStripMenuItem";
+            resources.ApplyResources(this.formasDePagoToolStripMenuItem, "formasDePagoToolStripMenuItem");
+            this.formasDePagoToolStripMenuItem.Click += new System.EventHandler(this.formasDePagoToolStripMenuItem_Click);
+            // 
             // frmMenuPrincipal
             // 
             resources.ApplyResources(this, "$this");
@@ -331,6 +339,7 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem cuentasCorrientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formasDePagoToolStripMenuItem;
     }
 }
 

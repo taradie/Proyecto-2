@@ -1,6 +1,6 @@
 ﻿namespace PROTOTIPO_C.C
 {
-    partial class frmPrincipalIngresoProveedores
+    partial class frmPrincipalFormaPago
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalIngresoProveedores));
-            this.grdProveedores = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalFormaPago));
             this.grupoFiltrar = new System.Windows.Forms.GroupBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
@@ -41,22 +40,10 @@
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grdProveedores)).BeginInit();
+            this.grdFormasPago = new System.Windows.Forms.DataGridView();
             this.grupoFiltrar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdFormasPago)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grdProveedores
-            // 
-            this.grdProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdProveedores.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdProveedores.Location = new System.Drawing.Point(0, 0);
-            this.grdProveedores.Name = "grdProveedores";
-            this.grdProveedores.ReadOnly = true;
-            this.grdProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdProveedores.Size = new System.Drawing.Size(1014, 511);
-            this.grdProveedores.TabIndex = 9;
-            this.grdProveedores.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProveedores_CellContentDoubleClick);
             // 
             // grupoFiltrar
             // 
@@ -74,7 +61,7 @@
             this.grupoFiltrar.Location = new System.Drawing.Point(0, 0);
             this.grupoFiltrar.Name = "grupoFiltrar";
             this.grupoFiltrar.Size = new System.Drawing.Size(1014, 61);
-            this.grupoFiltrar.TabIndex = 10;
+            this.grupoFiltrar.TabIndex = 12;
             this.grupoFiltrar.TabStop = false;
             // 
             // btnFiltrar
@@ -84,7 +71,6 @@
             this.btnFiltrar.Size = new System.Drawing.Size(48, 42);
             this.btnFiltrar.TabIndex = 24;
             this.btnFiltrar.UseVisualStyleBackColor = true;
-            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // btnImprimir
             // 
@@ -94,7 +80,6 @@
             this.btnImprimir.Size = new System.Drawing.Size(48, 42);
             this.btnImprimir.TabIndex = 23;
             this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnAyuda
             // 
@@ -104,7 +89,6 @@
             this.btnAyuda.Size = new System.Drawing.Size(48, 42);
             this.btnAyuda.TabIndex = 13;
             this.btnAyuda.UseVisualStyleBackColor = true;
-            this.btnAyuda.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnIrUltimo
             // 
@@ -171,33 +155,47 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(632, 16);
+            this.label1.Location = new System.Drawing.Point(582, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(379, 33);
+            this.label1.Size = new System.Drawing.Size(429, 33);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Mantenimiento Proveedores";
+            this.label1.Text = "Mantenimiento Formas de Pago";
             // 
-            // frmPrincipalIngresoProveedores
+            // grdFormasPago
+            // 
+            this.grdFormasPago.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdFormasPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdFormasPago.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdFormasPago.Location = new System.Drawing.Point(0, 0);
+            this.grdFormasPago.Name = "grdFormasPago";
+            this.grdFormasPago.ReadOnly = true;
+            this.grdFormasPago.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdFormasPago.Size = new System.Drawing.Size(1014, 511);
+            this.grdFormasPago.TabIndex = 11;
+            this.grdFormasPago.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdFormasPago_CellContentDoubleClick);
+            // 
+            // frmPrincipalFormaPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1014, 511);
             this.Controls.Add(this.grupoFiltrar);
-            this.Controls.Add(this.grdProveedores);
-            this.Name = "frmPrincipalIngresoProveedores";
-            this.Text = "Principal Ingreso Proveedores";
-            this.Load += new System.EventHandler(this.frmPrincipalIngresoProveedores_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdProveedores)).EndInit();
+            this.Controls.Add(this.grdFormasPago);
+            this.Name = "frmPrincipalFormaPago";
+            this.Text = "frmPrincipalFormaPago";
             this.grupoFiltrar.ResumeLayout(false);
             this.grupoFiltrar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdFormasPago)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView grdProveedores;
         private System.Windows.Forms.GroupBox grupoFiltrar;
+        private System.Windows.Forms.Button btnFiltrar;
+        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Button btnIrUltimo;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
@@ -205,9 +203,6 @@
         private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAyuda;
-        private System.Windows.Forms.Button btnImprimir;
-        private System.Windows.Forms.Button btnFiltrar;
-
+        private System.Windows.Forms.DataGridView grdFormasPago;
     }
 }
