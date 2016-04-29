@@ -96,6 +96,84 @@ namespace ZORBANK
             temp.MdiParent = this;
             pictureBox1.Visible = false;
             temp.Show();
-        }                
+            
+        }
+
+        private void FormasPagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalFPcs temp = new frmPrincipalFPcs();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        
+        }
+
+        private void ConceptosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalConceptos temp = new frmPrincipalConceptos();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        
+        }        
+
+        private void BeneficiariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalBeneficiario temp = new frmPrincipalBeneficiario();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        
+        }
+
+        private void conciliaciónBancariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalConciliacion temp = new frmPrincipalConciliacion();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        
+
+        }
+
+        private void CuentasBancariasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaCuentas temp = new frmConsultaCuentas();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
+
+        private void MovimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaMovimiento temp = new frmConsultaMovimiento();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
+
+        private void AgendaZonaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaAgendaMovimiento temp = new frmConsultaAgendaMovimiento();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
+
+        private void MonedasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalMoneda temp = new frmPrincipalMoneda();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
     }
 }

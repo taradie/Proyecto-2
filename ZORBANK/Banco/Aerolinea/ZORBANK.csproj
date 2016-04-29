@@ -92,6 +92,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
     <Compile Include="consultaParqueo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,12 @@
     <Compile Include="FormReporte.designer.cs">
       <DependentUpon>FormReporte.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgendaMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgendaMovimiento.Designer.cs">
+      <DependentUpon>frmAgendaMovimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAsignacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,12 @@
     </Compile>
     <Compile Include="frmAsignacionRoles.Designer.cs">
       <DependentUpon>frmAsignacionRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBeneficiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBeneficiario.Designer.cs">
+      <DependentUpon>frmBeneficiario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmbitacora.cs">
       <SubType>Form</SubType>
@@ -139,6 +157,36 @@
     <Compile Include="frmCarrera.Designer.cs">
       <DependentUpon>frmCarrera.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConceptos.Designer.cs">
+      <DependentUpon>frmConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConciliacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConciliacion.Designer.cs">
+      <DependentUpon>frmConciliacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaAgendaMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaAgendaMovimiento.Designer.cs">
+      <DependentUpon>frmConsultaAgendaMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaCuentas.Designer.cs">
+      <DependentUpon>frmConsultaCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaMovimiento.Designer.cs">
+      <DependentUpon>frmConsultaMovimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmcontrolUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,11 +194,23 @@
       <DependentUpon>frmcontrolUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="claseUsuario.cs" />
+    <Compile Include="frmCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuentas.designer.cs">
+      <DependentUpon>frmCuentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDocumentos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDocumentos.designer.cs">
       <DependentUpon>frmDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormasPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormasPago.Designer.cs">
+      <DependentUpon>frmFormasPago.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -170,17 +230,59 @@
     <Compile Include="frmmodificarUsuario.Designer.cs">
       <DependentUpon>frmmodificarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoneda.Designer.cs">
+      <DependentUpon>frmMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimientos.Designer.cs">
+      <DependentUpon>frmMovimientos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPersona.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPersona.Designer.cs">
       <DependentUpon>frmPersona.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipalBeneficiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalBeneficiario.Designer.cs">
+      <DependentUpon>frmPrincipalBeneficiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalConceptos.Designer.cs">
+      <DependentUpon>frmPrincipalConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalConciliacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalConciliacion.Designer.cs">
+      <DependentUpon>frmPrincipalConciliacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipalDocumentos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPrincipalDocumentos.designer.cs">
       <DependentUpon>frmPrincipalDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalFPcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalFPcs.Designer.cs">
+      <DependentUpon>frmPrincipalFPcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalMoneda.Designer.cs">
+      <DependentUpon>frmPrincipalMoneda.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipalPersona.cs">
       <SubType>Form</SubType>
@@ -310,6 +412,9 @@
       <DependentUpon>ReporteUsuarios.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="consultaParqueo.resx">
       <DependentUpon>consultaParqueo.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,11 +424,17 @@
     <EmbeddedResource Include="FormReporte.resx">
       <DependentUpon>FormReporte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgendaMovimiento.resx">
+      <DependentUpon>frmAgendaMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAsignacion.resx">
       <DependentUpon>frmAsignacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAsignacionRoles.resx">
       <DependentUpon>frmAsignacionRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBeneficiario.resx">
+      <DependentUpon>frmBeneficiario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmbitacora.resx">
       <DependentUpon>frmbitacora.cs</DependentUpon>
@@ -331,11 +442,32 @@
     <EmbeddedResource Include="frmCarrera.resx">
       <DependentUpon>frmCarrera.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConceptos.resx">
+      <DependentUpon>frmConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConciliacion.resx">
+      <DependentUpon>frmConciliacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaAgendaMovimiento.resx">
+      <DependentUpon>frmConsultaAgendaMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaCuentas.resx">
+      <DependentUpon>frmConsultaCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaMovimiento.resx">
+      <DependentUpon>frmConsultaMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmcontrolUsuarios.resx">
       <DependentUpon>frmcontrolUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCuentas.resx">
+      <DependentUpon>frmCuentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDocumentos.resx">
       <DependentUpon>frmDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormasPago.resx">
+      <DependentUpon>frmFormasPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -346,11 +478,32 @@
     <EmbeddedResource Include="frmmodificarUsuario.resx">
       <DependentUpon>frmmodificarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMoneda.resx">
+      <DependentUpon>frmMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimientos.resx">
+      <DependentUpon>frmMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPersona.resx">
       <DependentUpon>frmPersona.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalBeneficiario.resx">
+      <DependentUpon>frmPrincipalBeneficiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalConceptos.resx">
+      <DependentUpon>frmPrincipalConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalConciliacion.resx">
+      <DependentUpon>frmPrincipalConciliacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalDocumentos.resx">
       <DependentUpon>frmPrincipalDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalFPcs.resx">
+      <DependentUpon>frmPrincipalFPcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalMoneda.resx">
+      <DependentUpon>frmPrincipalMoneda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalPersona.resx">
       <DependentUpon>frmPrincipalPersona.cs</DependentUpon>
@@ -632,12 +785,6 @@
     <None Include="Resources\1457296853_checked_checkbox.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1457297125_stock_form-checkbox.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\unchecked.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
@@ -655,6 +802,10 @@
     <Content Include="bin\Release\MySql.Data.DLL" />
     <Content Include="bin\Release\Navegador.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\unchecked.png" />
+    <None Include="Resources\1457297125_stock_form-checkbox.png" />
+    <None Include="Resources\1457297195_unchecked.gif" />
+    <None Include="Resources\Logo Estándar.jpg" />
     <None Include="Resources\Logo5.jpg" />
     <None Include="Resources\logo3.jpg" />
   </ItemGroup>
