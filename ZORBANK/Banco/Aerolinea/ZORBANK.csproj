@@ -98,6 +98,12 @@
     <Compile Include="AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <Compile Include="BancoSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BancoSplash.Designer.cs">
+      <DependentUpon>BancoSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="consultaParqueo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -414,6 +420,9 @@
     </Compile>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BancoSplash.resx">
+      <DependentUpon>BancoSplash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="consultaParqueo.resx">
       <DependentUpon>consultaParqueo.cs</DependentUpon>
@@ -802,6 +811,7 @@
     <Content Include="bin\Release\MySql.Data.DLL" />
     <Content Include="bin\Release\Navegador.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\Logo Splash 1.jpg" />
     <None Include="Resources\unchecked.png" />
     <None Include="Resources\1457297125_stock_form-checkbox.png" />
     <None Include="Resources\1457297195_unchecked.gif" />

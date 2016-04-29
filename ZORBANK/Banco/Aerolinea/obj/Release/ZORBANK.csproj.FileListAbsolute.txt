@@ -68,5 +68,6 @@ C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZOR
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Release\ZORBANK.csproj.GenerateResource.Cache
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Release\ZORBANK.exe
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Release\ZORBANK.pdb
-C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Release\ZORBANK.csprojResolveAssemblyReference.cache
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Release\ZORBANK.AboutBox1.resources
+C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Release\ZORBANK.BancoSplash.resources
+C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Release\ZORBANK.csprojResolveAssemblyReference.cache
