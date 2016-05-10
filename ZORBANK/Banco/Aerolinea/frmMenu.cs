@@ -50,19 +50,7 @@ namespace ZORBANK
             this.creacionUsuariosToolStripMenuItem.Enabled = claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmUsuario");
             this.bitacoraToolStripMenuItem.Enabled = claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmBitacora");
             this.reportesDeCatalogosToolStripMenuItem.Enabled = claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmReporteCatalogos");
-        */}
-
-        private void cERRARSESSIONToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult resul = MessageBox.Show("Esta seguro que desea cerrar session?", "Mensage de Confirmacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (resul == System.Windows.Forms.DialogResult.OK)
-            {
-                this.Close();
-                frmLogin login = new frmLogin();
-                login.Show();  
-            }
-        }
-
+        */}        
         
         private void aYUDAToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -174,6 +162,17 @@ namespace ZORBANK
             temp.MdiParent = this;
             pictureBox1.Visible = false;
             temp.Show();
+        }
+
+        private void CessarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult resul = MessageBox.Show("¿Esta seguro que desea cerrar sesión?", "Mensaje de Confirmación", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (resul == System.Windows.Forms.DialogResult.OK)
+            {
+                this.Close();
+                frmLogin login = new frmLogin();
+                login.Show();
+            }
         }
     }
 }

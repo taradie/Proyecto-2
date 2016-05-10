@@ -138,7 +138,7 @@
             this.MinimumSize = new System.Drawing.Size(533, 300);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ZORBANK";
+            this.Text = "BANCO";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

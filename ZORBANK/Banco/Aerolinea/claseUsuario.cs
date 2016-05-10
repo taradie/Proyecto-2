@@ -31,7 +31,7 @@ namespace ZORBANK
         public static Boolean Autentificar(String txtUsuario, String txtContra)
         {
             Boolean Encontre = false;
-            _comando = new OdbcCommand(String.Format("select * from USUARIO where nombre_usuario = '{0}' and password_usuario = '{1}' and estado = 'ACTIVO' and condicion = 1", txtUsuario, txtContra), ConexionODBC.Conexion.ObtenerConexion());
+            _comando = new OdbcCommand(String.Format("select * from USUARIO where nombre_usuario = '{0}' and password_usuario = '{1}' and estado = 'ACTIVO'", txtUsuario, txtContra), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
             if (_reader.Read())
                 Encontre = true;
@@ -47,7 +47,7 @@ namespace ZORBANK
             if (_reader.Read())
                 codigo = _reader.GetString(0);
 
-            _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, ip, codigo_usuario) VALUES('{0}','{1}',CURDATE(),DATE_FORMAT(CURTIME(), '%h:%i:%s'), '{2}','{3}')", Accion, table, ip, codigo), ConexionODBC.Conexion.ObtenerConexion());
+            _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, equipo, codigo_usuario) VALUES('{0}','{1}',CURDATE(),DATE_FORMAT(CURTIME(), '%h:%i:%s'), '{2}','{3}')", Accion, table, ip, codigo), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
         }
 

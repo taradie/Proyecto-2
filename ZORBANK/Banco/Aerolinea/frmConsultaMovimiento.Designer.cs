@@ -55,8 +55,8 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 411);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(998, 61);
             this.groupBox1.TabIndex = 3;
@@ -101,11 +101,11 @@
             // 
             // button2
             // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(365, 13);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(48, 42);
             this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // bntNuevo

@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.MenuPrincipal = new System.Windows.Forms.MenuStrip();
+            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CessarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.impresorasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.multiSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CatalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoCambioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FormasPagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,7 +73,6 @@
             this.tópicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.búsquedaPorTemasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CessarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -82,19 +85,51 @@
             // MenuPrincipal
             // 
             this.MenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inicioToolStripMenuItem,
             this.CatalogosToolStripMenuItem,
             this.cuentasToolStripMenuItem,
             this.ProcesosToolStripMenuItem,
             this.ReportesToolStripMenuItem,
             this.SeguridadToolStripMenuItem,
             this.ConfiguracionToolStripMenuItem,
-            this.AyudaToolStripMenuItem,
-            this.CessarSesionToolStripMenuItem});
+            this.AyudaToolStripMenuItem});
             this.MenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.MenuPrincipal.Name = "MenuPrincipal";
             this.MenuPrincipal.Size = new System.Drawing.Size(1014, 24);
             this.MenuPrincipal.TabIndex = 0;
             this.MenuPrincipal.Text = "menuStrip1";
+            // 
+            // inicioToolStripMenuItem
+            // 
+            this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CessarSesionToolStripMenuItem,
+            this.impresorasToolStripMenuItem,
+            this.multiSistemaToolStripMenuItem});
+            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.inicioToolStripMenuItem.Text = "Inicio";
+            // 
+            // CessarSesionToolStripMenuItem
+            // 
+            this.CessarSesionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CessarSesionToolStripMenuItem.Image")));
+            this.CessarSesionToolStripMenuItem.Name = "CessarSesionToolStripMenuItem";
+            this.CessarSesionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.CessarSesionToolStripMenuItem.Text = "&Cerrar Sesión";
+            this.CessarSesionToolStripMenuItem.Click += new System.EventHandler(this.CessarSesionToolStripMenuItem_Click);
+            // 
+            // impresorasToolStripMenuItem
+            // 
+            this.impresorasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("impresorasToolStripMenuItem.Image")));
+            this.impresorasToolStripMenuItem.Name = "impresorasToolStripMenuItem";
+            this.impresorasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.impresorasToolStripMenuItem.Text = "Impresoras";
+            // 
+            // multiSistemaToolStripMenuItem
+            // 
+            this.multiSistemaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("multiSistemaToolStripMenuItem.Image")));
+            this.multiSistemaToolStripMenuItem.Name = "multiSistemaToolStripMenuItem";
+            this.multiSistemaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.multiSistemaToolStripMenuItem.Text = "Multi Sistema";
             // 
             // CatalogosToolStripMenuItem
             // 
@@ -407,13 +442,6 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de ZORBANK";
             // 
-            // CessarSesionToolStripMenuItem
-            // 
-            this.CessarSesionToolStripMenuItem.Name = "CessarSesionToolStripMenuItem";
-            this.CessarSesionToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.CessarSesionToolStripMenuItem.Text = "&Cerrar Sesión";
-            this.CessarSesionToolStripMenuItem.Click += new System.EventHandler(this.cERRARSESSIONToolStripMenuItem_Click);
-            // 
             // statusStrip1
             // 
             this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -488,7 +516,6 @@
         private System.Windows.Forms.MenuStrip MenuPrincipal;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripMenuItem CessarSesionToolStripMenuItem;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripMenuItem CatalogosToolStripMenuItem;
@@ -530,5 +557,9 @@
         private System.Windows.Forms.ToolStripMenuItem AgendaZonaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoCambioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MonedasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CessarSesionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem impresorasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem multiSistemaToolStripMenuItem;
     }
 }

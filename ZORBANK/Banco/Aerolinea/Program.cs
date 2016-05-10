@@ -15,8 +15,7 @@ namespace ZORBANK
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            BancoSplash sp = new BancoSplash();
+            Application.SetCompatibleTextRenderingDefault(false);            
             Application.Run(new BancoSplash());
             Application.Run(new frmLogin());
         }
