@@ -102,4 +102,10 @@ C:\Users\Diego\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO
 =======
 C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFormaPago.resources
 C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFormasPago.resources
+<<<<<<< HEAD
+>>>>>>> CuentasCorrientes
+=======
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe.config
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.exe
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.pdb
 >>>>>>> CuentasCorrientes
