@@ -57,8 +57,8 @@
             this.grupoFiltrar.Controls.Add(this.btnRefrescar);
             this.grupoFiltrar.Controls.Add(this.btnNuevo);
             this.grupoFiltrar.Controls.Add(this.label1);
-            this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.grupoFiltrar.Location = new System.Drawing.Point(0, 450);
+            this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.grupoFiltrar.Location = new System.Drawing.Point(0, 0);
             this.grupoFiltrar.Name = "grupoFiltrar";
             this.grupoFiltrar.Size = new System.Drawing.Size(1014, 61);
             this.grupoFiltrar.TabIndex = 12;

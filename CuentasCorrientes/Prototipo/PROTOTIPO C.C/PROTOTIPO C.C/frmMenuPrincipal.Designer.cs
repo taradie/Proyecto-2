@@ -38,7 +38,6 @@
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deudasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pagoProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formasDePagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoDeEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pagoAEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +61,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.formasDePagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -73,8 +73,8 @@
             this.reportesToolStripMenuItem,
             this.seguridadToolStripMenuItem,
             this.seguridadToolStripMenuItem1,
-            this.configuracionToolStripMenuItem,
             this.seguridadToolStripMenuItem2,
+            this.configuracionToolStripMenuItem,
             this.ayudaToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
@@ -135,12 +135,6 @@
             this.pagoProveedoresToolStripMenuItem.Name = "pagoProveedoresToolStripMenuItem";
             this.pagoProveedoresToolStripMenuItem.Click += new System.EventHandler(this.pagoProveedoresToolStripMenuItem_Click);
             // 
-            // formasDePagoToolStripMenuItem
-            // 
-            this.formasDePagoToolStripMenuItem.Name = "formasDePagoToolStripMenuItem";
-            resources.ApplyResources(this.formasDePagoToolStripMenuItem, "formasDePagoToolStripMenuItem");
-            this.formasDePagoToolStripMenuItem.Click += new System.EventHandler(this.formasDePagoToolStripMenuItem_Click);
-            // 
             // seguridadToolStripMenuItem
             // 
             this.seguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -155,7 +149,6 @@
             // 
             resources.ApplyResources(this.ingresoDeEmpleadosToolStripMenuItem, "ingresoDeEmpleadosToolStripMenuItem");
             this.ingresoDeEmpleadosToolStripMenuItem.Name = "ingresoDeEmpleadosToolStripMenuItem";
-            this.ingresoDeEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.ingresoDeEmpleadosToolStripMenuItem_Click);
             // 
             // pagoAEmpleadosToolStripMenuItem
             // 
@@ -285,6 +278,12 @@
             this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel2.Name = "toolStripLabel2";
             resources.ApplyResources(this.toolStripLabel2, "toolStripLabel2");
+            // 
+            // formasDePagoToolStripMenuItem
+            // 
+            this.formasDePagoToolStripMenuItem.Name = "formasDePagoToolStripMenuItem";
+            resources.ApplyResources(this.formasDePagoToolStripMenuItem, "formasDePagoToolStripMenuItem");
+            this.formasDePagoToolStripMenuItem.Click += new System.EventHandler(this.formasDePagoToolStripMenuItem_Click);
             // 
             // frmMenuPrincipal
             // 
