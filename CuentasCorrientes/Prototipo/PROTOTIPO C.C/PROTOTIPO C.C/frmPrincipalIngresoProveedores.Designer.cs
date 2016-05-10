@@ -56,6 +56,7 @@
             this.grdProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdProveedores.Size = new System.Drawing.Size(1014, 511);
             this.grdProveedores.TabIndex = 9;
+            this.grdProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProveedores_CellContentClick);
             this.grdProveedores.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProveedores_CellContentDoubleClick);
             // 
             // grupoFiltrar
@@ -70,8 +71,8 @@
             this.grupoFiltrar.Controls.Add(this.btnRefrescar);
             this.grupoFiltrar.Controls.Add(this.btnNuevo);
             this.grupoFiltrar.Controls.Add(this.label1);
-            this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.grupoFiltrar.Location = new System.Drawing.Point(0, 0);
+            this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.grupoFiltrar.Location = new System.Drawing.Point(0, 450);
             this.grupoFiltrar.Name = "grupoFiltrar";
             this.grupoFiltrar.Size = new System.Drawing.Size(1014, 61);
             this.grupoFiltrar.TabIndex = 10;

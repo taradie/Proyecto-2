@@ -65,3 +65,7 @@ C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROT
 C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\Navegador.dll
 C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFormaPago.resources
 C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFormasPago.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalIngresoClientes.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMensaje.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmEmpleado.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalIngresoEmpleados.resources

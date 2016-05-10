@@ -16,7 +16,7 @@ namespace PROTOTIPO_C.C
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenuPrincipal());
+            Application.Run(new frmMensaje());
         }
     }
 }

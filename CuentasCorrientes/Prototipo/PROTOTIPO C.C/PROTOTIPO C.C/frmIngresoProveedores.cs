@@ -131,6 +131,8 @@ namespace PROTOTIPO_C.C
                 this.Close();
             }
 
+            frmPrincipalIngresoProveedores temp = new frmPrincipalIngresoProveedores();
+            temp.funActualizarGrid();
             estado = "";
             txtNombreProveedor.Clear();
             txtDireccionProveedor.Clear();

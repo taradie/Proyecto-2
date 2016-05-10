@@ -20,7 +20,7 @@ namespace PROTOTIPO_C.C
             funActualizarGrid();
         }
 
-        private void funActualizarGrid()
+        public void funActualizarGrid()
         {
             clasnegocio cnegocio = new clasnegocio();
             cnegocio.funconsultarRegistros("proveedor", "SELECT codproveedor as Codigo,nombre as Nombre, direccion as Direccion, nit as Nit, telefono as Telefono, descripcion as Descripcion, cuenta as Cuenta, estado as Estado from proveedor WHERE estado = 'ACTIVO' ", "consulta", grdProveedores);
@@ -28,7 +28,7 @@ namespace PROTOTIPO_C.C
 
         private void frmPrincipalIngresoProveedores_Load(object sender, EventArgs e)
         {
-
+            funActualizarGrid();
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -90,6 +90,11 @@ namespace PROTOTIPO_C.C
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grdProveedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

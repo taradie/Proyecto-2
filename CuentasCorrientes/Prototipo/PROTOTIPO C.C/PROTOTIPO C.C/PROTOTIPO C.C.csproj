@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpleado.Designer.cs">
+      <DependentUpon>frmEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFacturaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     <Compile Include="frmIngresoProveedores.Designer.cs">
       <DependentUpon>frmIngresoProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMensaje.Designer.cs">
+      <DependentUpon>frmMensaje.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,18 @@
     </Compile>
     <Compile Include="frmPrincipalFormaPago.Designer.cs">
       <DependentUpon>frmPrincipalFormaPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalIngresoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalIngresoClientes.designer.cs">
+      <DependentUpon>frmPrincipalIngresoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalIngresoEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalIngresoEmpleados.Designer.cs">
+      <DependentUpon>frmPrincipalIngresoEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipalIngresoProveedores.cs">
       <SubType>Form</SubType>
@@ -151,6 +175,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StringResources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmEmpleado.resx">
+      <DependentUpon>frmEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFacturaCliente.resx">
       <DependentUpon>frmFacturaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIngresoProveedores.resx">
       <DependentUpon>frmIngresoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMensaje.resx">
+      <DependentUpon>frmMensaje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.en-US.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
@@ -192,6 +222,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalFormaPago.resx">
       <DependentUpon>frmPrincipalFormaPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalIngresoClientes.resx">
+      <DependentUpon>frmPrincipalIngresoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalIngresoEmpleados.resx">
+      <DependentUpon>frmPrincipalIngresoEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalIngresoProveedores.resx">
       <DependentUpon>frmPrincipalIngresoProveedores.cs</DependentUpon>

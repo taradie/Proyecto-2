@@ -19,7 +19,7 @@ namespace PROTOTIPO_C.C
 
         private void cobrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrincipalClienteIngreso temp = new frmPrincipalClienteIngreso();
+            frmPrincipalIngresoClientes temp = new frmPrincipalIngresoClientes();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             //pictureBox1.Visible = false;
@@ -116,6 +116,14 @@ namespace PROTOTIPO_C.C
         private void formasDePagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPrincipalFormaPago temp = new frmPrincipalFormaPago();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void ingresoDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalIngresoEmpleados temp = new frmPrincipalIngresoEmpleados();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             temp.Show();
