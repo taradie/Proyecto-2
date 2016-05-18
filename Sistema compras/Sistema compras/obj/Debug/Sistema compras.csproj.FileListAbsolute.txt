@@ -1,0 +1,269 @@
+c:\users\melvinalejandro\documents\visual studio 2013\Projects\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\bin\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProductos.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmRegistroProducto.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProveedor.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionProv.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmOC.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema compras.exe
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema compras.pdb
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\bin\Debug\Sistema compras.pdb
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmInventario.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmOC.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProductos.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProveedor.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionProv.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmRegistroProducto.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfIdioma.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfMoneda.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmBaseDatos.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\Usuario\Documents\Diseño Sistemas\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalBD.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmBaseDatos.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfIdioma.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfMoneda.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalBD.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmIngresoEgreso.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMovimiento.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMarca.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalImpuestos.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalMarca.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Impuestos.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema compras.exe
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema compras.pdb
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\bin\Debug\Sistema compras.pdb
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmBaseDatos.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfIdioma.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfMoneda.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmIngresoEgreso.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMarca.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalImpuestos.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalMarca.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProductos.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmOC.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalBD.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMovimiento.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProveedor.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionProv.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmRegistroProducto.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Impuestos.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\comprasprototipo2\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmLinea.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalLinea.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMensaje.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\bin\Debug\ClaseProveedor.pdb
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\bin\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\bin\Debug\ClaseProveedor.pdb
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmBaseDatos.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfIdioma.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfMoneda.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmIngresoEgreso.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmLinea.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMarca.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMensaje.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalImpuestos.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalLinea.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalMarca.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProductos.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmOC.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalBD.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMovimiento.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProveedor.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionProv.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmRegistroProducto.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Impuestos.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmVistaReporte.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema compras.exe
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema compras.pdb
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\bin\Debug\Sistema compras.pdb
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\bin\Debug\ClaseProveedor.pdb
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmBaseDatos.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfIdioma.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfMoneda.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmIngresoEgreso.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmLinea.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMarca.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMensaje.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalImpuestos.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalLinea.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalMarca.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProductos.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmOC.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalBD.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMovimiento.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProveedor.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionProv.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmRegistroProducto.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmVistaReporte.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Impuestos.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+C:\Users\melvinalejandro\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+F:\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe.config
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema compras.exe
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema compras.pdb
+F:\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe
+F:\Sistema compras\Sistema compras\bin\Debug\Sistema compras.pdb
+F:\Sistema compras\Sistema compras\bin\Debug\ClaseProveedor.pdb
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmBaseDatos.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfIdioma.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmConfMoneda.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmIngresoEgreso.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmLinea.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMarca.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMensaje.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalImpuestos.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalLinea.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalMarca.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProductos.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmOC.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalBD.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMovimiento.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProveedor.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionProv.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmRegistroProducto.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmVistaReporte.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Impuestos.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+F:\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmVistaReporte.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmBaseDatos.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmConfIdioma.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmConfMoneda.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmIngresoEgreso.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmLinea.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMarca.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMensaje.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalImpuestos.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalLinea.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalMarca.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmProductos.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmOC.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalBD.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMovimiento.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmProveedor.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmCreacionProv.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmRegistroProducto.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmVistaReporte.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.Impuestos.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\bin\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\bin\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\Proyecto Compras\Sistema compras - Copy\Sistema compras\bin\Debug\ClaseProveedor.pdb
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.exe
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.pdb
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\bin\Debug\Sistema compras.exe
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\bin\Debug\Sistema compras.pdb
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\bin\Debug\ClaseProveedor.pdb
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmBaseDatos.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmConfIdioma.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmConfMoneda.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmIngresoEgreso.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmLinea.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMarca.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMensaje.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalImpuestos.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalLinea.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalMarca.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmProductos.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmOC.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalBD.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMovimiento.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmProveedor.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmCreacionProv.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmRegistroProducto.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmVistaReporte.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.Impuestos.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+C:\Users\Usuario\Documents\IngenieriaSoft\Sistema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\bin\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\bin\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\bin\Debug\ClaseProveedor.pdb
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmIngresoEgreso.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMarca.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMensaje.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalLinea.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalMarca.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmOC.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmMovimiento.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmVistaReporte.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.txtcondi.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmExistencias.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalExistencias.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalProductos.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmLogin.resources
+C:\Users\Josue\Desktop\Sitema Compras\Sistema compras - Copy\Sistema compras\obj\Debug\Sistema_compras.frmProducto.resources
