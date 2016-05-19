@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaCuentas));
-            this.grdCuentas = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
@@ -40,20 +39,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grdCuentas)).BeginInit();
+            this.grdCuentas = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCuentas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grdCuentas
-            // 
-            this.grdCuentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdCuentas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdCuentas.Location = new System.Drawing.Point(0, 0);
-            this.grdCuentas.Name = "grdCuentas";
-            this.grdCuentas.Size = new System.Drawing.Size(998, 472);
-            this.grdCuentas.TabIndex = 0;
-            this.grdCuentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // groupBox1
             // 
@@ -66,10 +55,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Location = new System.Drawing.Point(0, -1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(998, 61);
+            this.groupBox1.Size = new System.Drawing.Size(998, 74);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtrar";
@@ -155,21 +143,34 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre:";
             // 
+            // grdCuentas
+            // 
+            this.grdCuentas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grdCuentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdCuentas.Location = new System.Drawing.Point(0, 60);
+            this.grdCuentas.Name = "grdCuentas";
+            this.grdCuentas.Size = new System.Drawing.Size(998, 534);
+            this.grdCuentas.TabIndex = 0;
+            this.grdCuentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // frmConsultaCuentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(998, 472);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdCuentas);
+            this.Controls.Add(this.groupBox1);
             this.Name = "frmConsultaCuentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Cuentas";
             this.Load += new System.EventHandler(this.frmConsultaCuentas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdCuentas)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCuentas)).EndInit();
             this.ResumeLayout(false);
 
         }

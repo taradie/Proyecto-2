@@ -54,7 +54,7 @@
   <ItemGroup>
     <Reference Include="ConexionODBC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\ConexionODBC.dll</HintPath>
+      <HintPath>..\..\..\Software Base\Codigo Fuente ODBC\ConexionODBC\bin\Debug\ConexionODBC.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -74,9 +74,13 @@
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MultiBD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MultiBD.dll</HintPath>
+    </Reference>
     <Reference Include="Navegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Navegador.dll</HintPath>
+      <HintPath>..\..\..\Software Base\Navegador\Navegador\Navegador\bin\Debug\Navegador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -133,12 +137,6 @@
     <Compile Include="frmAgendaMovimiento.Designer.cs">
       <DependentUpon>frmAgendaMovimiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAsignacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAsignacion.Designer.cs">
-      <DependentUpon>frmAsignacion.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAsignacionRoles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,12 +154,6 @@
     </Compile>
     <Compile Include="frmbitacora.Designer.cs">
       <DependentUpon>frmbitacora.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCarrera.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCarrera.Designer.cs">
-      <DependentUpon>frmCarrera.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConceptos.cs">
       <SubType>Form</SubType>
@@ -205,12 +197,6 @@
     </Compile>
     <Compile Include="frmCuentas.designer.cs">
       <DependentUpon>frmCuentas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmDocumentos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDocumentos.designer.cs">
-      <DependentUpon>frmDocumentos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFormasPago.cs">
       <SubType>Form</SubType>
@@ -272,12 +258,6 @@
     <Compile Include="frmPrincipalConciliacion.Designer.cs">
       <DependentUpon>frmPrincipalConciliacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipalDocumentos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPrincipalDocumentos.designer.cs">
-      <DependentUpon>frmPrincipalDocumentos.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmPrincipalFPcs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,12 +299,6 @@
     </Compile>
     <Compile Include="frmRol.Designer.cs">
       <DependentUpon>frmRol.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSalones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSalones.Designer.cs">
-      <DependentUpon>frmSalones.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVistaReporte.cs">
       <SubType>Form</SubType>
@@ -436,9 +410,6 @@
     <EmbeddedResource Include="frmAgendaMovimiento.resx">
       <DependentUpon>frmAgendaMovimiento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAsignacion.resx">
-      <DependentUpon>frmAsignacion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmAsignacionRoles.resx">
       <DependentUpon>frmAsignacionRoles.cs</DependentUpon>
     </EmbeddedResource>
@@ -447,9 +418,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmbitacora.resx">
       <DependentUpon>frmbitacora.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCarrera.resx">
-      <DependentUpon>frmCarrera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConceptos.resx">
       <DependentUpon>frmConceptos.cs</DependentUpon>
@@ -471,9 +439,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCuentas.resx">
       <DependentUpon>frmCuentas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDocumentos.resx">
-      <DependentUpon>frmDocumentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFormasPago.resx">
       <DependentUpon>frmFormasPago.cs</DependentUpon>
@@ -505,9 +470,6 @@
     <EmbeddedResource Include="frmPrincipalConciliacion.resx">
       <DependentUpon>frmPrincipalConciliacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipalDocumentos.resx">
-      <DependentUpon>frmPrincipalDocumentos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalFPcs.resx">
       <DependentUpon>frmPrincipalFPcs.cs</DependentUpon>
     </EmbeddedResource>
@@ -528,9 +490,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRol.resx">
       <DependentUpon>frmRol.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSalones.resx">
-      <DependentUpon>frmSalones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVistaReporte.resx">
       <DependentUpon>frmVistaReporte.cs</DependentUpon>

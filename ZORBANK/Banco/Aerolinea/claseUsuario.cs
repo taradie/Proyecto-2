@@ -42,13 +42,17 @@ namespace ZORBANK
         {
             string ip = ObtenerIP();
             string codigo = "";
+            
             _comando = new OdbcCommand(String.Format("select codigo_usuario from USUARIO where nombre_usuario = '{0}'", txtUsuario), ConexionODBC.Conexion.ObtenerConexion());
+            
             _reader = _comando.ExecuteReader();
             if (_reader.Read())
                 codigo = _reader.GetString(0);
-
-            _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, equipo, codigo_usuario) VALUES('{0}','{1}',CURDATE(),DATE_FORMAT(CURTIME(), '%h:%i:%s'), '{2}','{3}')", Accion, table, ip, codigo), ConexionODBC.Conexion.ObtenerConexion());
+            int hora = DateTime.UtcNow.Hour;
+            ConexionODBC.Conexion.CerrarConexion();
+            _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, equipo, codigo_usuario,observaciones) VALUES('{0}','{1}', CURDATE(),'{4}', '{2}','{3}','Cambios')", Accion, table, ip, codigo,hora), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
+            ConexionODBC.Conexion.CerrarConexion();
         }
 
         public static string ObtenerIP()
@@ -74,10 +78,12 @@ namespace ZORBANK
             _reader = _comando.ExecuteReader();
             if (_reader.Read())
                usuario = _reader.GetString(0);
+            ConexionODBC.Conexion.CerrarConexion();
             _comando = new OdbcCommand(String.Format("select codigo_rol from USUARIO where codigo_usuario = '{0}'", usuario), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
             if (_reader.Read())
                 rol = _reader.GetString(0);
+            ConexionODBC.Conexion.CerrarConexion();
             _comando = new OdbcCommand(String.Format("select permiso from PRIVILEGIOS where formulario = '{0}' and codigo_rol = '{1}'", sForm, rol), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
             if (_reader.Read())
@@ -88,7 +94,7 @@ namespace ZORBANK
             {
                 encontre = false;
             }
-                
+            ConexionODBC.Conexion.CerrarConexion();
             return encontre;
         }
 
@@ -105,14 +111,17 @@ namespace ZORBANK
             _reader = _comando.ExecuteReader();
             if (_reader.Read())
                 usuario = _reader.GetString(0);
+            ConexionODBC.Conexion.CerrarConexion();
             _comando = new OdbcCommand(String.Format("select codigo_rol from USUARIO where codigo_usuario = '{0}'", usuario), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
             if (_reader.Read())
                 rol = _reader.GetString(0);
+            ConexionODBC.Conexion.CerrarConexion();
             _comando = new OdbcCommand(String.Format("select codigo_privilegios from PRIVILEGIOS where codigo_rol = '{0}' and formulario = '{1}'", rol,formulario), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
             if(_reader.Read())
                 privilegio = _reader.GetString(0);
+            ConexionODBC.Conexion.CerrarConexion();
             _comando = new OdbcCommand(String.Format("select validacion from PERMISO where codigo_privilegios = '{0}'", privilegio), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
             while (_reader.Read())

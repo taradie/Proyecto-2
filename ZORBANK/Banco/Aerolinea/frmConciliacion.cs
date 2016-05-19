@@ -16,5 +16,20 @@ namespace ZORBANK
         {
             InitializeComponent();
         }
+
+        private void frmConciliacion_Load(object sender, EventArgs e)
+        {
+            //textBox2.Text = DateTime.Now.ToString("dd/MM/yyyy");
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

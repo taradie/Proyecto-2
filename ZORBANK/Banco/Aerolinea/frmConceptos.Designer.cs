@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConceptos));
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -47,7 +48,11 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+          //  this.dataSet2 = new ZORBANK.DataSet2();
+            this.dataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
+         //   ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox2
@@ -141,6 +146,7 @@
             this.button1.Size = new System.Drawing.Size(48, 42);
             this.button1.TabIndex = 13;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnBuscar
             // 
@@ -186,6 +192,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(48, 42);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEliminar
             // 
@@ -215,6 +222,17 @@
             this.btnNuevo.Size = new System.Drawing.Size(48, 42);
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click_1);
+            // 
+            // dataSet2
+            // 
+           // this.dataSet2.DataSetName = "DataSet2";
+           // this.dataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSet2BindingSource
+            // 
+          //  this.dataSet2BindingSource.DataSource = this.dataSet2;
+            this.dataSet2BindingSource.Position = 0;
             // 
             // frmConceptos
             // 
@@ -232,7 +250,10 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmConceptos";
             this.Text = "frmConceptos";
+            this.Load += new System.EventHandler(this.frmConceptos_Load);
             this.panel1.ResumeLayout(false);
+            //((System.ComponentModel.ISupportInitialize)(this.dataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +279,7 @@
         public System.Windows.Forms.Button btnEliminar;
         public System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
+     //  private DataSet2 dataSet2;
+        private System.Windows.Forms.BindingSource dataSet2BindingSource;
     }
 }

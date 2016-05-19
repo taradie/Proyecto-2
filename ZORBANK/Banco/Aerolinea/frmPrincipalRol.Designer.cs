@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalRol));
             this.grdrRolPrincipal = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdrRolPrincipal)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -48,10 +48,10 @@
             // 
             this.grdrRolPrincipal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdrRolPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdrRolPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdrRolPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.grdrRolPrincipal.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.grdrRolPrincipal.Location = new System.Drawing.Point(0, 64);
             this.grdrRolPrincipal.Name = "grdrRolPrincipal";
-            this.grdrRolPrincipal.Size = new System.Drawing.Size(996, 504);
+            this.grdrRolPrincipal.Size = new System.Drawing.Size(996, 440);
             this.grdrRolPrincipal.TabIndex = 0;
             this.grdrRolPrincipal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -66,13 +66,24 @@
             this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.Controls.Add(this.txtBuscar);
             this.groupBox1.Controls.Add(this.lblBuscar);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 440);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(996, 64);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtrar";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(687, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(306, 39);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Mantenimiento Rol";
             // 
             // btnIrUltimo
             // 
@@ -152,17 +163,6 @@
             this.lblBuscar.Size = new System.Drawing.Size(64, 16);
             this.lblBuscar.TabIndex = 0;
             this.lblBuscar.Text = "Buscar: ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(687, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 39);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Mantenimiento Rol";
             // 
             // frmPrincipalRol
             // 

@@ -174,5 +174,13 @@ namespace ZORBANK
                 login.Show();
             }
         }
+
+        private void establecerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MultiBD.frmMultiBD temp = new MultiBD.frmMultiBD();
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
     }
 }

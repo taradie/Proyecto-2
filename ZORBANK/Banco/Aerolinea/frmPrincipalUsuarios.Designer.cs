@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalUsuarios));
             this.grupoFiltrar = new System.Windows.Forms.GroupBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.grdUsuarios = new System.Windows.Forms.DataGridView();
-            this.btnImprimir = new System.Windows.Forms.Button();
             this.grupoFiltrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -57,13 +57,23 @@
             this.grupoFiltrar.Controls.Add(this.label1);
             this.grupoFiltrar.Controls.Add(this.txtBuscar);
             this.grupoFiltrar.Controls.Add(this.lblBuscar);
-            this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.grupoFiltrar.Location = new System.Drawing.Point(0, 476);
+            this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.grupoFiltrar.Location = new System.Drawing.Point(0, 0);
             this.grupoFiltrar.Name = "grupoFiltrar";
             this.grupoFiltrar.Size = new System.Drawing.Size(1226, 61);
             this.grupoFiltrar.TabIndex = 3;
             this.grupoFiltrar.TabStop = false;
             this.grupoFiltrar.Text = "Filtrar";
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
+            this.btnImprimir.Location = new System.Drawing.Point(635, 13);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(48, 42);
+            this.btnImprimir.TabIndex = 24;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnIrUltimo
             // 
@@ -158,26 +168,16 @@
             // 
             this.grdUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.grdUsuarios.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.grdUsuarios.Location = new System.Drawing.Point(0, 61);
             this.grdUsuarios.Name = "grdUsuarios";
             this.grdUsuarios.ReadOnly = true;
             this.grdUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdUsuarios.Size = new System.Drawing.Size(1226, 537);
+            this.grdUsuarios.Size = new System.Drawing.Size(1226, 476);
             this.grdUsuarios.TabIndex = 2;
             this.grdUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdUsuarios_CellClick);
             this.grdUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdFacultad_CellContentClick);
             this.grdUsuarios.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdUsuarios_CellContentDoubleClick);
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
-            this.btnImprimir.Location = new System.Drawing.Point(635, 13);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(48, 42);
-            this.btnImprimir.TabIndex = 24;
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // frmPrincipalUsuarios
             // 

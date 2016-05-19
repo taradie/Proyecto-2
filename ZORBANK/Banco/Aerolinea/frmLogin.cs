@@ -22,7 +22,7 @@ namespace ZORBANK
             if (claseUsuario.Autentificar(txtUser.Text, txtPass.Text) == true)
             {
                 claseUsuario.varibaleUsuario = txtUser.Text;
-                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Inicio Secion", "Usuario");
+                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Inicio Sesion", "Usuario");
                 this.Hide();
                 frmMenu Menu = new frmMenu();
                 Menu.Show();

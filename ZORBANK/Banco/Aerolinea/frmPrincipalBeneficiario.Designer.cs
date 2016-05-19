@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalBeneficiario));
             this.grupoFiltrar = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.lblBuscar = new System.Windows.Forms.Label();
-            this.grdPago = new System.Windows.Forms.DataGridView();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnIrPrimero = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.grdPago = new System.Windows.Forms.DataGridView();
             this.grupoFiltrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdPago)).BeginInit();
             this.SuspendLayout();
@@ -55,52 +55,13 @@
             this.grupoFiltrar.Controls.Add(this.label1);
             this.grupoFiltrar.Controls.Add(this.txtBuscar);
             this.grupoFiltrar.Controls.Add(this.lblBuscar);
-            this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.grupoFiltrar.Location = new System.Drawing.Point(0, 450);
+            this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.grupoFiltrar.Location = new System.Drawing.Point(0, 0);
             this.grupoFiltrar.Name = "grupoFiltrar";
-            this.grupoFiltrar.Size = new System.Drawing.Size(1014, 61);
+            this.grupoFiltrar.Size = new System.Drawing.Size(1014, 66);
             this.grupoFiltrar.TabIndex = 7;
             this.grupoFiltrar.TabStop = false;
             this.grupoFiltrar.Text = "Filtrar";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(575, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(436, 39);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Mantenimiento Beneficiario";
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(61, 25);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(209, 20);
-            this.txtBuscar.TabIndex = 1;
-            // 
-            // lblBuscar
-            // 
-            this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(12, 28);
-            this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(47, 13);
-            this.lblBuscar.TabIndex = 0;
-            this.lblBuscar.Text = "Nombre:";
-            // 
-            // grdPago
-            // 
-            this.grdPago.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdPago.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdPago.Location = new System.Drawing.Point(0, 0);
-            this.grdPago.Name = "grdPago";
-            this.grdPago.ReadOnly = true;
-            this.grdPago.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdPago.Size = new System.Drawing.Size(1014, 511);
-            this.grdPago.TabIndex = 6;
             // 
             // btnIrUltimo
             // 
@@ -156,6 +117,44 @@
             this.btnNuevo.TabIndex = 17;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(575, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(436, 39);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mantenimiento Beneficiario";
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(61, 25);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(209, 20);
+            this.txtBuscar.TabIndex = 1;
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.Location = new System.Drawing.Point(12, 28);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(47, 13);
+            this.lblBuscar.TabIndex = 0;
+            this.lblBuscar.Text = "Nombre:";
+            // 
+            // grdPago
+            // 
+            this.grdPago.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdPago.Location = new System.Drawing.Point(0, 58);
+            this.grdPago.Name = "grdPago";
+            this.grdPago.ReadOnly = true;
+            this.grdPago.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdPago.Size = new System.Drawing.Size(1364, 658);
+            this.grdPago.TabIndex = 6;
             // 
             // frmPrincipalBeneficiario
             // 

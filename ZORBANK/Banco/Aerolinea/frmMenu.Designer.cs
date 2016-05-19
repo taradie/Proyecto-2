@@ -107,28 +107,29 @@
             this.multiSistemaToolStripMenuItem});
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.inicioToolStripMenuItem.Text = "Inicio";
+            this.inicioToolStripMenuItem.Text = "&Inicio";
             // 
             // CessarSesionToolStripMenuItem
             // 
             this.CessarSesionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CessarSesionToolStripMenuItem.Image")));
             this.CessarSesionToolStripMenuItem.Name = "CessarSesionToolStripMenuItem";
-            this.CessarSesionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.CessarSesionToolStripMenuItem.Text = "&Cerrar Sesión";
+            this.CessarSesionToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.CessarSesionToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.CessarSesionToolStripMenuItem.Text = "Cerrar Sesión";
             this.CessarSesionToolStripMenuItem.Click += new System.EventHandler(this.CessarSesionToolStripMenuItem_Click);
             // 
             // impresorasToolStripMenuItem
             // 
             this.impresorasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("impresorasToolStripMenuItem.Image")));
             this.impresorasToolStripMenuItem.Name = "impresorasToolStripMenuItem";
-            this.impresorasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.impresorasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.impresorasToolStripMenuItem.Text = "Impresoras";
             // 
             // multiSistemaToolStripMenuItem
             // 
             this.multiSistemaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("multiSistemaToolStripMenuItem.Image")));
             this.multiSistemaToolStripMenuItem.Name = "multiSistemaToolStripMenuItem";
-            this.multiSistemaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.multiSistemaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.multiSistemaToolStripMenuItem.Text = "Multi Sistema";
             // 
             // CatalogosToolStripMenuItem
@@ -365,7 +366,7 @@
             this.MonedasToolStripMenuItem});
             this.ConfiguracionToolStripMenuItem.Name = "ConfiguracionToolStripMenuItem";
             this.ConfiguracionToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.ConfiguracionToolStripMenuItem.Text = "Co&nfiguración";
+            this.ConfiguracionToolStripMenuItem.Text = "&Configuración";
             // 
             // parámetrosDelSistemaToolStripMenuItem
             // 
@@ -394,6 +395,7 @@
             this.establecerToolStripMenuItem.Name = "establecerToolStripMenuItem";
             this.establecerToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.establecerToolStripMenuItem.Text = "Establecer tipo de conexión";
+            this.establecerToolStripMenuItem.Click += new System.EventHandler(this.establecerToolStripMenuItem_Click);
             // 
             // MonedasToolStripMenuItem
             // 
