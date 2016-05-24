@@ -25,6 +25,9 @@ namespace MultiBD
         }
 
         public String ConexionODBC = "";
+        protected String pass = "umg2016";
+
+        OdbcConnection conexionBDODBC = new OdbcConnection();
 
         private static string[] GetOdbcDriverNames()
         {
@@ -74,9 +77,7 @@ namespace MultiBD
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-
-            OdbcConnection conexionBDODBC = new OdbcConnection();
+        {            
             try
             {
                 DialogResult boton = MessageBox.Show("Esto puede ocacionar problemas con los datos\n" +
@@ -98,14 +99,18 @@ namespace MultiBD
                     else
                     {
                         if (rbDSN.Checked == true && rbDriver.Checked == false)
-                        {
+                        {                            
                             conexionBDODBC = new OdbcConnection("dsn=" + cmbODBC.Text +
                                 ";UID=" + txtUsuario.Text + ";PWD=" + txtContrasena.Text +
                                  ";Database=" + txtBD.Text + ";");
 
-                            ConexionODBC = "dsn=" + cmbODBC.Text +
+                            string encryptedstring = StringCipher.Encrypt("dsn=" + cmbODBC.Text +
                                 ";UID=" + txtUsuario.Text + ";PWD=" + txtContrasena.Text +
-                                 ";Database=" + txtBD.Text + ";";
+                                 ";Database=" + txtBD.Text + ";", pass);
+
+                            //MessageBox.Show(encryptedstring);
+
+                            ConexionODBC = encryptedstring;                        
                         }
                         if (rbDriver.Checked == true && rbDSN.Checked == false)
                         {
@@ -116,11 +121,13 @@ namespace MultiBD
                                  ";PWD=" + txtContrasena.Text +
                                  ";Database=" + txtBD.Text + ";");
 
-                            ConexionODBC = "Driver={" + cmbDriver.Text +
-                                "};Server=" + txtServidor.Text +
-                                ";UID=" + txtUsuario.Text +
-                                ";PWD=" + txtContrasena.Text +
-                                ";Database=" + txtBD.Text + ";";
+                            string encryptedstring = StringCipher.Encrypt("Driver={" + cmbDriver.Text +
+                                 "};Server=" + txtServidor.Text +
+                                 ";UID=" + txtUsuario.Text +
+                                 ";PWD=" + txtContrasena.Text +
+                                 ";Database=" + txtBD.Text + ";", pass);
+
+                            ConexionODBC = encryptedstring;
                         }
 
                         conexionBDODBC.Open();
@@ -225,13 +232,36 @@ namespace MultiBD
             {
                 if (ConexionODBCKey != null)
                 {
-                    ConexionODBCActual = (string) ConexionODBCKey.GetValue(keyname,"No hay Conexión");
+                    ConexionODBCActual = (string) ConexionODBCKey.GetValue(keyname,"DSN='proyecto2'");
                     ConexionODBCKey.Close();
                 }
             }
-            
-            MessageBox.Show("ConexiónODBC : "+ConexionODBCActual, "MultiBD",
-                     MessageBoxButtons.OK, MessageBoxIcon.Information);
+            string decryptedstring = StringCipher.Decrypt(ConexionODBCActual, pass);
+
+            conexionBDODBC = new OdbcConnection(decryptedstring);
+            conexionBDODBC.Open();
+            if (conexionBDODBC.State == ConnectionState.Open)
+            {
+                MessageBox.Show("¡Conexión Exitosa!", "MultiBD",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                MessageBox.Show("¡Conexión Falló!", "MultiBD",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        
+        conexionBDODBC.Close();
+               /* MessageBox.Show("ConexiónODBC : " + ConexionODBCActual, "MultiBD",
+                     MessageBoxButtons.OK, MessageBoxIcon.Information);*/
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {            
+            string appPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
+            string ayuda = appPath + "\\MultiBD.chm";
+            //MessageBox.Show(ayuda);
+            Help.ShowHelp(this, ayuda);            
         }
     }
 }

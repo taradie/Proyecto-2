@@ -237,7 +237,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(48, 42);
             this.button3.TabIndex = 20;
+            this.button3.TabStop = false;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frmMultiBD
             // 
@@ -261,9 +263,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMultiBD";
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Establecer Conexión a Base de Datos";
             this.groupBox1.ResumeLayout(false);
