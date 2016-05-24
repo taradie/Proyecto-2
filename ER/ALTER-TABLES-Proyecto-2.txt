@@ -1,0 +1,359 @@
+-- ENCARGADO:Manuel Chuquiej
+-- DESCRIPCION: Cambios en tablas de proveedor, agregar campo condicion,
+-- FECHA: 16/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+-- ALTER TABLE `proveedor` ADD `condicion` BOOLEAN NULL AFTER `estado`;
+
+
+-- ALTER TABLE `marca` ADD `condicion` BOOLEAN NULL AFTER `estado`;
+
+-- ENCARGADO:Dylan Corado
+-- DESCRIPCION: Cambios en tablas de empresa, y creacion de tabla tipofactura, relacion a factura
+-- FECHA: 17/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+--  Agregar auto increment en codigo empresa---------
+ALTER TABLE `empresa` CHANGE `codigo_empresa` `codigo_empresa` INT(11) NOT NULL AUTO_INCREMENT;
+
+--  ----Alter que agrega un campo a empresa----------------------
+ALTER TABLE `empresa` ADD `estado` char(30) NULL;
+ALTER TABLE `empresa` ADD `condicion` char(30) NULL;
+ALTER TABLE `empresa` CHANGE `ciudad/poblacion` `ciudad` CHAR(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `empresa` CHANGE `estado/departamento` `departamento` CHAR(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `empresa` ADD `imagen` CHAR(50) NOT NULL AFTER `departamento`;
+
+
+CREATE TABLE tipofactura(
+	codTipoFactura	INT	AUTO_INCREMENT,
+	tipo		CHAR(50),
+	estado		CHAR(50),
+	condicion 	CHAR(50),
+	PRIMARY KEY (codTipoFactura)
+)
+;
+
+ALTER TABLE factura ADD codTipoFactura INT NOT NULL;
+ALTER TABLE factura ADD CONSTRAINT relaciontipofactura_factura 
+    FOREIGN KEY (codTipoFactura)
+    REFERENCES tipofactura(codTipoFactura)
+;
+
+ALTER TABLE factura ADD codproveedor INT NULL;
+ALTER TABLE factura ADD CONSTRAINT relacionproveedor_factura 
+    FOREIGN KEY (codproveedor)
+    REFERENCES proveedor(codproveedor)
+;
+
+-- ENCARGADO:Diego Taracena
+-- DESCRIPCION: cambios en la tabla de tipodocumento
+-- FECHA: 17/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE `tipodocumento` CHANGE `condicion` `condicion` CHAR(10) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+ALTER TABLE cuentascorrientesclientes DROP FOREIGN KEY `RefTIPODOCUMENTO138`;  
+ALTER TABLE cuentascorrientesproveedores DROP FOREIGN KEY `RefTIPODOCUMENTO143`; 
+ALTER TABLE cuentascorrientesempleados DROP FOREIGN KEY `RefTIPODOCUMENTO145`;  
+ALTER TABLE documento_compra DROP FOREIGN KEY `RefTIPODOCUMENTO17`; 
+ALTER TABLE `tipodocumento` CHANGE `codtipodocumento` `codtipodocumento` INT(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `cuentascorrientesproveedores` CHANGE `codtipodocumento` `codtipodocumento` INT(11) NOT NULL;
+ALTER TABLE `cuentascorrientesempleados` CHANGE `codtipodocumento` `codtipodocumento` INT(11) NOT NULL;
+ALTER TABLE `cuentascorrientesclientes` CHANGE `codtipodocumento` `codtipodocumento` INT(11) NOT NULL;
+ALTER TABLE `documento_compra` CHANGE `codtipodocumento` `codtipodocumento` INT(11) NOT NULL;
+
+ALTER TABLE cuentascorrientesproveedores ADD CONSTRAINT relacionproveedores_Tipo
+    FOREIGN KEY (codtipodocumento)
+
+    REFERENCES tipodocumento(codtipodocumento)
+
+; 
+
+ALTER TABLE cuentascorrientesempleados ADD CONSTRAINT relacionempleados_Tipo
+    FOREIGN KEY (codtipodocumento)
+
+    REFERENCES tipodocumento(codtipodocumento)
+
+;
+
+ALTER TABLE cuentascorrientesclientes ADD CONSTRAINT relacionclientes_Tipo
+    FOREIGN KEY (codtipodocumento)
+
+    REFERENCES tipodocumento(codtipodocumento)
+
+;
+
+ALTER TABLE documento_compra ADD CONSTRAINT documentocompra_Tipo
+    FOREIGN KEY (codtipodocumento)
+
+    REFERENCES tipodocumento(codtipodocumento)
+
+;  
+
+
+-- ENCARGADO:Douglas Cajbon
+-- DESCRIPCION: cambios en la tabla de personas y empleado
+-- FECHA: 17/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE personas ADD condicion CHAR(30) NOT NULL;
+ALTER TABLE empleado ADD condicion CHAR(30) NOT NULL; 
+
+-- ENCARGADO:Sabrina Gomez
+-- DESCRIPCION: creacion de tabla lista precios y relaciones a esta tabla de producto, marca, linea, tipo cliente
+-- FECHA: 20/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+-- TABLE: LISTAPRECIOS 
+--
+
+CREATE TABLE LISTAPRECIOS(
+    codListaProd    INT         AUTO_INCREMENT,
+    total           INTEGER,
+    descuento       INT,
+    icod            INT         NOT NULL,
+    codproducto     INT         NOT NULL,
+    codmarca        INT         NOT NULL,
+    codlinea        INT         NOT NULL,
+    PRIMARY KEY (codListaProd)
+)ENGINE=INNODB
+;
+
+
+
+-- 
+-- TABLE: LISTAPRECIOS 
+--
+
+ALTER TABLE LISTAPRECIOS ADD CONSTRAINT RefMATIPOCLIENTE164 
+    FOREIGN KEY (icod)
+    REFERENCES MATIPOCLIENTE(icod)
+;
+
+ALTER TABLE LISTAPRECIOS ADD CONSTRAINT RefPRODUCTO166 
+    FOREIGN KEY (codproducto)
+    REFERENCES PRODUCTO(codproducto)
+;
+
+ALTER TABLE LISTAPRECIOS ADD CONSTRAINT RefMARCA167 
+    FOREIGN KEY (codmarca)
+    REFERENCES MARCA(codmarca)
+;
+
+ALTER TABLE LISTAPRECIOS ADD CONSTRAINT RefLINEA168 
+    FOREIGN KEY (codlinea)
+    REFERENCES LINEA(codlinea)
+;
+ALTER TABLE `vendedor` CHANGE `correo` `correo` VARCHAR(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+
+
+-- ENCARGADO:Dylan Corado
+-- DESCRIPCION: Tabla Idioma
+-- FECHA: 20/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE IDIOMA(
+    codidioma    INT         AUTO_INCREMENT,
+    idioma           char(50),
+    PRIMARY KEY (codidioma)
+)ENGINE=INNODB
+;
+
+INSERT INTO `idioma` (`codidioma`, `idioma`) VALUES (NULL, 'Espanol');
+
+-- ENCARGADO:Josue Revolorio
+-- DESCRIPCION: producto, almacen actualizadas
+-- FECHA: 22/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE `producto` DROP `marca`;
+ALTER TABLE `producto` ADD `imagen` CHAR(100) NOT NULL AFTER `comision`;
+ALTER TABLE producto DROP FOREIGN KEY RefTIPOPRODUCTO163;
+DROP TABLE TIPOPRODUCTO;
+ALTER TABLE `existencias` DROP `condicion`;
+ALTER TABLE `existencias` ADD `fechaingreso` DATE NULL AFTER `cantidad`;
+ALTER TABLE `existencias` ADD `fechaegreso` DATE NULL AFTER `fechaingreso`;
+ALTER TABLE `existencias` CHANGE `cantidad` `cantidad` INT(10) NULL DEFAULT NULL;
+
+CREATE TABLE FACTURAPROVEEDOR(
+    codfacturaprov     INT             AUTO_INCREMENT,
+    codproveedor       INT             NOT NULL,
+    total              DECIMAL(10, 0),
+    codimpuesto        CHAR(10),
+    situacion          CHAR(20),
+    estado             CHAR(20),
+    condicion          CHAR(30),
+    PRIMARY KEY (codfacturaprov)
+)ENGINE=INNODB
+;
+
+ALTER TABLE FACTURAPROVEEDOR ADD CONSTRAINT RefIMPUESTOS_fact18 
+    FOREIGN KEY (codimpuesto)
+    REFERENCES IMPUESTOS(codimpuesto)
+;
+
+ALTER TABLE FACTURAPROVEEDOR ADD CONSTRAINT RefPROVEEDOR_fact21 
+    FOREIGN KEY (codproveedor)
+    REFERENCES PROVEEDOR(codproveedor)
+;
+
+
+CREATE VIEW ViewExistencias
+   AS
+   SELECT
+	  existencias.cantidad as Existencias,
+	  almacen.nombre as Almacen,
+	  producto.codproducto as Codigo_Producto, 
+          producto.nombreproducto as Nombre,
+          marca.descripcion as Marca,
+          linea.descripcion as Linea,
+	  existencias.fechaingreso as Ultimo_Ingreso,
+	  existencias.fechaegreso as Ultimo_Egreso
+   FROM 
+          producto, marca, linea, existencias, almacen 
+   WHERE
+          marca.codmarca = producto.codmarca AND 
+          linea.codlinea = producto.codlinea AND 
+	  existencias.codalmacen = almacen.codalmacen AND
+	  producto.codproducto = existencias.codproducto
+   ;
+
+CREATE VIEW ViewProducto
+   AS
+   SELECT
+	  producto.codproducto as Codigo, 
+          producto.nombreproducto as Nombre,
+          producto.descripcion as Descripcion,
+          marca.descripcion as Marca,
+          proveedor.nombre as Proveedor, 
+          linea.descripcion as Linea,
+          producto.tamano as Tamano,
+          producto.costo as Costo,
+          producto.precio as Precio,
+          producto.existencia as Existencia,
+	  producto.exstmin as ExisMin,
+	  producto.exstmax as ExisMax,
+          producto.costeo as Costeo,
+          producto.tipoproducto as Tipo_Producto,
+          producto.fechacreacion as Fecha_Creacion,
+          producto.fechaventa as Ultima_Venta,
+          producto.fechacompra as Ultima_Compra,
+	  producto.comision as Comision,
+   	  producto.estado as Estado
+   FROM 
+          producto, marca, linea, proveedor 
+   WHERE
+          marca.codmarca = producto.codmarca AND 
+          linea.codlinea = producto.codlinea AND 
+          proveedor.codproveedor = producto.codproveedor AND
+	  producto.condicion = 1
+   ;
+
+ALTER TABLE `facturaproveedor` ADD `estadomov` BOOLEAN NOT NULL AFTER `situacion`;
+ALTER TABLE `facturaproveedor` ADD `fecha` DATE NULL AFTER `total`;
+ALTER TABLE `facturaproveedor` ADD `codencabezado` INT NOT NULL AFTER `fecha`;
+
+ALTER TABLE FACTURAPROVEEDOR ADD CONSTRAINT RefENCABFACT18 
+    FOREIGN KEY (codencabezado)
+    REFERENCES ENCABEZADO_DOCCOMPRA(codencabezado)
+;
+
+
+
+
+-- ENCARGADO:Manuel Chuquiej
+
+-- FECHA: 22/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+--  --Alter table para tabla movimiento de inventario y relacion Nueva---------------
+
+ALTER TABLE `tipomovimientoinventario` ADD `condicion` BOOLEAN NULL AFTER `movimiento`;
+
+
+ALTER TABLE movimientoinventario DROP FOREIGN KEY RefTIPOMOVIMIENTOINVENTARIO19;
+ALTER TABLE movimientoinventario DROP INDEX `RefTIPOMOVIMIENTOINVENTARIO19`; 
+alter table tipomovimientoinventario change codtipomovimiento codtipomovimiento int auto_increment;
+
+
+ALTER TABLE `movimientoinventario` CHANGE `codtipomovimiento` `codtipomovimiento` INT(10) NOT NULL;
+
+ALTER TABLE `movimientoinventario` ADD CONSTRAINT `RefTipoMovInv` FOREIGN KEY (`codtipomovimiento`) REFERENCES `proyecto2`.`tipomovimientoinventario`(`codtipomovimiento`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+-- ENCARGADO:Dylan Corado
+-- DESCRIPCION: cambios en la tabla de factura proveedor
+-- FECHA: 22/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE `cobrador` CHANGE `condicion` `condicion` CHAR(10) NULL DEFAULT NULL;
+ALTER TABLE `facturaproveedor` CHANGE `codencabezado` `codencabezado` INT(11) NULL;
+ALTER TABLE `facturaproveedor` ADD `saldo` DECIMAL(10,2) NULL AFTER `estadomov`;
+ALTER TABLE `facturaproveedor` CHANGE `total` `total` DECIMAL(10,2) NULL DEFAULT NULL;
+
+ALTER TABLE cuentascorrientesproveedores DROP FOREIGN KEY `RefFACTURA139`; 
+ALTER TABLE `cuentascorrientesproveedores` DROP `ncodfactura`;
+ALTER TABLE `cuentascorrientesproveedores` DROP `vserie`;
+ALTER TABLE `cuentascorrientesproveedores` DROP `codVendedor`;
+ALTER TABLE `cuentascorrientesproveedores` ADD `codfacturaprov` INT NOT NULL;
+ALTER TABLE cuentascorrientesproveedores ADD CONSTRAINT relaciontipofacturaproveedor_cuentascorrientesproveedor
+    FOREIGN KEY (codfacturaprov)
+    REFERENCES facturaproveedor(codfacturaprov)
+;
+
+ CREATE TABLE ENCABEZADODOC(
+    codencabezado         INT          AUTO_INCREMENT,
+    fecha              DATE            NOT NULL,
+    estado             CHAR(20),
+    condicion          CHAR(30),
+    PRIMARY KEY (codencabezado)
+)ENGINE=INNODB
+;
+
+ALTER TABLE `cuentascorrientesproveedores` ADD `codencabezado` INT NOT NULL;
+ALTER TABLE `cuentascorrientesclientes` ADD `codencabezado` INT NOT NULL;
+
+ALTER TABLE cuentascorrientesproveedores ADD CONSTRAINT relacioncuentascorrientesprov_encabezado
+    FOREIGN KEY (codencabezado)
+    REFERENCES encabezadodoc(codencabezado)
+;
+
+ALTER TABLE cuentascorrientesclientes ADD CONSTRAINT relacioncuentascorrientesclientes_encabezado
+    FOREIGN KEY (codencabezado)
+    REFERENCES encabezadodoc(codencabezado)
+;
+
+-- ENCARGADO:Gerardo Santizo
+-- DESCRIPCION: cambios en la tabla factura
+-- FECHA: 22/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE `factura` ADD `movinventario` BOOLEAN NOT NULL;
+
+-- ENCARGADO:Sabrina Gomez
+-- DESCRIPCION: cambios en la tabla de factura 
+-- FECHA: 23/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE factura DROP FOREIGN KEY relaciontipofactura_factura;
+ALTER TABLE `factura` DROP `codTipofactura`;
+
+-- Elimina codProveedor
+ALTER TABLE factura DROP FOREIGN KEY relacionproveedor_factura;
+ALTER TABLE `factura` DROP `codproveedor`;
+
+-- Nuevo campo (saldo)
+ALTER TABLE `factura` ADD `saldo` DECIMAL(10,2) NOT NULL AFTER `movinventario`;
+
+-- ENCARGADO:Manuel Chuquiej
+-- DESCRIPCION: autoincrement en documento compra
+-- FECHA: 23/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+alter table documento_compra change codoc codoc int auto_increment;
+
+-- ENCARGADO:Diego Taracena
+-- DESCRIPCION: cambios en cobrador
+-- FECHA: 23/05/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE `cobrador` CHANGE `condicion` `condicion` CHAR(10) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL AFTER `comision`;
+ALTER TABLE `cobrador` CHANGE `estado` `estado` CHAR(10) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL AFTER `comision`;

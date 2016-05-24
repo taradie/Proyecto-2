@@ -1,0 +1,11 @@
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\bin\Debug\DllCobrador.dll
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\bin\Debug\DllCobrador.pdb
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\bin\Debug\ConexionODBC.dll
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\bin\Debug\FiltradoGrids.dll
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\bin\Debug\Navegador.dll
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\obj\Debug\DllCobrador.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\obj\Debug\DllCobrador.frmCobrador.resources
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\obj\Debug\DllCobrador.frmPrincipalCobrador.resources
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\obj\Debug\DllCobrador.csproj.GenerateResource.Cache
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\obj\Debug\DllCobrador.dll
+C:\Users\Diego\Documents\DllCobrador\DllCobrador\obj\Debug\DllCobrador.pdb
