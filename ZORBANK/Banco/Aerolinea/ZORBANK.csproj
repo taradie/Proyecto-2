@@ -48,8 +48,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ConexionODBC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -185,12 +184,6 @@
     <Compile Include="frmConsultaMovimiento.Designer.cs">
       <DependentUpon>frmConsultaMovimiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmcontrolUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmcontrolUsuarios.designer.cs">
-      <DependentUpon>frmcontrolUsuarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="claseUsuario.cs" />
     <Compile Include="frmCuentas.cs">
       <SubType>Form</SubType>
@@ -210,17 +203,17 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmmodificarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmmodificarUsuario.Designer.cs">
-      <DependentUpon>frmmodificarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMoneda.cs">
       <SubType>Form</SubType>
@@ -275,30 +268,6 @@
     </Compile>
     <Compile Include="frmPrincipalPersona.Designer.cs">
       <DependentUpon>frmPrincipalPersona.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPrincipalRol.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPrincipalRol.Designer.cs">
-      <DependentUpon>frmPrincipalRol.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPrincipalUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPrincipalUsuarios.designer.cs">
-      <DependentUpon>frmPrincipalUsuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmreporteUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmreporteUsuarios.designer.cs">
-      <DependentUpon>frmreporteUsuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmRol.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRol.Designer.cs">
-      <DependentUpon>frmRol.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVistaReporte.cs">
       <SubType>Form</SubType>
@@ -434,9 +403,6 @@
     <EmbeddedResource Include="frmConsultaMovimiento.resx">
       <DependentUpon>frmConsultaMovimiento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmcontrolUsuarios.resx">
-      <DependentUpon>frmcontrolUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCuentas.resx">
       <DependentUpon>frmCuentas.cs</DependentUpon>
     </EmbeddedResource>
@@ -446,11 +412,11 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmmodificarUsuario.resx">
-      <DependentUpon>frmmodificarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMoneda.resx">
       <DependentUpon>frmMoneda.cs</DependentUpon>
@@ -478,18 +444,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalPersona.resx">
       <DependentUpon>frmPrincipalPersona.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipalRol.resx">
-      <DependentUpon>frmPrincipalRol.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipalUsuarios.resx">
-      <DependentUpon>frmPrincipalUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmreporteUsuarios.resx">
-      <DependentUpon>frmreporteUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRol.resx">
-      <DependentUpon>frmRol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVistaReporte.resx">
       <DependentUpon>frmVistaReporte.cs</DependentUpon>
@@ -769,7 +723,29 @@
     <Content Include="bin\Release\itextsharp.dll" />
     <Content Include="bin\Release\MySql.Data.DLL" />
     <Content Include="bin\Release\Navegador.pdb" />
+    <Content Include="Logo.ico" />
+    <Content Include="Logo_Redondo.ico" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\Logo Redondo.png" />
+    <None Include="Resources\Logo Redondo2.png" />
+    <None Include="Resources\Logo Redondo.jpg" />
+    <None Include="Resources\Logo Redondo1.png" />
+    <None Include="Resources\brain.png" />
+    <None Include="Resources\book-brown.png" />
+    <None Include="Resources\keyboard-full.png" />
+    <None Include="Resources\question-button.png" />
+    <None Include="Resources\door-open.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\brightness.png" />
+    <None Include="Resources\building.png" />
+    <None Include="Resources\toolbox.png" />
+    <None Include="Resources\money-bag-dollar.png" />
+    <None Include="Resources\currency.png" />
+    <None Include="Resources\database.png" />
+    <None Include="Resources\home-medium.png" />
+    <None Include="Resources\balloon-buzz.png" />
+    <None Include="Resources\lock.png" />
     <None Include="Resources\Logo Splash 1.jpg" />
     <None Include="Resources\unchecked.png" />
     <None Include="Resources\1457297125_stock_form-checkbox.png" />

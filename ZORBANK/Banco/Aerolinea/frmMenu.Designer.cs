@@ -30,10 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.MenuPrincipal = new System.Windows.Forms.MenuStrip();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CessarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.impresorasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.multiSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CatalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoCambioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FormasPagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,20 +66,16 @@
             this.creacionUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConfiguracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parámetrosDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosDeLaEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.establecerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MonedasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.idiomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.índiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tópicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.búsquedaPorTemasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MenuPrincipal.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -99,19 +98,60 @@
             this.MenuPrincipal.TabIndex = 0;
             this.MenuPrincipal.Text = "menuStrip1";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel,
+            this.toolStripStatusLabel2});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 24);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1014, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.ActiveLinkColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripStatusLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(67, 17);
+            this.toolStripStatusLabel.Text = "Fecha Hora";
+            this.toolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.ActiveLinkColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripStatusLabel2.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(47, 17);
+            this.toolStripStatusLabel2.Text = "Usuario";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::ZORBANK.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1014, 610);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // inicioToolStripMenuItem
             // 
             this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CessarSesionToolStripMenuItem,
-            this.impresorasToolStripMenuItem,
-            this.multiSistemaToolStripMenuItem});
+            this.impresorasToolStripMenuItem});
+            this.inicioToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.home_medium;
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.inicioToolStripMenuItem.Text = "&Inicio";
             // 
             // CessarSesionToolStripMenuItem
             // 
-            this.CessarSesionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CessarSesionToolStripMenuItem.Image")));
+            this.CessarSesionToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.door_open;
             this.CessarSesionToolStripMenuItem.Name = "CessarSesionToolStripMenuItem";
             this.CessarSesionToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.CessarSesionToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
@@ -125,13 +165,6 @@
             this.impresorasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.impresorasToolStripMenuItem.Text = "Impresoras";
             // 
-            // multiSistemaToolStripMenuItem
-            // 
-            this.multiSistemaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("multiSistemaToolStripMenuItem.Image")));
-            this.multiSistemaToolStripMenuItem.Name = "multiSistemaToolStripMenuItem";
-            this.multiSistemaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.multiSistemaToolStripMenuItem.Text = "Multi Sistema";
-            // 
             // CatalogosToolStripMenuItem
             // 
             this.CatalogosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -139,8 +172,9 @@
             this.FormasPagoToolStripMenuItem,
             this.ConceptosToolStripMenuItem,
             this.BeneficiariosToolStripMenuItem});
+            this.CatalogosToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.keyboard_full;
             this.CatalogosToolStripMenuItem.Name = "CatalogosToolStripMenuItem";
-            this.CatalogosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.CatalogosToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.CatalogosToolStripMenuItem.Text = "Ca&tálogos";
             // 
             // tipoCambioToolStripMenuItem
@@ -181,8 +215,9 @@
             this.BancosToolStripMenuItem,
             this.MovimientosToolStripMenuItem,
             this.AgendaZonaToolStripMenuItem});
+            this.cuentasToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.book_brown;
             this.cuentasToolStripMenuItem.Name = "cuentasToolStripMenuItem";
-            this.cuentasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.cuentasToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.cuentasToolStripMenuItem.Text = "C&uentas";
             // 
             // CuentasBancariasToolStripMenuItem
@@ -221,8 +256,9 @@
             this.ProcesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.emisiónDeChequesToolStripMenuItem,
             this.conciliaciónBancariaToolStripMenuItem});
+            this.ProcesosToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.brain;
             this.ProcesosToolStripMenuItem.Name = "ProcesosToolStripMenuItem";
-            this.ProcesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.ProcesosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.ProcesosToolStripMenuItem.Text = "&Procesos";
             // 
             // emisiónDeChequesToolStripMenuItem
@@ -247,8 +283,9 @@
             this.reporteDeLaAgendaToolStripMenuItem,
             this.reporteToolStripMenuItem,
             this.reporteDeToolStripMenuItem});
+            this.ReportesToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.report;
             this.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem";
-            this.ReportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.ReportesToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.ReportesToolStripMenuItem.Text = "&Reportes";
             // 
             // reporteDeCuentasToolStripMenuItem
@@ -336,8 +373,9 @@
             this.SeguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.creacionUsuariosToolStripMenuItem,
             this.bitacoraToolStripMenuItem});
+            this.SeguridadToolStripMenuItem.Image = global::ZORBANK.Properties.Resources._lock;
             this.SeguridadToolStripMenuItem.Name = "SeguridadToolStripMenuItem";
-            this.SeguridadToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.SeguridadToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.SeguridadToolStripMenuItem.Text = "&Seguridad";
             // 
             // creacionUsuariosToolStripMenuItem
@@ -359,21 +397,15 @@
             // ConfiguracionToolStripMenuItem
             // 
             this.ConfiguracionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.parámetrosDelSistemaToolStripMenuItem,
             this.agregarEmpresaToolStripMenuItem,
             this.datosDeLaEmpresaToolStripMenuItem,
             this.establecerToolStripMenuItem,
-            this.MonedasToolStripMenuItem});
+            this.MonedasToolStripMenuItem,
+            this.idiomaToolStripMenuItem});
+            this.ConfiguracionToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.toolbox;
             this.ConfiguracionToolStripMenuItem.Name = "ConfiguracionToolStripMenuItem";
-            this.ConfiguracionToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.ConfiguracionToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.ConfiguracionToolStripMenuItem.Text = "&Configuración";
-            // 
-            // parámetrosDelSistemaToolStripMenuItem
-            // 
-            this.parámetrosDelSistemaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("parámetrosDelSistemaToolStripMenuItem.Image")));
-            this.parámetrosDelSistemaToolStripMenuItem.Name = "parámetrosDelSistemaToolStripMenuItem";
-            this.parámetrosDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.parámetrosDelSistemaToolStripMenuItem.Text = "Parámetros del Sistema";
             // 
             // agregarEmpresaToolStripMenuItem
             // 
@@ -405,6 +437,13 @@
             this.MonedasToolStripMenuItem.Text = "Monedas";
             this.MonedasToolStripMenuItem.Click += new System.EventHandler(this.MonedasToolStripMenuItem_Click);
             // 
+            // idiomaToolStripMenuItem
+            // 
+            this.idiomaToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.balloon_buzz;
+            this.idiomaToolStripMenuItem.Name = "idiomaToolStripMenuItem";
+            this.idiomaToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.idiomaToolStripMenuItem.Text = "Idioma";
+            // 
             // AyudaToolStripMenuItem
             // 
             this.AyudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -412,8 +451,9 @@
             this.tópicosToolStripMenuItem,
             this.búsquedaPorTemasToolStripMenuItem,
             this.acercaDeToolStripMenuItem});
+            this.AyudaToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.question_button;
             this.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem";
-            this.AyudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.AyudaToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.AyudaToolStripMenuItem.Text = "&Ayuda";
             // 
             // índiceToolStripMenuItem
@@ -444,57 +484,16 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de ZORBANK";
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel,
-            this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 24);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1014, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.ActiveLinkColor = System.Drawing.SystemColors.ControlLight;
-            this.toolStripStatusLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(67, 17);
-            this.toolStripStatusLabel.Text = "Fecha Hora";
-            this.toolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.ActiveLinkColor = System.Drawing.SystemColors.ControlLight;
-            this.toolStripStatusLabel2.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(47, 17);
-            this.toolStripStatusLabel2.Text = "Usuario";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::ZORBANK.Properties.Resources.Logo_Splash_1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1014, 610);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1014, 634);
-            this.ControlBox = false;
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.MenuPrincipal);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuPrincipal;
             this.MaximizeBox = false;
@@ -533,7 +532,6 @@
         private System.Windows.Forms.ToolStripMenuItem emisiónDeChequesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem conciliaciónBancariaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem BeneficiariosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem parámetrosDelSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarEmpresaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem datosDeLaEmpresaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem establecerToolStripMenuItem;
@@ -562,6 +560,6 @@
         private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CessarSesionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem impresorasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem multiSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem idiomaToolStripMenuItem;
     }
 }

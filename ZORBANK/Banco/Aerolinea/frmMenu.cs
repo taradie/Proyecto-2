@@ -69,11 +69,11 @@ namespace ZORBANK
         private void creacionUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            frmPrincipalUsuarios temp = new frmPrincipalUsuarios();
+            /*frmPrincipalUsuarios temp = new frmPrincipalUsuarios();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;
-            temp.Show();
+            temp.Show();*/
         }
 
         
