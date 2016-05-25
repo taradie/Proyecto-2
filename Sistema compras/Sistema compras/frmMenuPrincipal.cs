@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClaseProveedor;
+using SeguridadGrafico;
+using Multilenguaje;
 
 namespace Sistema_compras
 {
@@ -20,7 +22,7 @@ namespace Sistema_compras
 
         private void ordenesDeCompraPendientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmOC inv = new frmOC();
+            frmPrincipalOrdenCompra inv = new frmPrincipalOrdenCompra();
             inv.WindowState = FormWindowState.Maximized;
             inv.MdiParent = this;
             inv.Show();
@@ -58,10 +60,10 @@ namespace Sistema_compras
 
         private void idiomaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /*frmConfIdioma oc = new frmConfIdioma();
-            oc.WindowState = FormWindowState.Maximized;
-            oc.MdiParent = this;
-            oc.Show();*/
+            frmMultilenguaje inv = new frmMultilenguaje();
+            inv.WindowState = FormWindowState.Maximized;
+            inv.MdiParent = this;
+            inv.Show();
         }
 
         private void monedaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -131,6 +133,15 @@ namespace Sistema_compras
             ax.WindowState = FormWindowState.Maximized;
             ax.MdiParent = this;
             ax.Show();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalUsuarios ax = new frmPrincipalUsuarios();
+            ax.WindowState = FormWindowState.Maximized;
+            ax.MdiParent = this;
+            ax.Show();
+            
         }
     }
 }

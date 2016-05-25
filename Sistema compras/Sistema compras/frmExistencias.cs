@@ -125,7 +125,7 @@ namespace Sistema_compras
 
             private void btnGuardar_Click(object sender, EventArgs e)
             {
-                if (!txtCantidad.Text.Equals("") && !cmbProducto.Text.Equals("") && !cmbAlmacen.Text.Equals(""))
+                if (!cmbProducto.Text.Equals("") && !cmbAlmacen.Text.Equals(""))
                 {
                     funGuardarDatos();
                 }
@@ -142,7 +142,7 @@ namespace Sistema_compras
 
             private void btnEditar_Click(object sender, EventArgs e)
             {
-                if (!txtCantidad.Text.Equals("") && !cmbProducto.Text.Equals("") && !cmbAlmacen.Text.Equals(""))
+                if (!cmbProducto.Text.Equals("") && !cmbAlmacen.Text.Equals(""))
                 {
                     funActualizar();
                 }
@@ -172,6 +172,7 @@ namespace Sistema_compras
                     string producto = _reader.GetString(0);
                     cmbProducto.Items.Add(producto);
                 }
+                ConexionODBC.Conexion.CerrarConexion();
 
                 cmbAlmacen.Items.Clear();
                 _comando = new OdbcCommand(String.Format("Select CONCAT(codalmacen,'.',nombre)AS Almacen FROM almacen where estado = 'ACTIVO' and condicion = 1"), ConexionODBC.Conexion.ObtenerConexion());
@@ -181,6 +182,7 @@ namespace Sistema_compras
                     string almacen = _reader.GetString(0);
                     cmbAlmacen.Items.Add(almacen);
                 }
+                ConexionODBC.Conexion.CerrarConexion();
             }
 
             public void funGuardarDatos()
@@ -195,7 +197,7 @@ namespace Sistema_compras
                     string[] almacen = cmbAlmacen.Text.Split(separador);
                     txtAlmacen.Text = almacen[0];
 
-                    _comando = new OdbcCommand(String.Format("Select codExistencias FROM existencias where codproducto = '{0}' AND codalmacen = '{0}'", txtProducto, txtAlmacen), ConexionODBC.Conexion.ObtenerConexion());
+                    _comando = new OdbcCommand(String.Format("Select codExistencias FROM existencias where codproducto = '{0}' AND codalmacen = '{0}'", txtProducto.Text, txtAlmacen.Text), ConexionODBC.Conexion.ObtenerConexion());
                     _reader = _comando.ExecuteReader();
                     if (_reader.Read())
                     {
@@ -208,13 +210,15 @@ namespace Sistema_compras
                         TextBox[] aDatos = { txtEstado, txtCantidad, txtAlmacen, txtProducto };
                         string sTabla = "existencias";
                         cn.AsignarObjetos(sTabla, bPermiso, aDatos);
-                        LimpiarTextos();
+                        funCommit();
                         MessageBox.Show("Datos guardados con exito");
+                        LimpiarTextos();
                     }
                     ConexionODBC.Conexion.CerrarConexion();
                 }
                 catch (Exception)
                 {
+                    funRollback();
                     MessageBox.Show("Ocurrio un error al guardar los datos");
                 }
             }
@@ -227,7 +231,7 @@ namespace Sistema_compras
                     TextBox txtProducto = new TextBox(); txtProducto.Text = cmbProducto.Text;
                     TextBox txtAlmacen = new TextBox(); txtAlmacen.Text = cmbAlmacen.Text;
 
-                    _comando = new OdbcCommand(String.Format("Select codExistencias FROM existencias where codproducto = '{0}' AND codalmacen = '{0}'", txtProducto, txtAlmacen), ConexionODBC.Conexion.ObtenerConexion());
+                    _comando = new OdbcCommand(String.Format("Select codExistencias FROM existencias where codproducto = '{0}' AND codalmacen = '{0}'", txtProducto.Text, txtAlmacen.Text), ConexionODBC.Conexion.ObtenerConexion());
                     _reader = _comando.ExecuteReader();
                     if (_reader.Read())
                     {
@@ -241,6 +245,7 @@ namespace Sistema_compras
                         string sTabla = "existencias";
                         string codigoexistencia = "codexistencia";
                         cn.EditarObjetos(sTabla, bPermiso, aDatos, codigo, codigoexistencia);
+                        funCommit();
                         LimpiarTextos();
                         MessageBox.Show("Datos editados con exito");
                     }
@@ -248,10 +253,24 @@ namespace Sistema_compras
                 }
                 catch (Exception)
                 {
+                    funRollback();
                     MessageBox.Show("Ocurrio un error al editar los datos");
                 }
             }
 
+            private void funCommit()
+            {
+                _comando = new OdbcCommand(String.Format("COMMIT"), ConexionODBC.Conexion.ObtenerConexion());
+                _reader = _comando.ExecuteReader();
+                ConexionODBC.Conexion.CerrarConexion();
+            }
+
+            private void funRollback()
+            {
+                _comando = new OdbcCommand(String.Format("ROLLBACK TO SAVEPOINT antesGuardar"), ConexionODBC.Conexion.ObtenerConexion());
+                _reader = _comando.ExecuteReader();
+                ConexionODBC.Conexion.CerrarConexion();
+            }
 
         #endregion
     }

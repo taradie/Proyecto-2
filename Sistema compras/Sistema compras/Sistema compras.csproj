@@ -59,6 +59,10 @@
     <Reference Include="Microsoft.VisualStudio.VSHelp80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Multilenguaje, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Multilenguaje.dll</HintPath>
+    </Reference>
     <Reference Include="Navegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Navegador.dll</HintPath>
@@ -91,6 +95,17 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalOrdenCompra.Designer.cs">
+      <DependentUpon>frmPrincipalOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos Localizables\StringResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResources.resx</DependentUpon>
     </Compile>
     <Compile Include="ReporteExistencias.cs">
       <AutoGen>True</AutoGen>
@@ -175,12 +190,6 @@
     <Compile Include="frmPrincipalProductos.Designer.cs">
       <DependentUpon>frmPrincipalProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmOC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmOC.Designer.cs">
-      <DependentUpon>frmOC.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmPrincipalAlmacen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +237,12 @@
       <DependentUpon>ReporteMarca.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ReporteOrdenCompra1.cs">
+      <DependentUpon>ReporteOrdenCompra.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Include="ReporteProductos.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -236,6 +251,14 @@
     </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalOrdenCompra.resx">
+      <DependentUpon>frmPrincipalOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursos Localizables\StringResources.ES-US.resx" />
+    <EmbeddedResource Include="Recursos Localizables\StringResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteExistencias.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -277,9 +300,6 @@
     <EmbeddedResource Include="frmPrincipalProductos.resx">
       <DependentUpon>frmPrincipalProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmOC.resx">
-      <DependentUpon>frmOC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalAlmacen.resx">
       <DependentUpon>frmPrincipalAlmacen.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +333,10 @@
     <EmbeddedResource Include="ReporteMarca.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteMarca.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteOrdenCompra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteOrdenCompra1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteProductos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

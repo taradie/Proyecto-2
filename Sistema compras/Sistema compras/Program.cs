@@ -16,7 +16,8 @@ namespace Sistema_compras
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMensaje());
+            //Application.Run(new frmMensaje());
+            Application.Run(new frmLogin());
         }
     }
 }

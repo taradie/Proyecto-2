@@ -348,8 +348,9 @@ namespace Sistema_compras
                 {
                     string nombre = txtNombre.Text;
                     string descripcion = txtDescripcion.Text;
-                    txtMarca.Text = txtCosto.Text = txtExistencia.Text = txtPrecio.Text = txtLinea.Text = txtProveedor.Text = null;
+                    txtCosto.Text = txtExistencia.Text = txtPrecio.Text = null;
                     txtCosteo.Text = "-";
+                    txtLinea.Text = txtProveedor.Text = txtMarca.Text = "1";
                     txtTipo.Text = "Servicio";
                     txtEstado.Text = "ACTIVO";
                     txtCosto.Text = txtPrecio.Text = txtExistencia.Text = "0";
@@ -386,8 +387,8 @@ namespace Sistema_compras
                     TextBox[] aDatos = { txtEstado, txtCondicion, txtCosto, txtNombre, txtDescripcion, txtTamano, txtPrecio, 
                         txtExistencia, txtExMin, txtExMax, txtCosteo,txtTipo, txtCreacion, txtVenta, txtCompra, txtComision, txtIMG, txtMarca, txtLinea, txtProveedor};
                     string sTabla = "producto";
-                    string codigopersona = "codproducto";
-                    cn.EditarObjetos(sTabla, bPermiso, aDatos, codigo, codigopersona);
+                    string codigoproducto = "codproducto";
+                    cn.EditarObjetos(sTabla, bPermiso, aDatos, codigo, codigoproducto);
                     LimpiarTextos();
                     MessageBox.Show("Datos editados con exito");
                 }

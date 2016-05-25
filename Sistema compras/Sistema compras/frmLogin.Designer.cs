@@ -89,14 +89,15 @@
             // 
             this.txtUser.Location = new System.Drawing.Point(89, 92);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(226, 20);
+            this.txtUser.Size = new System.Drawing.Size(344, 20);
             this.txtUser.TabIndex = 5;
             // 
             // txtPass
             // 
             this.txtPass.Location = new System.Drawing.Point(89, 121);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(226, 20);
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(344, 20);
             this.txtPass.TabIndex = 6;
             // 
             // frmLogin
@@ -112,6 +113,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.ResumeLayout(false);
             this.PerformLayout();
