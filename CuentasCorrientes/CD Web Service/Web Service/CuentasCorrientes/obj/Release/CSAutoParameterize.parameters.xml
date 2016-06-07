@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="server=localhost;uid=root;pwd=;database=proyecto2" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\DylanIsaac\\Documents\\WebService\\CuentasCorrientes\\CuentasCorrientes\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="CuentasCorrientes.Models.ApplicationDbContext-Web.config Connection String" description="CuentasCorrientes.Models.ApplicationDbContext Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="CuentasCorrientes.Models.ApplicationDbContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\DylanIsaac\\Documents\\WebService\\CuentasCorrientes\\CuentasCorrientes\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CuentasCorrientes.Models.ApplicationDbContext']/@connectionString" />
+  </parameter>
+</parameters>

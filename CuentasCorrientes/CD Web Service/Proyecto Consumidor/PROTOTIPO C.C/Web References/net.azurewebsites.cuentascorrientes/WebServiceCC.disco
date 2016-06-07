@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://cuentascorrientes.azurewebsites.net/WebServiceCC.asmx?wsdl" docRef="http://cuentascorrientes.azurewebsites.net/WebServiceCC.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://cuentascorrientes.azurewebsites.net/WebServiceCC.asmx" xmlns:q1="http://cuentascorrientes.azurewebsites.net" binding="q1:WebServiceCCSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://cuentascorrientes.azurewebsites.net/WebServiceCC.asmx" xmlns:q2="http://cuentascorrientes.azurewebsites.net" binding="q2:WebServiceCCSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

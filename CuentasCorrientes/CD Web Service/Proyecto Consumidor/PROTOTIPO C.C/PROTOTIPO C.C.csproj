@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52E87278-3AFA-4F40-A209-5DB2452D644E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PROTOTIPO_C.C</RootNamespace>
+    <AssemblyName>PROTOTIPO C.C</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClaseProveedor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Pictures\dllactualizadaproveedores\ClaseProveedor.dll</HintPath>
+    </Reference>
+    <Reference Include="ConexionODBC">
+      <HintPath>..\ConexionODBC.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="dllClientes">
+      <HintPath>..\..\..\..\..\..\..\Downloads\Dll Clientes\Dll Clientes\dllClientes.dll</HintPath>
+    </Reference>
+    <Reference Include="DllCobrador">
+      <HintPath>..\..\..\..\..\..\..\Pictures\dllactualizadaproveedores\Dll Cobrador\DllCobrador.dll</HintPath>
+    </Reference>
+    <Reference Include="Empleados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Pictures\dllactualizadaproveedores\Empleados.dll</HintPath>
+    </Reference>
+    <Reference Include="Empresa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Empresa\Empresa\Empresa\bin\Debug\Empresa.dll</HintPath>
+    </Reference>
+    <Reference Include="Filtrado">
+      <HintPath>..\..\..\..\..\..\..\Desktop\9no Ciclo\Ingenieria del SW\Centro Educacional\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Filtrado.dll</HintPath>
+    </Reference>
+    <Reference Include="FiltradoGrids, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Pictures\dllactualizadaproveedores\FiltradoGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Multilenguaje">
+      <HintPath>..\..\..\..\..\..\Multilenguaje\Multilenguaje\Multilenguaje\bin\Debug\Multilenguaje.dll</HintPath>
+    </Reference>
+    <Reference Include="Navegador">
+      <HintPath>..\Navegador.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConceptos.designer.cs">
+      <DependentUpon>frmConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturaCliente.Designer.cs">
+      <DependentUpon>frmFacturaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturaProveedor.Designer.cs">
+      <DependentUpon>frmFacturaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturas.Designer.cs">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormasPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormasPago.Designer.cs">
+      <DependentUpon>frmFormasPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMensaje.Designer.cs">
+      <DependentUpon>frmMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoneda.Designer.cs">
+      <DependentUpon>frmMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagoPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagoPrestamos.designer.cs">
+      <DependentUpon>frmPagoPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrestamo.Designer.cs">
+      <DependentUpon>frmPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalConcepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalConcepto.designer.cs">
+      <DependentUpon>frmPrincipalConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalFacturaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalFacturaProveedor.Designer.cs">
+      <DependentUpon>frmPrincipalFacturaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalFacturas.Designer.cs">
+      <DependentUpon>frmPrincipalFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalFormaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalFormaPago.Designer.cs">
+      <DependentUpon>frmPrincipalFormaPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalPagoPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalPagoPrestamo.designer.cs">
+      <DependentUpon>frmPrincipalPagoPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalFacturasClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalFacturasClientes.Designer.cs">
+      <DependentUpon>frmPrincipalFacturasClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalPrestamos.Designer.cs">
+      <DependentUpon>frmPrincipalPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalTipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalTipoDocumento.designer.cs">
+      <DependentUpon>frmPrincipalTipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoDocumento.designer.cs">
+      <DependentUpon>frmTipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PruebaWS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebaWS.Designer.cs">
+      <DependentUpon>PruebaWS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos Localizables\StringResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteConcepto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web References\net.azurewebsites.cuentascorrientes\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmConceptos.resx">
+      <DependentUpon>frmConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturaCliente.resx">
+      <DependentUpon>frmFacturaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturaProveedor.resx">
+      <DependentUpon>frmFacturaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturas.resx">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormasPago.resx">
+      <DependentUpon>frmFormasPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMensaje.resx">
+      <DependentUpon>frmMensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.en-US.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoneda.resx">
+      <DependentUpon>frmMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagoPrestamos.resx">
+      <DependentUpon>frmPagoPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrestamo.resx">
+      <DependentUpon>frmPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalConcepto.resx">
+      <DependentUpon>frmPrincipalConcepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalFacturaProveedor.resx">
+      <DependentUpon>frmPrincipalFacturaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalFacturas.resx">
+      <DependentUpon>frmPrincipalFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalFacturasClientes.resx">
+      <DependentUpon>frmPrincipalFacturasClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalFormaPago.resx">
+      <DependentUpon>frmPrincipalFormaPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalPagoPrestamo.resx">
+      <DependentUpon>frmPrincipalPagoPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalPrestamos.resx">
+      <DependentUpon>frmPrincipalPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalTipoDocumento.resx">
+      <DependentUpon>frmPrincipalTipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoDocumento.resx">
+      <DependentUpon>frmTipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PruebaWS.resx">
+      <DependentUpon>PruebaWS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursos Localizables\StringResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursos Localizables\StringResources.ES-US.resx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\net.azurewebsites.cuentascorrientes\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\net.azurewebsites.cuentascorrientes\WebServiceCC.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://cuentascorrientes.azurewebsites.net/WebServiceCC.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\net.azurewebsites.cuentascorrientes\</RelPath>
+      <UpdateFromURL>http://cuentascorrientes.azurewebsites.net/WebServiceCC.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PROTOTIPO_C_C_net_azurewebsites_cuentascorrientes_WebServiceCC</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\net.azurewebsites.cuentascorrientes\WebServiceCC.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
