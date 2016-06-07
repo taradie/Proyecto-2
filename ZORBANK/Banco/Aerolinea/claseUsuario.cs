@@ -50,9 +50,9 @@ namespace ZORBANK
                 codigo = _reader.GetString(0);
             int hora = DateTime.UtcNow.Hour;
             ConexionODBC.Conexion.CerrarConexion();
-            _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, equipo, codigo_usuario,observaciones) VALUES('{0}','{1}', CURDATE(),'{4}', '{2}','{3}','Cambios')", Accion, table, ip, codigo,hora), ConexionODBC.Conexion.ObtenerConexion());
-            _reader = _comando.ExecuteReader();
-            ConexionODBC.Conexion.CerrarConexion();
+           // _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, equipo, codigo_usuario,observaciones) VALUES('{0}','{1}', CURDATE(),'{4}', '{2}','{3}','Cambios')", Accion, table, ip, codigo,hora), ConexionODBC.Conexion.ObtenerConexion());
+            //_reader = _comando.ExecuteReader();
+            //ConexionODBC.Conexion.CerrarConexion();
         }
 
         public static string ObtenerIP()

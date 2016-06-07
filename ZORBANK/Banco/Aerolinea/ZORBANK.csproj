@@ -83,6 +83,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
@@ -124,6 +125,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormClienteWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClienteWeb.Designer.cs">
+      <DependentUpon>FormClienteWeb.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReporte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +148,12 @@
     </Compile>
     <Compile Include="frmAsignacionRoles.Designer.cs">
       <DependentUpon>frmAsignacionRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanco.designer.cs">
+      <DependentUpon>frmBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBeneficiario.cs">
       <SubType>Form</SubType>
@@ -202,6 +215,12 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalBanco.designer.cs">
+      <DependentUpon>frmPrincipalBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
@@ -301,6 +320,9 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="ReporteConcepto.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ReporteDistribucionNota.cs">
       <DependentUpon>ReporteDistribucionNota.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -311,6 +333,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteCurso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteFormas.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="reporteJornada.cs">
@@ -361,6 +386,11 @@
       <DependentUpon>ReporteUsuarios.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Web References\net.azurewebsites.bancos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
@@ -373,6 +403,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormClienteWeb.resx">
+      <DependentUpon>FormClienteWeb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormReporte.resx">
       <DependentUpon>FormReporte.cs</DependentUpon>
     </EmbeddedResource>
@@ -381,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAsignacionRoles.resx">
       <DependentUpon>frmAsignacionRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBanco.resx">
+      <DependentUpon>frmBanco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBeneficiario.resx">
       <DependentUpon>frmBeneficiario.cs</DependentUpon>
@@ -411,6 +447,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalBanco.resx">
+      <DependentUpon>frmPrincipalBanco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
@@ -503,6 +542,7 @@
     <None Include="bin\Release\Aerolinea.exe.config" />
     <None Include="bin\Release\Aerolinea.vshost.exe.config" />
     <None Include="bin\Release\Aerolinea.vshost.exe.manifest" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -530,6 +570,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ReporteConcepto.rpt" />
+    <None Include="ReporteFormas.rpt" />
+    <None Include="Web References\net.azurewebsites.bancos\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\net.azurewebsites.bancos\WebServicesBanco.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -726,6 +773,7 @@
     <Content Include="Logo.ico" />
     <Content Include="Logo_Redondo.ico" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Web References\net.azurewebsites.bancos\WebServicesBanco.disco" />
     <None Include="Resources\Logo.png" />
     <None Include="Resources\Logo Redondo.png" />
     <None Include="Resources\Logo Redondo2.png" />
@@ -756,6 +804,22 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://bancos.azurewebsites.net/WebServicesBanco.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\net.azurewebsites.bancos\</RelPath>
+      <UpdateFromURL>http://bancos.azurewebsites.net/WebServicesBanco.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ZORBANK_net_azurewebsites_bancos_WebServicesBanco</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

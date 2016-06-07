@@ -26,7 +26,17 @@ namespace ZORBANK
             btnCancelar.Enabled = false;
             btnImprimir.Enabled = false;
         }
-
+        public frmConceptos(String snada)
+        {
+            InitializeComponent();
+            funSedes();
+            funSedes1();
+            btnGuardar.Enabled = false;
+            btnCancelar.Enabled = false;
+            btnImprimir.Enabled = false;
+            int index = comboBox1.FindString(snada);
+            comboBox1.SelectedIndex = index;
+        }
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             clasnegocio cnegocio = new clasnegocio();
@@ -65,20 +75,27 @@ namespace ZORBANK
         void funSedes()
         {
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistrosCombo("codigo_operacion", "SELECT codigo_operacion  from operacioncontable", "codigo_operacion", comboBox1);
+            cnegocio.funconsultarRegistrosCombo("codigo_operacion", "SELECT concat(concat(codigo_operacion, ',') ,operacion) As forma from operacioncontable", "forma", comboBox1);
 
         }
         void funSedes1()
       {
           clasnegocio cnegocio = new clasnegocio();
             cnegocio.funconsultarRegistrosCombo("codigo_clasificacion", "SELECT codigo_clasificacion  from clasificacionconceptosbancarios", "codigo_clasificacion", comboBox2);
+//          clasnegocio cnegocio = new clasnegocio();
+  //        cnegocio.funconsultarRegistrosCombo("codigo_clasificacion, descripcion", "SELECT concat(TRIM(codigo_clasificacion), '.', TRIM(descripcion)) as Sede from clasificacionconceptosbancarios ", "Sede", comboBox2);
 
+       
        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            _comando = new OdbcCommand(String.Format("insert into conceptosbancarios(concepto,descripcion,codigo_operacion,codigo_clasificacion,estado) values ('" + textBox1.Text + "','" + textBox2.Text + "','" + comboBox1 + "','" + comboBox2 + "','" + 1 + "' )"), ConexionODBC.Conexion.ObtenerConexion());
+            _comando = new OdbcCommand(String.Format("insert into conceptosbancarios(concepto,descripcion,codigo_operacion,codigo_clasificacion,estado) values ('" + textBox1.Text + "','" + textBox2.Text + "','" + comboBox1 + "','" + comboBox2 + "','" + comboBox3+ "' )"), ConexionODBC.Conexion.ObtenerConexion());
            _comando.ExecuteNonQuery();
+           textBox1.Text = "";
+           textBox2.Text = "";
+           comboBox1.Text = "";
+           comboBox2.Text = "";
         }
 
         private void btnNuevo_Click_1(object sender, EventArgs e)
@@ -108,6 +125,11 @@ namespace ZORBANK
             proc.Start();
             proc.Close();
             
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

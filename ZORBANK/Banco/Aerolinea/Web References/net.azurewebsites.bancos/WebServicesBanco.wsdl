@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://bancos.azurewebsites.net/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://bancos.azurewebsites.net/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web Services Banco</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://bancos.azurewebsites.net/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarCuentasBancariasXEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo_empresa" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarCuentasBancariasXEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarCuentasBancariasXEmpresaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarCuentasBancariasXBanco">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo_banco" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarCuentasBancariasXBancoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarCuentasBancariasXBancoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sEnviarDisponibilidadBancariaXCuenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo_cuenta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sEnviarDisponibilidadBancariaXCuentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sEnviarDisponibilidadBancariaXCuentaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sEnviarDisponibilidadBancariaXBanco">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo_banco" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sEnviarDisponibilidadBancariaXBancoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sEnviarDisponibilidadBancariaXBancoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sEnviarDisponibilidadBancaria">
+        <s:complexType />
+      </s:element>
+      <s:element name="sEnviarDisponibilidadBancariaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sEnviarDisponibilidadBancariaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarCuentasBancariasXEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarCuentasBancariasXEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="ListarCuentasBancariasXEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarCuentasBancariasXEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarCuentasBancariasXBancoSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarCuentasBancariasXBanco" />
+  </wsdl:message>
+  <wsdl:message name="ListarCuentasBancariasXBancoSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarCuentasBancariasXBancoResponse" />
+  </wsdl:message>
+  <wsdl:message name="sEnviarDisponibilidadBancariaXCuentaSoapIn">
+    <wsdl:part name="parameters" element="tns:sEnviarDisponibilidadBancariaXCuenta" />
+  </wsdl:message>
+  <wsdl:message name="sEnviarDisponibilidadBancariaXCuentaSoapOut">
+    <wsdl:part name="parameters" element="tns:sEnviarDisponibilidadBancariaXCuentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="sEnviarDisponibilidadBancariaXBancoSoapIn">
+    <wsdl:part name="parameters" element="tns:sEnviarDisponibilidadBancariaXBanco" />
+  </wsdl:message>
+  <wsdl:message name="sEnviarDisponibilidadBancariaXBancoSoapOut">
+    <wsdl:part name="parameters" element="tns:sEnviarDisponibilidadBancariaXBancoResponse" />
+  </wsdl:message>
+  <wsdl:message name="sEnviarDisponibilidadBancariaSoapIn">
+    <wsdl:part name="parameters" element="tns:sEnviarDisponibilidadBancaria" />
+  </wsdl:message>
+  <wsdl:message name="sEnviarDisponibilidadBancariaSoapOut">
+    <wsdl:part name="parameters" element="tns:sEnviarDisponibilidadBancariaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServicesBancoSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCuentasBancariasXEmpresa">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna cuentas bancarias filtradas por empresa</wsdl:documentation>
+      <wsdl:input message="tns:ListarCuentasBancariasXEmpresaSoapIn" />
+      <wsdl:output message="tns:ListarCuentasBancariasXEmpresaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCuentasBancariasXBanco">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna cuentas bancarias filtradas por banco</wsdl:documentation>
+      <wsdl:input message="tns:ListarCuentasBancariasXBancoSoapIn" />
+      <wsdl:output message="tns:ListarCuentasBancariasXBancoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sEnviarDisponibilidadBancariaXCuenta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna la disponibilidad bancarias filtradas por cuenta</wsdl:documentation>
+      <wsdl:input message="tns:sEnviarDisponibilidadBancariaXCuentaSoapIn" />
+      <wsdl:output message="tns:sEnviarDisponibilidadBancariaXCuentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sEnviarDisponibilidadBancariaXBanco">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna la disponibilidad bancarias filtradas por banco</wsdl:documentation>
+      <wsdl:input message="tns:sEnviarDisponibilidadBancariaXBancoSoapIn" />
+      <wsdl:output message="tns:sEnviarDisponibilidadBancariaXBancoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sEnviarDisponibilidadBancaria">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna la disponibilidad bancarias</wsdl:documentation>
+      <wsdl:input message="tns:sEnviarDisponibilidadBancariaSoapIn" />
+      <wsdl:output message="tns:sEnviarDisponibilidadBancariaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServicesBancoSoap" type="tns:WebServicesBancoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://bancos.azurewebsites.net/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCuentasBancariasXEmpresa">
+      <soap:operation soapAction="http://bancos.azurewebsites.net/ListarCuentasBancariasXEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCuentasBancariasXBanco">
+      <soap:operation soapAction="http://bancos.azurewebsites.net/ListarCuentasBancariasXBanco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sEnviarDisponibilidadBancariaXCuenta">
+      <soap:operation soapAction="http://bancos.azurewebsites.net/sEnviarDisponibilidadBancariaXCuenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sEnviarDisponibilidadBancariaXBanco">
+      <soap:operation soapAction="http://bancos.azurewebsites.net/sEnviarDisponibilidadBancariaXBanco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sEnviarDisponibilidadBancaria">
+      <soap:operation soapAction="http://bancos.azurewebsites.net/sEnviarDisponibilidadBancaria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServicesBancoSoap12" type="tns:WebServicesBancoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://bancos.azurewebsites.net/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCuentasBancariasXEmpresa">
+      <soap12:operation soapAction="http://bancos.azurewebsites.net/ListarCuentasBancariasXEmpresa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCuentasBancariasXBanco">
+      <soap12:operation soapAction="http://bancos.azurewebsites.net/ListarCuentasBancariasXBanco" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sEnviarDisponibilidadBancariaXCuenta">
+      <soap12:operation soapAction="http://bancos.azurewebsites.net/sEnviarDisponibilidadBancariaXCuenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sEnviarDisponibilidadBancariaXBanco">
+      <soap12:operation soapAction="http://bancos.azurewebsites.net/sEnviarDisponibilidadBancariaXBanco" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sEnviarDisponibilidadBancaria">
+      <soap12:operation soapAction="http://bancos.azurewebsites.net/sEnviarDisponibilidadBancaria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServicesBanco">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web Services Banco</wsdl:documentation>
+    <wsdl:port name="WebServicesBancoSoap" binding="tns:WebServicesBancoSoap">
+      <soap:address location="http://bancos.azurewebsites.net/WebServicesBanco.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServicesBancoSoap12" binding="tns:WebServicesBancoSoap12">
+      <soap12:address location="http://bancos.azurewebsites.net/WebServicesBanco.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

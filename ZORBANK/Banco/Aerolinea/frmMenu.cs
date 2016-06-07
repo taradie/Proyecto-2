@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Drawing.Printing;
 
 namespace ZORBANK
 {
@@ -181,6 +181,26 @@ namespace ZORBANK
             temp.MdiParent = this;
             pictureBox1.Visible = false;
             temp.Show();
+        }
+
+        private void BancosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalBanco temp = new frmPrincipalBanco();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
+
+        private void impresorasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            //PrintDocument formulario = new PrintDocument();
+            //formulario.PrintPage += new PrintPageEventHandler(Datos_Cliente);
+            PrintDialog printDialog1 = new PrintDialog();
+            //printDialog1.Document = formulario;
+            //printDialog1.ShowHelp = true;
+            DialogResult result = printDialog1.ShowDialog();
         }
     }
 }

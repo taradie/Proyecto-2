@@ -24,14 +24,15 @@ C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZOR
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\bin\Debug\stdole.dll
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\bin\Debug\Microsoft.ReportViewer.WinForms.xml
-C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.csprojResolveAssemblyReference.cache
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.AboutBox1.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.BancoSplash.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.consultaParqueo.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.Form1.resources
+C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.FormClienteWeb.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.FormReporte.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmAgendaMovimiento.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmAsignacionRoles.resources
+C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmBanco.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmBeneficiario.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmbitacora.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmConceptos.resources
@@ -42,6 +43,8 @@ C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZOR
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmCuentas.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmFormasPago.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmLogin.resources
+C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmPrincipalBanco.resources
+C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmSplash.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmMenu.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmMoneda.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmMovimientos.resources
@@ -57,4 +60,3 @@ C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZOR
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.csproj.GenerateResource.Cache
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.exe
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.pdb
-C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmSplash.resources

@@ -255,7 +255,7 @@
             // 
             // bntIrUltimo
             // 
-            this.bntIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
+            this.bntIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("bntIrUltimo.Image")));
             this.bntIrUltimo.Location = new System.Drawing.Point(609, 4);
             this.bntIrUltimo.Name = "bntIrUltimo";
             this.bntIrUltimo.Size = new System.Drawing.Size(48, 42);
@@ -426,6 +426,7 @@
             this.MaximumSize = new System.Drawing.Size(710, 389);
             this.MinimumSize = new System.Drawing.Size(710, 389);
             this.Name = "frmAgendaMovimiento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

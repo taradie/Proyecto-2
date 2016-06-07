@@ -149,18 +149,18 @@
             this.grdMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdMovimientos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdMovimientos.Location = new System.Drawing.Point(0, 0);
+            this.grdMovimientos.Location = new System.Drawing.Point(0, 61);
             this.grdMovimientos.Name = "grdMovimientos";
-            this.grdMovimientos.Size = new System.Drawing.Size(998, 472);
-            this.grdMovimientos.TabIndex = 2;
+            this.grdMovimientos.Size = new System.Drawing.Size(998, 411);
+            this.grdMovimientos.TabIndex = 4;
             // 
             // frmConsultaMovimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 472);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdMovimientos);
+            this.Controls.Add(this.groupBox1);
             this.Name = "frmConsultaMovimiento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movimientos";

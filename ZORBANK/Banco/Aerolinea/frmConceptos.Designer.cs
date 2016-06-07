@@ -48,10 +48,10 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-          //  this.dataSet2 = new ZORBANK.DataSet2();
             this.dataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-         //   ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +60,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(194, 289);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(260, 21);
+            this.comboBox2.Size = new System.Drawing.Size(262, 21);
             this.comboBox2.TabIndex = 33;
             // 
             // comboBox1
@@ -68,7 +68,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(194, 249);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(260, 21);
+            this.comboBox1.Size = new System.Drawing.Size(262, 21);
             this.comboBox1.TabIndex = 32;
             // 
             // textBox2
@@ -224,21 +224,34 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click_1);
             // 
-            // dataSet2
+            // label5
             // 
-           // this.dataSet2.DataSetName = "DataSet2";
-           // this.dataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(112, 321);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Esatado";
             // 
-            // dataSet2BindingSource
+            // comboBox3
             // 
-          //  this.dataSet2BindingSource.DataSource = this.dataSet2;
-            this.dataSet2BindingSource.Position = 0;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "ACTIVO",
+            "INACTIVO"});
+            this.comboBox3.Location = new System.Drawing.Point(194, 321);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(262, 21);
+            this.comboBox3.TabIndex = 35;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // frmConceptos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 385);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox2);
@@ -252,7 +265,6 @@
             this.Text = "frmConceptos";
             this.Load += new System.EventHandler(this.frmConceptos_Load);
             this.panel1.ResumeLayout(false);
-            //((System.ComponentModel.ISupportInitialize)(this.dataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -281,5 +293,7 @@
         private System.Windows.Forms.Button btnNuevo;
      //  private DataSet2 dataSet2;
         private System.Windows.Forms.BindingSource dataSet2BindingSource;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

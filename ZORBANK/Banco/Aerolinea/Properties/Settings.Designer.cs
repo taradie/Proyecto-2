@@ -32,5 +32,15 @@ namespace ZORBANK.Properties {
                 return ((string)(this["ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://bancos.azurewebsites.net/WebServicesBanco.asmx")]
+        public string ZORBANK_net_azurewebsites_bancos_WebServicesBanco {
+            get {
+                return ((string)(this["ZORBANK_net_azurewebsites_bancos_WebServicesBanco"]));
+            }
+        }
     }
 }

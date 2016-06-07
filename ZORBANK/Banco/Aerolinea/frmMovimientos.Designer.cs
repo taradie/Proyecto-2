@@ -51,9 +51,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbCuenta = new System.Windows.Forms.ComboBox();
+            this.cmbConceptos = new System.Windows.Forms.ComboBox();
+            this.cmbFormaPago = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -86,7 +86,7 @@
             // 
             // bntIrUltimo
             // 
-            this.bntIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
+            this.bntIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("bntIrUltimo.Image")));
             this.bntIrUltimo.Location = new System.Drawing.Point(609, 4);
             this.bntIrUltimo.Name = "bntIrUltimo";
             this.bntIrUltimo.Size = new System.Drawing.Size(48, 42);
@@ -271,29 +271,29 @@
             this.label9.TabIndex = 11;
             this.label9.Text = "Observaciones";
             // 
-            // comboBox1
+            // cmbCuenta
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(107, 87);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cmbCuenta.FormattingEnabled = true;
+            this.cmbCuenta.Location = new System.Drawing.Point(107, 87);
+            this.cmbCuenta.Name = "cmbCuenta";
+            this.cmbCuenta.Size = new System.Drawing.Size(121, 21);
+            this.cmbCuenta.TabIndex = 12;
             // 
-            // comboBox2
+            // cmbConceptos
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(359, 87);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 13;
+            this.cmbConceptos.FormattingEnabled = true;
+            this.cmbConceptos.Location = new System.Drawing.Point(359, 87);
+            this.cmbConceptos.Name = "cmbConceptos";
+            this.cmbConceptos.Size = new System.Drawing.Size(121, 21);
+            this.cmbConceptos.TabIndex = 13;
             // 
-            // comboBox3
+            // cmbFormaPago
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(110, 126);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 14;
+            this.cmbFormaPago.FormattingEnabled = true;
+            this.cmbFormaPago.Location = new System.Drawing.Point(110, 126);
+            this.cmbFormaPago.Name = "cmbFormaPago";
+            this.cmbFormaPago.Size = new System.Drawing.Size(121, 21);
+            this.cmbFormaPago.TabIndex = 14;
             // 
             // dateTimePicker1
             // 
@@ -368,9 +368,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbFormaPago);
+            this.Controls.Add(this.cmbConceptos);
+            this.Controls.Add(this.cmbCuenta);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -384,6 +384,7 @@
             this.MaximumSize = new System.Drawing.Size(696, 386);
             this.MinimumSize = new System.Drawing.Size(696, 386);
             this.Name = "frmMovimientos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmMovimientos_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -415,9 +416,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbCuenta;
+        private System.Windows.Forms.ComboBox cmbConceptos;
+        private System.Windows.Forms.ComboBox cmbFormaPago;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox textBox1;

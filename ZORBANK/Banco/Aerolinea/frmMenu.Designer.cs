@@ -30,10 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.MenuPrincipal = new System.Windows.Forms.MenuStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CessarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.impresorasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,8 +39,8 @@
             this.ConceptosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BeneficiariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CuentasBancariasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BancosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CuentasBancariasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MovimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AgendaZonaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProcesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,6 +72,10 @@
             this.tópicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.búsquedaPorTemasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MenuPrincipal.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -97,47 +97,6 @@
             this.MenuPrincipal.Size = new System.Drawing.Size(1014, 24);
             this.MenuPrincipal.TabIndex = 0;
             this.MenuPrincipal.Text = "menuStrip1";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel,
-            this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 24);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1014, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.ActiveLinkColor = System.Drawing.SystemColors.ControlLight;
-            this.toolStripStatusLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(67, 17);
-            this.toolStripStatusLabel.Text = "Fecha Hora";
-            this.toolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.ActiveLinkColor = System.Drawing.SystemColors.ControlLight;
-            this.toolStripStatusLabel2.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(47, 17);
-            this.toolStripStatusLabel2.Text = "Usuario";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::ZORBANK.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1014, 610);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // inicioToolStripMenuItem
             // 
@@ -164,6 +123,7 @@
             this.impresorasToolStripMenuItem.Name = "impresorasToolStripMenuItem";
             this.impresorasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.impresorasToolStripMenuItem.Text = "Impresoras";
+            this.impresorasToolStripMenuItem.Click += new System.EventHandler(this.impresorasToolStripMenuItem_Click);
             // 
             // CatalogosToolStripMenuItem
             // 
@@ -211,14 +171,22 @@
             // cuentasToolStripMenuItem
             // 
             this.cuentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CuentasBancariasToolStripMenuItem,
             this.BancosToolStripMenuItem,
+            this.CuentasBancariasToolStripMenuItem,
             this.MovimientosToolStripMenuItem,
             this.AgendaZonaToolStripMenuItem});
             this.cuentasToolStripMenuItem.Image = global::ZORBANK.Properties.Resources.book_brown;
             this.cuentasToolStripMenuItem.Name = "cuentasToolStripMenuItem";
             this.cuentasToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.cuentasToolStripMenuItem.Text = "C&uentas";
+            // 
+            // BancosToolStripMenuItem
+            // 
+            this.BancosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("BancosToolStripMenuItem.Image")));
+            this.BancosToolStripMenuItem.Name = "BancosToolStripMenuItem";
+            this.BancosToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.BancosToolStripMenuItem.Text = "Bancos";
+            this.BancosToolStripMenuItem.Click += new System.EventHandler(this.BancosToolStripMenuItem_Click);
             // 
             // CuentasBancariasToolStripMenuItem
             // 
@@ -227,13 +195,6 @@
             this.CuentasBancariasToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.CuentasBancariasToolStripMenuItem.Text = "Cuentas Bancarias";
             this.CuentasBancariasToolStripMenuItem.Click += new System.EventHandler(this.CuentasBancariasToolStripMenuItem_Click);
-            // 
-            // BancosToolStripMenuItem
-            // 
-            this.BancosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("BancosToolStripMenuItem.Image")));
-            this.BancosToolStripMenuItem.Name = "BancosToolStripMenuItem";
-            this.BancosToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.BancosToolStripMenuItem.Text = "Bancos";
             // 
             // MovimientosToolStripMenuItem
             // 
@@ -483,6 +444,47 @@
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de ZORBANK";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel,
+            this.toolStripStatusLabel2});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 24);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1014, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.ActiveLinkColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripStatusLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(67, 17);
+            this.toolStripStatusLabel.Text = "Fecha Hora";
+            this.toolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.ActiveLinkColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripStatusLabel2.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(47, 17);
+            this.toolStripStatusLabel2.Text = "Usuario";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::ZORBANK.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1014, 610);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // frmMenu
             // 

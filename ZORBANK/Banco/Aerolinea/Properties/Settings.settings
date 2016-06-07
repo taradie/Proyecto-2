@@ -10,5 +10,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Dsn=centro_educacional;uid=root</Value>
     </Setting>
+    <Setting Name="ZORBANK_net_azurewebsites_bancos_WebServicesBanco" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://bancos.azurewebsites.net/WebServicesBanco.asmx</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -149,18 +149,18 @@
             this.grdAgendaMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdAgendaMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdAgendaMovimientos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdAgendaMovimientos.Location = new System.Drawing.Point(0, 0);
+            this.grdAgendaMovimientos.Location = new System.Drawing.Point(0, 61);
             this.grdAgendaMovimientos.Name = "grdAgendaMovimientos";
-            this.grdAgendaMovimientos.Size = new System.Drawing.Size(998, 472);
-            this.grdAgendaMovimientos.TabIndex = 4;
+            this.grdAgendaMovimientos.Size = new System.Drawing.Size(998, 411);
+            this.grdAgendaMovimientos.TabIndex = 6;
             // 
             // frmConsultaAgendaMovimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 472);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdAgendaMovimientos);
+            this.Controls.Add(this.groupBox1);
             this.Name = "frmConsultaAgendaMovimiento";
             this.Text = "Agenda de Movimiento";
             this.groupBox1.ResumeLayout(false);
