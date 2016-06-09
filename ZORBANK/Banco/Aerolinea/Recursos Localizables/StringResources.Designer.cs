@@ -196,7 +196,7 @@ namespace ZORBANK.Recursos_Localizables {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Emisión de Cheques.
+        ///   Looks up a localized string similar to Cliente Web Service.
         /// </summary>
         internal static string EmisionCheques {
             get {

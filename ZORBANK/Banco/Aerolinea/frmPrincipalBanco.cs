@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;using Seguridad;using SeguridadGrafico;
+using Navegador;
 
 namespace ZORBANK
 {
@@ -82,13 +82,13 @@ namespace ZORBANK
         public void funActualizarGrid()
         {
             clasnegocio negocio = new clasnegocio();    //informacion que visualizara el formulario principal de bancos
-            negocio.funconsultarRegistros("bancos", "SELECT codigo_banco AS Codigo, nombre AS Banco,abreviatura as Abreviatura,telefono AS No_Telefono,estado as Estado FROM proyecto2.bancos WHERE condicion= '1' ", "consulta", grdBancos);
+            negocio.funconsultarRegistros("bancos", "SELECT codigo_banco AS Codigo, nombre AS Banco,abreviatura as Abreviatura,telefono AS No_Telefono,estado as Estado FROM bancos WHERE condicion= '1' ", "consulta", grdBancos);
         }
         #endregion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FiltradoGrids.FiltradoGrids abc = new FiltradoGrids.FiltradoGrids("bancos");
+            FiltradoGrids.FiltradoGrids abc = new FiltradoGrids.FiltradoGrids("bancos");//funcion de busqueda personalizada de grid
             abc.ShowDialog(this);
             string query = abc.ObtenerQuery();
             clasnegocio cn = new clasnegocio();

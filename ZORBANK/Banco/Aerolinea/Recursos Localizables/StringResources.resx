@@ -163,7 +163,7 @@
     <value>Datos de la Empresa</value>
   </data>
   <data name="EmisionCheques" xml:space="preserve">
-    <value>Emisión de Cheques</value>
+    <value>Cliente Web Service</value>
   </data>
   <data name="FormasPago" xml:space="preserve">
     <value>Formas de Pago</value>

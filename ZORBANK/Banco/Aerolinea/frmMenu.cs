@@ -297,5 +297,14 @@ namespace ZORBANK
             vista.crystalReportViewer1.ReportSource = objRpt;
             vista.Show();
         }
+
+        private void emisiónDeChequesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormClienteWeb temp = new FormClienteWeb();
+            temp.WindowState = FormWindowState.Normal;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
     }
 }

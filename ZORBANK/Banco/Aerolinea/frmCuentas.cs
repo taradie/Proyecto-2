@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;using Seguridad;using SeguridadGrafico;
+using Navegador;
+using Seguridad;
 
 namespace ZORBANK
 {
+    //programador y analista: jose alberto oxcal ley
     public partial class frmCuentas : Form
     {
         string estado,temporal,sCodigo,tEmpresa,tFecha,tCuenta,tTipocuenta,tBanco,tMoneda,tCheque,tEstado;
         public frmCuentas(string sMensaje, string sEstadoI, string sCodigoI, string sEmpresa, string sFecha, string sCuenta, string sBanco, string sTipocuenta, string sMoneda, string sCheque, string sEstado)
         {
             clasnegocio cn = new clasnegocio();
-            estado = sEstadoI;
+            estado = sEstadoI;                  //alacenamiento de informacion en temporales
             temporal = sEstadoI;
             sCodigo = sCodigoI;
             tEmpresa = sEmpresa;
@@ -37,9 +39,18 @@ namespace ZORBANK
             cn.funactivarDesactivarBoton(btnAnterior, false);
             cn.funactivarDesactivarBoton(btnImprimir, false);
             cn.funactivarDesactivarBoton(btnRefrescar, false);
+            cn.funactivarDesactivarTextbox(txtNoCuenta, false);
+            cn.funactivarDesactivarTextbox(txtTipoCuenta, false);
+            cn.funactivarDesactivarTextbox(txtCheque, false);
+            cn.funactivarDesactivarTextbox(txtTipoCuenta, false);
+            cn.funactivarDesactivarCombobox(cmbBanco, false);
+            cn.funactivarDesactivarCombobox(cmbEmpresa, false);
+            cn.funactivarDesactivarCombobox(cmbEstado, false);
+            cn.funactivarDesactivarCombobox(cmbMoneda, false);
+                
             if (estado.Equals(""))
             {            //botones que se desactivan al crear un nuevo banco
-                cn.funactivarDesactivarBoton(btnNuevo, false);
+                cn.funactivarDesactivarBoton(btnNuevo, true);
                 cn.funactivarDesactivarBoton(btnEditar, false);
                 cn.funactivarDesactivarBoton(btnEliminar, false);
                 cn.funactivarDesactivarTextbox(txtCheque, false);
@@ -51,20 +62,13 @@ namespace ZORBANK
             {          //botones de que activan al editar o elimiar registros
                 cn.funactivarDesactivarBoton(btnEditar, true);
                 cn.funactivarDesactivarBoton(btnEliminar, true);
-                cn.funactivarDesactivarTextbox(txtEmpresa, false);
-                cn.funactivarDesactivarTextbox(txtNoCuenta, false);
-                cn.funactivarDesactivarTextbox(txtTipoCuenta, false);
-                cn.funactivarDesactivarTextbox(txtCheque, false);
-                cn.funactivarDesactivarTextbox(txtTipoCuenta, false);
-                cn.funactivarDesactivarCombobox(cmbBanco, false);
-                cn.funactivarDesactivarCombobox(cmbEstado, false);
-                cn.funactivarDesactivarCombobox(cmbMoneda, false);
                 dtFechaApertura.Enabled = false;
                 dtFechaApertura.Text = sFecha;
-                txtEmpresa.Text = sEmpresa;
+                cmbEmpresa.Text = sEmpresa;
                 txtNoCuenta.Text = sCuenta;
                 cmbMoneda.Text = tMoneda;
                 cmbBanco.Text = tBanco;
+                cmbEmpresa.Text = tEmpresa;
                 txtTipoCuenta.Text = sTipocuenta;
                 txtCheque.Text = sCheque;
                 cmbEstado.Text = sEstado;
@@ -75,10 +79,11 @@ namespace ZORBANK
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             clasnegocio cn = new clasnegocio();
-            Boolean bPermiso = true;
+            Boolean bPermiso = true;                        //dato de tabla y control para el almacenamiento de la informacion
             string sTabla = "cuentasinternas";
             string sTablaId = "codigo_cuenta_interna"; 
             txtFecha.Text = dtFechaApertura.Text;
+            txtEmpresa.Text = Convert.ToString(cmbEmpresa.SelectedValue);
             txtBanco.Text = Convert.ToString(cmbBanco.SelectedValue);
             txtMoneda.Text = Convert.ToString(cmbMoneda.SelectedValue);
             txtEstado.Text = cmbEstado.Text;
@@ -122,19 +127,20 @@ namespace ZORBANK
             cn.funactivarDesactivarBoton(btnEditar, false);
             cn.funactivarDesactivarBoton(btnEliminar, false);
             cn.funactivarDesactivarBoton(btnGuardar, true);
-            cn.funactivarDesactivarTextbox(txtEmpresa, true);
             cn.funactivarDesactivarTextbox(txtNoCuenta, true);
             cn.funactivarDesactivarTextbox(txtTipoCuenta, true);
             cn.funactivarDesactivarTextbox(txtCheque, false);
             cn.funactivarDesactivarCombobox(cmbMoneda, true);
             cn.funactivarDesactivarCombobox(cmbBanco, true);
+            cn.funactivarDesactivarCombobox(cmbEmpresa, true);
             cn.funactivarDesactivarCombobox(cmbEstado, true);
-            txtEmpresa.Text = "";
+            txtEmpresa.Text = "";               //limpieza de controles para nuevo registro
             txtNoCuenta.Text = "";
             txtTipoCuenta.Text = "";
             txtCheque.Text = "1";
             cmbMoneda.Text = "";
             cmbBanco.Text = "";
+            cmbEmpresa.Text = "";
             cmbEstado.SelectedIndex = 0;
 
         }
@@ -142,7 +148,6 @@ namespace ZORBANK
         {
             clasnegocio cn = new clasnegocio();                 //activa la edicion de informacion 
             cn.funactivarDesactivarBoton(btnEditar, false);
-            cn.funactivarDesactivarTextbox(txtEmpresa, true);
             cn.funactivarDesactivarTextbox(txtNoCuenta, true);
             cn.funactivarDesactivarTextbox(txtTipoCuenta, true);
             cn.funactivarDesactivarCombobox(cmbEstado, true);
@@ -157,22 +162,22 @@ namespace ZORBANK
         {
             clasnegocio cn = new clasnegocio();             //boton de cancelar y regresa el estado con el que se abre por primera vez el formulario
             cn.funactivarDesactivarBoton(btnEditar, true);
-            cn.funactivarDesactivarTextbox(txtEmpresa, false);
             cn.funactivarDesactivarTextbox(txtNoCuenta, false);
             cn.funactivarDesactivarTextbox(txtTipoCuenta, false);
             cn.funactivarDesactivarCombobox(cmbEstado, false);
             cn.funactivarDesactivarCombobox(cmbMoneda, false);
             cn.funactivarDesactivarCombobox(cmbBanco, false);
+            cn.funactivarDesactivarCombobox(cmbEmpresa, false);
             cn.funactivarDesactivarBoton(btnGuardar, false);
             cn.funactivarDesactivarBoton(btnNuevo, true);
             cn.funactivarDesactivarBoton(btnEliminar, false);
             estado = temporal;
             if (temporal.Equals("editar"))          //Regresa lo datos con el que el formulario se abrio
             {
-                txtEmpresa.Text = tEmpresa;
                 txtNoCuenta.Text = tCuenta;
                 cmbMoneda.Text = tMoneda;
                 cmbBanco.Text = tBanco;
+                cmbEmpresa.Text = tEmpresa;
                 txtTipoCuenta.Text = tTipocuenta;
                 txtCheque.Text = tCheque;
                 cmbEstado.Text = tEstado;
@@ -190,14 +195,22 @@ namespace ZORBANK
 
         private void frmCuentas_Load(object sender, EventArgs e)
         {
-            clasnegocio cn = new clasnegocio();
+            clasnegocio cn = new clasnegocio();             //captura de informacion en los combos 
+            cn.funconsultarRegistrosCombo("codigo_empresa", "select codigo_empresa,razon_social from empresa where condicion = '1' and estado='ACTIVO'", "razon_social", cmbEmpresa);
             cn.funconsultarRegistrosCombo("codigo_banco", "select codigo_banco,nombre from bancos where condicion = '1' and estado='ACTIVO'", "nombre", cmbBanco);
             cn.funconsultarRegistrosCombo("codigo_moneda", "select codigo_moneda,nombre from monedas where condicion='1' and estado='ACTIVO'", "nombre", cmbMoneda);
             if (estado.Equals(""))
             {
+                                 //activa la ingreso de informacion 
                 cmbBanco.Text = "";
                 cmbMoneda.Text = "";
+                cmbEmpresa.Text = "";
             }
+        }
+
+        private void btnRefrescar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

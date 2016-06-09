@@ -51,6 +51,7 @@
             this.reporteDeCuentasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeEstadoDeCuentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ReporteConceptosDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ReporteFPtoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.SeguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.creacionUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,7 +68,6 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ReporteFPtoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuPrincipal.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -220,8 +220,8 @@
             this.emisiónDeChequesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("emisiónDeChequesToolStripMenuItem.Image")));
             this.emisiónDeChequesToolStripMenuItem.Name = "emisiónDeChequesToolStripMenuItem";
             this.emisiónDeChequesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.emisiónDeChequesToolStripMenuItem.Text = "Emisión de Cheques";
-            this.emisiónDeChequesToolStripMenuItem.Visible = false;
+            this.emisiónDeChequesToolStripMenuItem.Text = "Cliente Web Service";
+            this.emisiónDeChequesToolStripMenuItem.Click += new System.EventHandler(this.emisiónDeChequesToolStripMenuItem_Click);
             // 
             // conciliaciónBancariaToolStripMenuItem
             // 
@@ -271,6 +271,13 @@
             this.ReporteConceptosDeToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.ReporteConceptosDeToolStripMenuItem.Text = "Conceptos";
             this.ReporteConceptosDeToolStripMenuItem.Click += new System.EventHandler(this.ReporteConceptosDeToolStripMenuItem_Click);
+            // 
+            // ReporteFPtoolStripMenuItem1
+            // 
+            this.ReporteFPtoolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ReporteFPtoolStripMenuItem1.Image")));
+            this.ReporteFPtoolStripMenuItem1.Name = "ReporteFPtoolStripMenuItem1";
+            this.ReporteFPtoolStripMenuItem1.Size = new System.Drawing.Size(159, 22);
+            this.ReporteFPtoolStripMenuItem1.Text = "Formas de Pago";
             // 
             // SeguridadToolStripMenuItem
             // 
@@ -414,13 +421,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // ReporteFPtoolStripMenuItem1
-            // 
-            this.ReporteFPtoolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ReporteFPtoolStripMenuItem1.Image")));
-            this.ReporteFPtoolStripMenuItem1.Name = "ReporteFPtoolStripMenuItem1";
-            this.ReporteFPtoolStripMenuItem1.Size = new System.Drawing.Size(159, 22);
-            this.ReporteFPtoolStripMenuItem1.Text = "Formas de Pago";
             // 
             // frmMenu
             // 

@@ -63,6 +63,7 @@
             this.txtCondicion = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.cmbEmpresa = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -132,6 +133,7 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.Location = new System.Drawing.Point(393, 4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(48, 42);
@@ -140,6 +142,7 @@
             // 
             // btnImprimir
             // 
+            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.Location = new System.Drawing.Point(339, 4);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(48, 42);
@@ -154,6 +157,7 @@
             this.btnRefrescar.Size = new System.Drawing.Size(48, 42);
             this.btnRefrescar.TabIndex = 5;
             this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // btnCancelar
             // 
@@ -252,11 +256,12 @@
             // 
             // txtEmpresa
             // 
-            this.txtEmpresa.Location = new System.Drawing.Point(149, 83);
+            this.txtEmpresa.Location = new System.Drawing.Point(538, 165);
             this.txtEmpresa.Name = "txtEmpresa";
-            this.txtEmpresa.Size = new System.Drawing.Size(222, 20);
+            this.txtEmpresa.Size = new System.Drawing.Size(109, 20);
             this.txtEmpresa.TabIndex = 1;
             this.txtEmpresa.Tag = "codigo_empresa";
+            this.txtEmpresa.Visible = false;
             // 
             // txtNoCuenta
             // 
@@ -384,11 +389,20 @@
             this.cmbEstado.Size = new System.Drawing.Size(121, 21);
             this.cmbEstado.TabIndex = 10;
             // 
+            // cmbEmpresa
+            // 
+            this.cmbEmpresa.FormattingEnabled = true;
+            this.cmbEmpresa.Location = new System.Drawing.Point(148, 83);
+            this.cmbEmpresa.Name = "cmbEmpresa";
+            this.cmbEmpresa.Size = new System.Drawing.Size(121, 21);
+            this.cmbEmpresa.TabIndex = 103;
+            // 
             // frmCuentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 268);
+            this.Controls.Add(this.cmbEmpresa);
             this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtCondicion);
@@ -458,5 +472,6 @@
         private System.Windows.Forms.TextBox txtCondicion;
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.ComboBox cmbEmpresa;
     }
 }

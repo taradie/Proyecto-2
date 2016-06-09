@@ -52,16 +52,27 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbCuenta = new System.Windows.Forms.ComboBox();
+            this.dtFechaRegistro = new System.Windows.Forms.DateTimePicker();
+            this.dtFechaAplicacion = new System.Windows.Forms.DateTimePicker();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtReferencia1 = new System.Windows.Forms.TextBox();
+            this.txtReferentia2 = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cmbBeneficiario = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbMoneda = new System.Windows.Forms.ComboBox();
+            this.txtCuenta = new System.Windows.Forms.TextBox();
+            this.txtMoneda = new System.Windows.Forms.TextBox();
+            this.txtBeneficiario = new System.Windows.Forms.TextBox();
+            this.txtFechaRegistro = new System.Windows.Forms.TextBox();
+            this.txtFechaAplicacion = new System.Windows.Forms.TextBox();
+            this.txtCondicion = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.cmbConceptos = new System.Windows.Forms.ComboBox();
             this.cmbFormaPago = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.txtConcepto = new System.Windows.Forms.TextBox();
+            this.txtFormaPago = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,6 +133,7 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.Location = new System.Drawing.Point(393, 4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(48, 42);
@@ -130,6 +142,7 @@
             // 
             // btnImprimir
             // 
+            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.Location = new System.Drawing.Point(339, 4);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(48, 42);
@@ -153,6 +166,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(48, 42);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -162,6 +176,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(48, 42);
             this.btnGuardar.TabIndex = 3;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEliminar
             // 
@@ -171,6 +186,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(48, 42);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -180,6 +196,7 @@
             this.btnEditar.Size = new System.Drawing.Size(48, 42);
             this.btnEditar.TabIndex = 1;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
@@ -189,11 +206,12 @@
             this.btnNuevo.Size = new System.Drawing.Size(48, 42);
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(285, 85);
+            this.label1.Location = new System.Drawing.Point(30, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 3;
@@ -202,7 +220,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 85);
+            this.label2.Location = new System.Drawing.Point(30, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 4;
@@ -211,7 +229,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 134);
+            this.label3.Location = new System.Drawing.Point(257, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 5;
@@ -256,7 +274,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(285, 134);
+            this.label8.Location = new System.Drawing.Point(467, 130);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 10;
@@ -274,69 +292,61 @@
             // cmbCuenta
             // 
             this.cmbCuenta.FormattingEnabled = true;
-            this.cmbCuenta.Location = new System.Drawing.Point(107, 87);
+            this.cmbCuenta.Location = new System.Drawing.Point(112, 126);
             this.cmbCuenta.Name = "cmbCuenta";
             this.cmbCuenta.Size = new System.Drawing.Size(121, 21);
-            this.cmbCuenta.TabIndex = 12;
+            this.cmbCuenta.TabIndex = 14;
             // 
-            // cmbConceptos
+            // dtFechaRegistro
             // 
-            this.cmbConceptos.FormattingEnabled = true;
-            this.cmbConceptos.Location = new System.Drawing.Point(359, 87);
-            this.cmbConceptos.Name = "cmbConceptos";
-            this.cmbConceptos.Size = new System.Drawing.Size(121, 21);
-            this.cmbConceptos.TabIndex = 13;
+            this.dtFechaRegistro.CustomFormat = "yyyy-MM-dd";
+            this.dtFechaRegistro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFechaRegistro.Location = new System.Drawing.Point(110, 199);
+            this.dtFechaRegistro.Name = "dtFechaRegistro";
+            this.dtFechaRegistro.Size = new System.Drawing.Size(162, 20);
+            this.dtFechaRegistro.TabIndex = 18;
             // 
-            // cmbFormaPago
+            // dtFechaAplicacion
             // 
-            this.cmbFormaPago.FormattingEnabled = true;
-            this.cmbFormaPago.Location = new System.Drawing.Point(110, 126);
-            this.cmbFormaPago.Name = "cmbFormaPago";
-            this.cmbFormaPago.Size = new System.Drawing.Size(121, 21);
-            this.cmbFormaPago.TabIndex = 14;
+            this.dtFechaAplicacion.CustomFormat = "yyyy-MM-dd";
+            this.dtFechaAplicacion.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFechaAplicacion.Location = new System.Drawing.Point(396, 199);
+            this.dtFechaAplicacion.Name = "dtFechaAplicacion";
+            this.dtFechaAplicacion.Size = new System.Drawing.Size(187, 20);
+            this.dtFechaAplicacion.TabIndex = 19;
             // 
-            // dateTimePicker1
+            // txtTotal
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(110, 199);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(162, 20);
-            this.dateTimePicker1.TabIndex = 16;
+            this.txtTotal.Location = new System.Drawing.Point(531, 127);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtTotal.TabIndex = 16;
+            this.txtTotal.Tag = "monto_total";
             // 
-            // dateTimePicker2
+            // txtReferencia1
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(396, 199);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(187, 20);
-            this.dateTimePicker2.TabIndex = 17;
+            this.txtReferencia1.Location = new System.Drawing.Point(110, 233);
+            this.txtReferencia1.Name = "txtReferencia1";
+            this.txtReferencia1.Size = new System.Drawing.Size(100, 20);
+            this.txtReferencia1.TabIndex = 20;
+            this.txtReferencia1.Tag = "referencia_1";
             // 
-            // textBox1
+            // txtReferentia2
             // 
-            this.textBox1.Location = new System.Drawing.Point(359, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 15;
+            this.txtReferentia2.Location = new System.Drawing.Point(359, 233);
+            this.txtReferentia2.Name = "txtReferentia2";
+            this.txtReferentia2.Size = new System.Drawing.Size(100, 20);
+            this.txtReferentia2.TabIndex = 21;
+            this.txtReferentia2.Tag = "referencia_2";
             // 
-            // textBox2
+            // txtObservaciones
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 233);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 18;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(359, 233);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 19;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(110, 268);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(313, 65);
-            this.textBox4.TabIndex = 20;
+            this.txtObservaciones.Location = new System.Drawing.Point(110, 268);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(313, 65);
+            this.txtObservaciones.TabIndex = 22;
+            this.txtObservaciones.Tag = "observaciones";
             // 
             // label10
             // 
@@ -347,29 +357,156 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "Beneficiario";
             // 
-            // comboBox4
+            // cmbBeneficiario
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(112, 164);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(226, 21);
-            this.comboBox4.TabIndex = 22;
+            this.cmbBeneficiario.FormattingEnabled = true;
+            this.cmbBeneficiario.Location = new System.Drawing.Point(112, 164);
+            this.cmbBeneficiario.Name = "cmbBeneficiario";
+            this.cmbBeneficiario.Size = new System.Drawing.Size(226, 21);
+            this.cmbBeneficiario.TabIndex = 17;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(274, 130);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Moneda";
+            // 
+            // cmbMoneda
+            // 
+            this.cmbMoneda.FormattingEnabled = true;
+            this.cmbMoneda.Location = new System.Drawing.Point(340, 124);
+            this.cmbMoneda.Name = "cmbMoneda";
+            this.cmbMoneda.Size = new System.Drawing.Size(121, 21);
+            this.cmbMoneda.TabIndex = 15;
+            // 
+            // txtCuenta
+            // 
+            this.txtCuenta.Location = new System.Drawing.Point(617, 217);
+            this.txtCuenta.Name = "txtCuenta";
+            this.txtCuenta.Size = new System.Drawing.Size(100, 20);
+            this.txtCuenta.TabIndex = 26;
+            this.txtCuenta.Tag = "codigo_cuenta_interna";
+            this.txtCuenta.Visible = false;
+            // 
+            // txtMoneda
+            // 
+            this.txtMoneda.Location = new System.Drawing.Point(617, 243);
+            this.txtMoneda.Name = "txtMoneda";
+            this.txtMoneda.Size = new System.Drawing.Size(100, 20);
+            this.txtMoneda.TabIndex = 27;
+            this.txtMoneda.Tag = "codigo_moneda";
+            this.txtMoneda.Visible = false;
+            // 
+            // txtBeneficiario
+            // 
+            this.txtBeneficiario.Location = new System.Drawing.Point(617, 272);
+            this.txtBeneficiario.Name = "txtBeneficiario";
+            this.txtBeneficiario.Size = new System.Drawing.Size(100, 20);
+            this.txtBeneficiario.TabIndex = 28;
+            this.txtBeneficiario.Tag = "codigo_cuenta_externa";
+            this.txtBeneficiario.Visible = false;
+            // 
+            // txtFechaRegistro
+            // 
+            this.txtFechaRegistro.Location = new System.Drawing.Point(617, 298);
+            this.txtFechaRegistro.Name = "txtFechaRegistro";
+            this.txtFechaRegistro.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaRegistro.TabIndex = 29;
+            this.txtFechaRegistro.Tag = "fecha_registro";
+            this.txtFechaRegistro.Visible = false;
+            // 
+            // txtFechaAplicacion
+            // 
+            this.txtFechaAplicacion.Location = new System.Drawing.Point(617, 324);
+            this.txtFechaAplicacion.Name = "txtFechaAplicacion";
+            this.txtFechaAplicacion.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaAplicacion.TabIndex = 30;
+            this.txtFechaAplicacion.Tag = "fecha_aplicacion";
+            this.txtFechaAplicacion.Visible = false;
+            // 
+            // txtCondicion
+            // 
+            this.txtCondicion.Location = new System.Drawing.Point(511, 295);
+            this.txtCondicion.Name = "txtCondicion";
+            this.txtCondicion.Size = new System.Drawing.Size(100, 20);
+            this.txtCondicion.TabIndex = 31;
+            this.txtCondicion.Tag = "condicion";
+            this.txtCondicion.Text = "1";
+            this.txtCondicion.Visible = false;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(511, 321);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(100, 20);
+            this.txtEstado.TabIndex = 32;
+            this.txtEstado.Tag = "estado";
+            this.txtEstado.Text = "ACTIVO";
+            this.txtEstado.Visible = false;
+            // 
+            // cmbConceptos
+            // 
+            this.cmbConceptos.FormattingEnabled = true;
+            this.cmbConceptos.Location = new System.Drawing.Point(112, 90);
+            this.cmbConceptos.Name = "cmbConceptos";
+            this.cmbConceptos.Size = new System.Drawing.Size(121, 21);
+            this.cmbConceptos.TabIndex = 33;
+            // 
+            // cmbFormaPago
+            // 
+            this.cmbFormaPago.FormattingEnabled = true;
+            this.cmbFormaPago.Location = new System.Drawing.Point(340, 90);
+            this.cmbFormaPago.Name = "cmbFormaPago";
+            this.cmbFormaPago.Size = new System.Drawing.Size(121, 21);
+            this.cmbFormaPago.TabIndex = 34;
+            // 
+            // txtConcepto
+            // 
+            this.txtConcepto.Location = new System.Drawing.Point(617, 164);
+            this.txtConcepto.Name = "txtConcepto";
+            this.txtConcepto.Size = new System.Drawing.Size(100, 20);
+            this.txtConcepto.TabIndex = 35;
+            this.txtConcepto.Tag = "codigo_concepto";
+            this.txtConcepto.Visible = false;
+            // 
+            // txtFormaPago
+            // 
+            this.txtFormaPago.Location = new System.Drawing.Point(617, 191);
+            this.txtFormaPago.Name = "txtFormaPago";
+            this.txtFormaPago.Size = new System.Drawing.Size(100, 20);
+            this.txtFormaPago.TabIndex = 36;
+            this.txtFormaPago.Tag = "codigo_forma";
+            this.txtFormaPago.Visible = false;
             // 
             // frmMovimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 347);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtFormaPago);
+            this.Controls.Add(this.txtConcepto);
             this.Controls.Add(this.cmbFormaPago);
             this.Controls.Add(this.cmbConceptos);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtCondicion);
+            this.Controls.Add(this.txtFechaAplicacion);
+            this.Controls.Add(this.txtFechaRegistro);
+            this.Controls.Add(this.txtBeneficiario);
+            this.Controls.Add(this.txtMoneda);
+            this.Controls.Add(this.txtCuenta);
+            this.Controls.Add(this.cmbMoneda);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.cmbBeneficiario);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtObservaciones);
+            this.Controls.Add(this.txtReferentia2);
+            this.Controls.Add(this.txtReferencia1);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.dtFechaAplicacion);
+            this.Controls.Add(this.dtFechaRegistro);
             this.Controls.Add(this.cmbCuenta);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -417,15 +554,26 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbCuenta;
+        private System.Windows.Forms.DateTimePicker dtFechaRegistro;
+        private System.Windows.Forms.DateTimePicker dtFechaAplicacion;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.TextBox txtReferencia1;
+        private System.Windows.Forms.TextBox txtReferentia2;
+        private System.Windows.Forms.TextBox txtObservaciones;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmbBeneficiario;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cmbMoneda;
+        private System.Windows.Forms.TextBox txtCuenta;
+        private System.Windows.Forms.TextBox txtMoneda;
+        private System.Windows.Forms.TextBox txtBeneficiario;
+        private System.Windows.Forms.TextBox txtFechaRegistro;
+        private System.Windows.Forms.TextBox txtFechaAplicacion;
+        private System.Windows.Forms.TextBox txtCondicion;
+        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.ComboBox cmbConceptos;
         private System.Windows.Forms.ComboBox cmbFormaPago;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.TextBox txtConcepto;
+        private System.Windows.Forms.TextBox txtFormaPago;
     }
 }

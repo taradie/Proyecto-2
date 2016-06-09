@@ -7,14 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;using Seguridad;using SeguridadGrafico;
+using Navegador;
 using Seguridad;
-using SeguridadGrafico;
 
 namespace ZORBANK
 {
     public partial class frmBanco : Form
     {
+
+        //programador y analista : Jose alberto oxcal Ley
         string estado,sCodigo,temporal,tBanco,tAbreviatura,tTelefono,tEstado;
         public frmBanco(string sMensaje,string sEstadoI,string sCodigoI ,string sBanco,string sAbreviatura,string sTelefono,string sEstado)
         {
@@ -35,9 +36,13 @@ namespace ZORBANK
             cn.funactivarDesactivarBoton(btnImprimir, false);
             cn.funactivarDesactivarBoton(btnRefrescar, false);
             if (estado.Equals("")) {            //botones que se desactivan al crear un nuevo banco
-                cn.funactivarDesactivarBoton(btnNuevo, false);
+                cn.funactivarDesactivarBoton(btnNuevo, true);
                 cn.funactivarDesactivarBoton(btnEditar, false);
                 cn.funactivarDesactivarBoton(btnEliminar, false);
+                cn.funactivarDesactivarTextbox(txtNombreBanco, false);
+                cn.funactivarDesactivarTextbox(txtAbreviatura, false);
+                cn.funactivarDesactivarTextbox(txtTelefono, false);
+                cn.funactivarDesactivarCombobox(cmbEstado, false);
                 cmbEstado.SelectedIndex = 0;
             }
             else {          //botones de que activan al editar o elimiar registros
@@ -144,7 +149,7 @@ namespace ZORBANK
             {
                 TextBox[] aDatos = { txtNombreBanco, txtAbreviatura, txtTelefono, txtEstado, txtcondicion };            //datos para el almacenamietno
                 cn.AsignarObjetos(sTabla, bPermiso, aDatos);
-                //claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insertar", sTabla);      //bitacora de alamcenamiento de nuevo registro
+                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insertar", sTabla);      //bitacora de alamcenamiento de nuevo registro
 
             }
             this.Close();           //Cierre de formulario

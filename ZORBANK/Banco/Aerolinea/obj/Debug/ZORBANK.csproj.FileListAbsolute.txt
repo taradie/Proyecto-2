@@ -36,6 +36,7 @@ C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZOR
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmAgendaMovimiento.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmBanco.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmBeneficiario.resources
+C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmCambioMonedacs.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmConceptos.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmConciliacion.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmConsultaAgendaMovimiento.resources
@@ -45,6 +46,7 @@ C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZOR
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmFormasPago.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmLogin.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmPrincipalBanco.resources
+C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmPrincipalCambioM.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmSplash.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmMenu.resources
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmMoneda.resources
@@ -64,5 +66,3 @@ C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZOR
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.exe
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.pdb
 C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.csprojResolveAssemblyReference.cache
-C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmCambioMonedacs.resources
-C:\Users\Josué Enrique\Documents\Mis Estudios\XI Semestre\Proyecto Banco IS\ZORBANK\Banco\Aerolinea\obj\Debug\ZORBANK.frmPrincipalCambioM.resources

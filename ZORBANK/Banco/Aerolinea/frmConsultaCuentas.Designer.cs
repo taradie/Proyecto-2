@@ -30,27 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaCuentas));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.bntAnterior = new System.Windows.Forms.Button();
             this.btnIrPrimero = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.bntNuevo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.grdCuentas = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdCuentas)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnActualizar);
             this.groupBox1.Controls.Add(this.btnIrUltimo);
             this.groupBox1.Controls.Add(this.btnSiguiente);
             this.groupBox1.Controls.Add(this.bntAnterior);
             this.groupBox1.Controls.Add(this.btnIrPrimero);
-            this.groupBox1.Controls.Add(this.btnActualizar);
+            this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.bntNuevo);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -60,6 +60,16 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtrar";
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
+            this.btnActualizar.Location = new System.Drawing.Point(130, 12);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(48, 42);
+            this.btnActualizar.TabIndex = 11;
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnIrUltimo
             // 
@@ -101,15 +111,15 @@
             this.btnIrPrimero.UseVisualStyleBackColor = true;
             this.btnIrPrimero.Click += new System.EventHandler(this.btnIrPrimero_Click);
             // 
-            // btnActualizar
+            // btnBuscar
             // 
-            this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
-            this.btnActualizar.Location = new System.Drawing.Point(78, 13);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(48, 42);
-            this.btnActualizar.TabIndex = 6;
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.Location = new System.Drawing.Point(78, 13);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(48, 42);
+            this.btnBuscar.TabIndex = 6;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // bntNuevo
             // 
@@ -142,16 +152,6 @@
             this.grdCuentas.TabIndex = 2;
             this.grdCuentas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCuentas_CellDoubleClick);
             // 
-            // button1
-            // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(130, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 42);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // frmConsultaCuentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,10 +178,10 @@
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button bntAnterior;
         private System.Windows.Forms.Button btnIrPrimero;
-        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button bntNuevo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView grdCuentas;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
