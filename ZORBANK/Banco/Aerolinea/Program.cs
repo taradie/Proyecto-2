@@ -16,9 +16,11 @@ namespace ZORBANK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new frmSplash());            
+            
             //Application.Run(new FormClienteWeb());
-            Application.Run(new frmSplash());
-            Application.Run(new frmMenu());
+            
+            //Application.Run(new frmMenu());
         }
     }
 }

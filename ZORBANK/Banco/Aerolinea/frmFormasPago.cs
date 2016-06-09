@@ -7,9 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;
+using Navegador;using Seguridad;using SeguridadGrafico;
 using ConexionODBC;
 using System.Data.Odbc;
+using Seguridad;
+using SeguridadGrafico;
+
 namespace ZORBANK
 {
     public partial class frmFormasPago : Form

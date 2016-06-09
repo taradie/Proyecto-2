@@ -31,6 +31,7 @@ namespace ZORBANK
                 timer1.Stop();
                 this.Hide();                
                 frmMenu temp = new frmMenu();
+                //FormClienteWeb temp = new FormClienteWeb();
                 temp.Show();
                 //MultiBD.frmMultiBD temp1 = new MultiBD.frmMultiBD();
                 //temp1.Show();

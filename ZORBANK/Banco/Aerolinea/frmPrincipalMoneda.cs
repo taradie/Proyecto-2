@@ -28,7 +28,7 @@ namespace ZORBANK
         private void funActualizarGrid()
         {
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistros("monedas", "SELECT nombre as Nombre, abreviatura as Abreciatura, fecha_registro as Fecha_registro from monedas ", "consulta", grdPago);
+            cnegocio.funconsultarRegistros("monedas", "SELECT nombre as Nombre, abreviatura as Abreciatura, fecha_registro as Fecha_registro from monedas ", "consulta", grdFacultad);
         }
         private void frmPrincipalMoneda_Load(object sender, EventArgs e)
         {
@@ -38,6 +38,22 @@ namespace ZORBANK
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
             funActualizarGrid();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmMoneda temp = new frmMoneda();
+            temp.Show();
+        }
+
+        private void btnRefrescar_Click_1(object sender, EventArgs e)
+        {
+            funActualizarGrid();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

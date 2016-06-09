@@ -77,9 +77,18 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\MultiBD.dll</HintPath>
     </Reference>
+    <Reference Include="Multilenguaje">
+      <HintPath>..\..\..\Software Base\dlls Actualizads\dlls Actualizads\Multilenguaje.dll</HintPath>
+    </Reference>
     <Reference Include="Navegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Software Base\Navegador\Navegador\Navegador\bin\Debug\Navegador.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad">
+      <HintPath>..\..\..\Software Base\dll Seguridad\dll Seguridad\Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="SeguridadGrafico">
+      <HintPath>..\..\..\Software Base\dll Seguridad\dll Seguridad\SeguridadGrafico.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -107,12 +116,6 @@
     </Compile>
     <Compile Include="BancoSplash.Designer.cs">
       <DependentUpon>BancoSplash.cs</DependentUpon>
-    </Compile>
-    <Compile Include="consultaParqueo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="consultaParqueo.Designer.cs">
-      <DependentUpon>consultaParqueo.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -143,12 +146,6 @@
     <Compile Include="frmAgendaMovimiento.Designer.cs">
       <DependentUpon>frmAgendaMovimiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAsignacionRoles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAsignacionRoles.Designer.cs">
-      <DependentUpon>frmAsignacionRoles.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmBanco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,11 +158,11 @@
     <Compile Include="frmBeneficiario.Designer.cs">
       <DependentUpon>frmBeneficiario.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmbitacora.cs">
+    <Compile Include="frmCambioMonedacs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmbitacora.Designer.cs">
-      <DependentUpon>frmbitacora.cs</DependentUpon>
+    <Compile Include="frmCambioMonedacs.Designer.cs">
+      <DependentUpon>frmCambioMonedacs.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConceptos.cs">
       <SubType>Form</SubType>
@@ -197,7 +194,6 @@
     <Compile Include="frmConsultaMovimiento.Designer.cs">
       <DependentUpon>frmConsultaMovimiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="claseUsuario.cs" />
     <Compile Include="frmCuentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +217,12 @@
     </Compile>
     <Compile Include="frmPrincipalBanco.designer.cs">
       <DependentUpon>frmPrincipalBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalCambioM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalCambioM.Designer.cs">
+      <DependentUpon>frmPrincipalCambioM.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
@@ -282,12 +284,6 @@
     <Compile Include="frmPrincipalMoneda.Designer.cs">
       <DependentUpon>frmPrincipalMoneda.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipalPersona.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPrincipalPersona.Designer.cs">
-      <DependentUpon>frmPrincipalPersona.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmVistaReporte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,76 +298,15 @@
     <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReporteAlumno.cs">
+    <Compile Include="Recursos Localizables\StringResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteAlumno.rpt</DependentUpon>
-      <SubType>Component</SubType>
+      <DependentUpon>StringResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ReporteCarrera.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteCarrera.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ReporteActaNotas.cs">
-      <DependentUpon>ReporteActaNotas.rpt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="ReporteConcepto.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ReporteDistribucionNota.cs">
-      <DependentUpon>ReporteDistribucionNota.rpt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="ReporteCurso.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteCurso.rpt</DependentUpon>
+    <Compile Include="ReporteConecpto.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ReporteFormas.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="reporteJornada.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>reporteJornada.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="reporteLaboratorios.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>reporteLaboratorios.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ReporteMensualidad.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteMensualidad.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="reportePuestos.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>reportePuestos.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="reporteRol.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>reporteRol.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ReporteSalones.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteSalones.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ReporteUsuario.cs">
@@ -397,9 +332,6 @@
     <EmbeddedResource Include="BancoSplash.resx">
       <DependentUpon>BancoSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="consultaParqueo.resx">
-      <DependentUpon>consultaParqueo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -412,17 +344,14 @@
     <EmbeddedResource Include="frmAgendaMovimiento.resx">
       <DependentUpon>frmAgendaMovimiento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAsignacionRoles.resx">
-      <DependentUpon>frmAsignacionRoles.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmBanco.resx">
       <DependentUpon>frmBanco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBeneficiario.resx">
       <DependentUpon>frmBeneficiario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmbitacora.resx">
-      <DependentUpon>frmbitacora.cs</DependentUpon>
+    <EmbeddedResource Include="frmCambioMonedacs.resx">
+      <DependentUpon>frmCambioMonedacs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConceptos.resx">
       <DependentUpon>frmConceptos.cs</DependentUpon>
@@ -450,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalBanco.resx">
       <DependentUpon>frmPrincipalBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalCambioM.resx">
+      <DependentUpon>frmPrincipalCambioM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
@@ -481,9 +413,6 @@
     <EmbeddedResource Include="frmPrincipalMoneda.resx">
       <DependentUpon>frmPrincipalMoneda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipalPersona.resx">
-      <DependentUpon>frmPrincipalPersona.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmVistaReporte.resx">
       <DependentUpon>frmVistaReporte.cs</DependentUpon>
     </EmbeddedResource>
@@ -492,41 +421,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteAlumno.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteAlumno.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReporteCarrera.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteCarrera.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReporteCurso.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteCurso.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reporteJornada.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>reporteJornada.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reporteLaboratorios.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>reporteLaboratorios.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReporteMensualidad.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteMensualidad.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reportePuestos.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>reportePuestos.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reporteRol.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>reporteRol.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReporteSalones.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteSalones.cs</LastGenOutput>
+    <EmbeddedResource Include="Recursos Localizables\StringResources.ES-US.resx" />
+    <EmbeddedResource Include="Recursos Localizables\StringResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteUsuario.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -582,14 +480,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ReporteDistribucionNota.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteDistribucionNota.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReporteActaNotas.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteActaNotas.cs</LastGenOutput>
-    </EmbeddedResource>
     <None Include="Resources\16 %28User%29.ico" />
   </ItemGroup>
   <ItemGroup>

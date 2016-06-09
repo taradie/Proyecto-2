@@ -16,14 +16,14 @@ namespace ZORBANK {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ReporteFormas : ReportClass {
+    public class ReporteConcepto : ReportClass {
         
-        public ReporteFormas() {
+        public ReporteConcepto() {
         }
         
         public override string ResourceName {
             get {
-                return "ReporteFormas.rpt";
+                return "ReporteConcepto.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace ZORBANK {
         
         public override string FullResourceName {
             get {
-                return "ZORBANK.ReporteFormas.rpt";
+                return "ZORBANK.ReporteConcepto.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace ZORBANK {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReporteFormas : Component, ICachedReport {
+    public class CachedReporteConcepto : Component, ICachedReport {
         
-        public CachedReporteFormas() {
+        public CachedReporteConcepto() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace ZORBANK {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ReporteFormas rpt = new ReporteFormas();
+            ReporteConcepto rpt = new ReporteConcepto();
             rpt.Site = this.Site;
             return rpt;
         }

@@ -8,6 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
+using Seguridad;
+using SeguridadGrafico;
+using Multilenguaje;
+using ZORBANK.Recursos_Localizables;
+using System.Threading;
+using System.Globalization;
+using System.Data.Odbc;
+
 
 namespace ZORBANK
 {
@@ -59,7 +67,7 @@ namespace ZORBANK
 
         private void bitacoraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmbitacora temp = new frmbitacora();
+            frmBitacora temp = new frmBitacora();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;
@@ -69,24 +77,13 @@ namespace ZORBANK
         private void creacionUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            /*frmPrincipalUsuarios temp = new frmPrincipalUsuarios();
-            temp.WindowState = FormWindowState.Maximized;
-            temp.MdiParent = this;
-            pictureBox1.Visible = false;
-            temp.Show();*/
-        }
-
-        
-        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmPrincipalPersona temp = new frmPrincipalPersona();
+            frmPrincipalUsuarios temp = new frmPrincipalUsuarios();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;
             temp.Show();
-            
         }
-
+                
         private void FormasPagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPrincipalFPcs temp = new frmPrincipalFPcs();
@@ -201,6 +198,104 @@ namespace ZORBANK
             //printDialog1.Document = formulario;
             //printDialog1.ShowHelp = true;
             DialogResult result = printDialog1.ShowDialog();
+        }
+
+        private void AplicarIdioma()
+        {
+            inicioToolStripMenuItem.Text = StringResources.Inicio;
+            CessarSesionToolStripMenuItem.Text = StringResources.CerrarSesión;
+            impresorasToolStripMenuItem.Text = StringResources.Impresoras;
+            CatalogosToolStripMenuItem.Text = StringResources.Catalogos;
+            tipoCambioToolStripMenuItem.Text = StringResources.TipoCambio;
+            FormasPagoToolStripMenuItem.Text = StringResources.FormasPago;
+            ConceptosToolStripMenuItem.Text = StringResources.Conceptos;
+            BeneficiariosToolStripMenuItem.Text = StringResources.Beneficiarios;
+            cuentasToolStripMenuItem.Text = StringResources.Cuentas;
+            BancosToolStripMenuItem.Text = StringResources.Bancos;
+            CuentasBancariasToolStripMenuItem.Text = StringResources.CuentasBancarias;
+            MovimientosToolStripMenuItem.Text = StringResources.MovimientosBancarios;
+            AgendaZonaToolStripMenuItem.Text = StringResources.AgendaMovimientos;
+            ProcesosToolStripMenuItem.Text = StringResources.Procesos;
+            emisiónDeChequesToolStripMenuItem.Text = StringResources.EmisionCheques;
+            conciliaciónBancariaToolStripMenuItem.Text = StringResources.Conciliacion;
+            ReportesToolStripMenuItem.Text = StringResources.Reportes;
+            SeguridadToolStripMenuItem.Text = StringResources.Seguridad;
+            creacionUsuariosToolStripMenuItem.Text = StringResources.Usuarios;
+            bitacoraToolStripMenuItem.Text = StringResources.Bitacora;
+            ConfiguracionToolStripMenuItem.Text = StringResources.Configuracion;
+            agregarEmpresaToolStripMenuItem.Text = StringResources.AgregarEmpresa;
+            datosDeLaEmpresaToolStripMenuItem.Text = StringResources.DatosEmpresa;
+            establecerToolStripMenuItem.Text = StringResources.MultiBD;
+            MonedasToolStripMenuItem.Text = StringResources.Monedas;
+            idiomaToolStripMenuItem.Text = StringResources.Idioma;
+            AyudaToolStripMenuItem.Text = StringResources.Ayuda;
+            índiceToolStripMenuItem.Text = StringResources.Indice;
+            acercaDeToolStripMenuItem.Text = StringResources.Acerca;
+
+
+
+
+        }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+            if (Idioma.ObtenerIdioma() == "Ingles")
+            {
+
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("ES-US");
+
+                AplicarIdioma();
+
+            }
+
+            else if (Idioma.ObtenerIdioma() == "Espanol")
+
+            {
+
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("");
+
+                AplicarIdioma();
+
+            }
+
+        }
+
+        private void idiomaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMultilenguaje temp = new frmMultilenguaje();
+            temp.ShowDialog(this);
+            this.Refresh();
+            AplicarIdioma();
+
+        }
+
+        private void tipoCambioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalCambioM temp = new frmPrincipalCambioM();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
+
+        private void ReporteConceptosDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FiltradoGrids.FiltradoGrids abc = new FiltradoGrids.FiltradoGrids("conceptobancarios");
+            abc.ShowDialog(this);
+            string query = abc.ObtenerQuery();
+            //string query = "select * from usuario";
+            MessageBox.Show(query);
+
+            ReporteConcepto objRpt = new ReporteConcepto();
+            OdbcDataAdapter adp = new OdbcDataAdapter(query, ConexionODBC.Conexion.ObtenerConexion());
+            DataSet1 dt = new DataSet1();
+            adp.Fill(dt, "conceptosbancarios");
+            objRpt.SetDataSource(dt);
+            ConexionODBC.Conexion.CerrarConexion();
+
+            frmVistaReporte vista = new frmVistaReporte();
+            vista.crystalReportViewer1.ReportSource = objRpt;
+            vista.Show();
         }
     }
 }

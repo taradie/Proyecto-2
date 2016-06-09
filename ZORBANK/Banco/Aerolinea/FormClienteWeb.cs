@@ -24,9 +24,11 @@ namespace ZORBANK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            net.azurewebsites.bancos.WebServicesBanco ws = new net.azurewebsites.bancos.WebServicesBanco();
-
-            dataGridView1.DataSource = ws.sEnviarDisponibilidadBancaria().Tables[0];
+            net.azurewebsites.bancos.WebServicesBanco ws = new net.azurewebsites.bancos.WebServicesBanco();            
+            this.Cursor = Cursors.WaitCursor;
+            //dataGridView1.DataSource = ws.sEnviarDisponibilidadBancaria().Tables[0];
+            dataGridView1.DataSource = ws.sEnviarDisponibilidadBancariaXBanco(codigobanco.Text).Tables[0];
+            this.Cursor = Cursors.Arrow;
         }
     }
 }
