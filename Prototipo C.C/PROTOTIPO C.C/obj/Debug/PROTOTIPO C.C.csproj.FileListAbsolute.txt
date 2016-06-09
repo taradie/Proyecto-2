@@ -1,0 +1,172 @@
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe.config
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.pdb
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.csprojResolveAssemblyReference.cache
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Properties.Resources.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.csproj.GenerateResource.Cache
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.exe
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.pdb
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\en-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMenuPrincipal.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalClienteIngreso.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMenuPrincipal.en-US.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\en-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPagos.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrestamos.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturasClientes.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalPagosClientes.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMoneda.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmIdioma.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\ES-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.ES-US.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\ES-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\ES-CO\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.ES-CO.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\ES-CO\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmIngresoProveedores.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalIngresoProveedores.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturaProveedores.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturaCliente.resources
+C:\Users\DylanIsaac\Desktop\Prototipo C.C\2\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmIngresoCliente.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe.config
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.exe
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.pdb
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.pdb
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\en-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\ES-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.csprojResolveAssemblyReference.cache
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturaCliente.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMenuPrincipal.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMoneda.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturasClientes.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Properties.Resources.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMenuPrincipal.en-US.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.ES-US.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.csproj.GenerateResource.Cache
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\en-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\ES-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\ConexionODBC.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\FiltradoGrids.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\bin\Debug\Navegador.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFormaPago.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFormasPago.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\PROTOTIPO C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMensaje.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Empresa.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Empresa.pdb
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmConceptos.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalConcepto.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturas.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturas.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Filtrado.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Filtrado.pdb
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrestamo.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalPrestamos.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\dllClientes.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\ClaseProveedor.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalTipoDocumento.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmTipoDocumento.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPagoPrestamos.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalPagoPrestamo.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Empleados.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Multilenguaje.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Multilenguaje.pdb
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\ES-US\Multilenguaje.resources.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturaProveedor.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturaProveedor.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\bin\Debug\DllCobrador.dll
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.PruebaWS.resources
+C:\Users\DylanIsaac\Documents\GitHub\Proyecto-2\CuentasCorrientes\Prototipo\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmAgregarFacturaP.resources
+C:\Users\Josue\Desktop\Prototipo C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe.config
+C:\Users\Josue\Desktop\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.exe
+C:\Users\Josue\Desktop\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.pdb
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe.config
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.exe
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.pdb
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.pdb
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\en-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\ES-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\ConexionODBC.dll
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Navegador.dll
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Empresa.pdb
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Filtrado.pdb
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Multilenguaje.pdb
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\ES-US\Multilenguaje.resources.dll
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.csprojResolveAssemblyReference.cache
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmConceptos.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturaCliente.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturaProveedor.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturas.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFormasPago.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMensaje.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMenuPrincipal.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMoneda.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmNuevaFacturaProveedor.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPagoPrestamos.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrestamo.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalConcepto.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturaProveedor.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturas.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturasClientes.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFormaPago.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalPagoPrestamo.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalPrestamos.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalTipoDocumento.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmTipoDocumento.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmVistaReporte.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Properties.Resources.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.PruebaWS.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMenuPrincipal.en-US.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.ES-US.resources
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.csproj.GenerateResource.Cache
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\en-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\obj\Debug\ES-US\PROTOTIPO C.C.resources.dll
+C:\Users\DylanIsaac\Desktop\9no Ciclo\Ingenieria del SW\Proyecto Final\Prototipo C.C\PROTOTIPO C.C\bin\Debug\FiltradoGrids.dll
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe.config
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.exe
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.pdb
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmConceptos.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturaCliente.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturaProveedor.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFacturas.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmFormasPago.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMensaje.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMenuPrincipal.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMoneda.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmNuevaFacturaProveedor.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPagoPrestamos.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrestamo.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalConcepto.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturaProveedor.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturas.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFacturasClientes.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalFormaPago.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalPagoPrestamo.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalPrestamos.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmPrincipalTipoDocumento.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmTipoDocumento.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmVistaReporte.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Properties.Resources.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.PruebaWS.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmMenuPrincipal.en-US.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.Recursos_Localizables.StringResources.ES-US.resources
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO C.C.csproj.GenerateResource.Cache
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.exe
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\PROTOTIPO C.C.pdb
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\en-US\PROTOTIPO C.C.resources.dll
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\ES-US\PROTOTIPO C.C.resources.dll
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\ConexionODBC.dll
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Navegador.dll
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Empresa.pdb
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Filtrado.pdb
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\Multilenguaje.pdb
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\bin\Debug\ES-US\Multilenguaje.resources.dll
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\en-US\PROTOTIPO C.C.resources.dll
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\ES-US\PROTOTIPO C.C.resources.dll
+C:\Users\Diego\Documents\1universidad\noveno\software\proyecto 2\prototipos\version 8\Prototipo C.C\PROTOTIPO C.C\obj\Debug\PROTOTIPO_C.C.frmNuevaFacturaCliente.resources

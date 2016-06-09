@@ -30,14 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ConexionODBC">
-      <HintPath>..\..\1universidad\noveno\software\proyecto 2\prototipos\version 3\Prototipo C.C\ConexionODBC.dll</HintPath>
+    <Reference Include="ConexionODBC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\1universidad\noveno\software\proyecto 2\Dlls\multiBD\ConexionODBC.dll</HintPath>
     </Reference>
     <Reference Include="FiltradoGrids">
       <HintPath>..\..\1universidad\noveno\software\proyecto 2\prototipos\version 3\FiltradoGrids.dll</HintPath>
     </Reference>
-    <Reference Include="Navegador">
-      <HintPath>..\..\1universidad\noveno\software\proyecto 2\prototipos\version 3\Prototipo C.C\Navegador.dll</HintPath>
+    <Reference Include="Navegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\1universidad\noveno\software\proyecto 2\Dlls\multiBD\Navegador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
