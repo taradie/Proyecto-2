@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;using Seguridad;using SeguridadGrafico;
+using Navegador;
 using ConexionODBC;
 using System.Data.Odbc;
 namespace ZORBANK

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;using Seguridad;using SeguridadGrafico;
+using Navegador;
 using ConexionODBC;
 using System.Data.Odbc;
 
@@ -24,8 +24,7 @@ namespace ZORBANK
         private void funActualizarGrid()
         {
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistros("conceptosbancarios", "SELECT codigo_concepto as Codigo, concepto as Concepto, descripcion as Descripcion, estado as Estado from conceptosbancarios WHERE estado = '1'", "consulta", grdFacultad);
-            ConexionODBC.Conexion.CerrarConexion();
+            cnegocio.funconsultarRegistros("conceptosbancarios", "SELECT codigo_concepto as Codigo, concepto as Concepto, descripcion as Descripcion, estado as Estado from conceptosbancarios", "consulta", grdFacultad);
         }
         private void frmPrincipalConceptos_Load(object sender, EventArgs e)
         {
@@ -39,7 +38,10 @@ namespace ZORBANK
 
         private void grdFacultad_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            string sCodPersona = grdFacultad.Rows[grdFacultad.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            frmFormasPago temp = new frmFormasPago(sCodPersona);
+            temp.Show();
+       
         }
 
         private void button6_Click_1(object sender, EventArgs e)
@@ -54,7 +56,7 @@ namespace ZORBANK
             funActualizarGrid();
         }
 
-        private void btnImprimir_Click(object sender, EventArgs e)
+      /*  private void btnImprimir_Click(object sender, EventArgs e)
         {
             FiltradoGrids.FiltradoGrids abc = new FiltradoGrids.FiltradoGrids("conceptobancarios");
             abc.ShowDialog(this);
@@ -67,11 +69,10 @@ namespace ZORBANK
             DataSet1 dt = new DataSet1();
             adp.Fill(dt, "conceptosbancarios");
             objRpt.SetDataSource(dt);
-            ConexionODBC.Conexion.CerrarConexion();
 
             frmVistaReporte vista = new frmVistaReporte();
             vista.crystalReportViewer1.ReportSource = objRpt;
-            vista.Show();            
-        }
+            vista.Show();
+        }*/
     }
 }

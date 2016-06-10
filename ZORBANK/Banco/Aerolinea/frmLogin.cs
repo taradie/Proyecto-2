@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad;
+using SeguridadGrafico;
 
 namespace ZORBANK
 {
@@ -23,7 +24,7 @@ namespace ZORBANK
             if (claseUsuario.Autentificar(txtUser.Text, txtPass.Text) == true)
             {
                 claseUsuario.varibaleUsuario = txtUser.Text;
-                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Inicio Sesion", "Usuario");
+                //claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Inicio Sesion", "Usuario");
                 this.Hide();
                 frmMenu Menu = new frmMenu();
                 Menu.Show();

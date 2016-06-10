@@ -68,9 +68,6 @@
       <HintPath>bin\Debug\FiltradoGrids.dll</HintPath>
     </Reference>
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="itextsharp">
-      <HintPath>.\itextsharp.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MultiBD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -84,7 +81,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Software Base\Navegador\Navegador\Navegador\bin\Debug\Navegador.dll</HintPath>
     </Reference>
-    <Reference Include="Seguridad">
+    <Reference Include="Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Software Base\dll Seguridad\dll Seguridad\Seguridad.dll</HintPath>
     </Reference>
     <Reference Include="SeguridadGrafico">

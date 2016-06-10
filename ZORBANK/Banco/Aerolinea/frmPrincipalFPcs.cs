@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;using Seguridad;using SeguridadGrafico;
+using Navegador;
 using ConexionODBC;
 using System.Data.Odbc;
 namespace ZORBANK
@@ -29,7 +29,6 @@ namespace ZORBANK
         {
             clasnegocio cnegocio = new clasnegocio();
             cnegocio.funconsultarRegistros("forma_pago", "SELECT formas_pago.descripcion as Descripcion, formas_pago.codigo_tipo_forma as Tipo, tipoformapago.tipo_forma as Forma from formas_pago,tipoformapago ", "consulta", grdFacultad);
-            ConexionODBC.Conexion.CerrarConexion();
         }
         private void button6_Click(object sender, EventArgs e)
         {
@@ -39,6 +38,10 @@ namespace ZORBANK
 
         private void grdFacultad_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            string sCodPersona = grdFacultad.Rows[grdFacultad.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            frmFormasPago temp = new frmFormasPago(sCodPersona);
+            temp.Show();
+       
 
         }
 
@@ -52,7 +55,7 @@ namespace ZORBANK
 
         }
 
-        private void btnImprimir_Click(object sender, EventArgs e)
+     /*   private void btnImprimir_Click(object sender, EventArgs e)
         {
             FiltradoGrids.FiltradoGrids abc = new FiltradoGrids.FiltradoGrids("formas_pago");
             abc.ShowDialog(this);
@@ -65,11 +68,10 @@ namespace ZORBANK
             DataSet1 dt = new DataSet1();
             adp.Fill(dt, "formas_pago");
             objRpt.SetDataSource(dt);
-            ConexionODBC.Conexion.CerrarConexion();
 
             frmVistaReporte vista = new frmVistaReporte();
             vista.crystalReportViewer1.ReportSource = objRpt;
-            vista.Show();            
-        }
+            vista.Show();
+        } */
     }
 }

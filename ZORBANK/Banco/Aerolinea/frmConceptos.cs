@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;using Seguridad;using SeguridadGrafico;
+using Navegador;
 using ConexionODBC;
 using System.Data.Odbc;
-
+using Seguridad;
+using SeguridadGrafico;
 namespace ZORBANK
 {
     public partial class frmConceptos : Form
@@ -26,7 +27,7 @@ namespace ZORBANK
             btnCancelar.Enabled = false;
             btnImprimir.Enabled = false;
         }
-        public frmConceptos(String snada)
+        public frmConceptos(String sCodPersona)
         {
             InitializeComponent();
             funSedes();
@@ -34,8 +35,9 @@ namespace ZORBANK
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
             btnImprimir.Enabled = false;
-            int index = comboBox1.FindString(snada);
+            int index = comboBox1.FindString(sCodPersona);
             comboBox1.SelectedIndex = index;
+            textBox1.Text = sCodPersona;
         }
         private void btnNuevo_Click(object sender, EventArgs e)
         {
@@ -76,7 +78,7 @@ namespace ZORBANK
         {
             clasnegocio cnegocio = new clasnegocio();
             cnegocio.funconsultarRegistrosCombo("codigo_operacion", "SELECT concat(concat(codigo_operacion, ',') ,operacion) As forma from operacioncontable", "forma", comboBox1);
-
+        //    claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Consulta", sTabla);
         }
         void funSedes1()
       {
@@ -130,6 +132,13 @@ namespace ZORBANK
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEditar_Click_1(object sender, EventArgs e)
+        {
+            _comando = new OdbcCommand(String.Format("update conceptosbancarios Set concepto = " + textBox1.Text + " where concepto = " + textBox1.Text + ""), ConexionODBC.Conexion.ObtenerConexion());
+            _comando.ExecuteNonQuery();
+            textBox1.Text = "";
         }
     }
 }

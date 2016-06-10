@@ -7,11 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;using Seguridad;using SeguridadGrafico;
+using Navegador;
 using ConexionODBC;
 using System.Data.Odbc;
 using Seguridad;
-using SeguridadGrafico;
 
 namespace ZORBANK
 {
@@ -27,13 +26,13 @@ namespace ZORBANK
             InitializeComponent();
             funSedes1();
         }
-        public frmFormasPago(string sCodigoP, string sDPI, string sNombreP)
+        public frmFormasPago(string sCodPersona)
         {
             InitializeComponent();
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
             btnImprimir.Enabled = false;
-            textBox1.Text = sCodigoP;
+            textBox1.Text = sCodPersona;
         }
         string funCortador(string sDato)
         {
@@ -174,7 +173,16 @@ namespace ZORBANK
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string texto = comboBox1.Text + " " + comboBox2.Text;
+
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            _comando = new OdbcCommand(String.Format("update formas_pago Set descrpicion = " + textBox1.Text + " where dpi = " + textBox1.Text + ""), ConexionODBC.Conexion.ObtenerConexion());
+            _comando.ExecuteNonQuery();
+            textBox1.Text = "";
+        }
+
+     
     }
 }

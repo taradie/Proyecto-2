@@ -37,8 +37,6 @@
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.grdFacultad = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdFacultad)).BeginInit();
@@ -53,21 +51,18 @@
             this.groupBox1.Controls.Add(this.btnRefrescar);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1014, 61);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Filtrar";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(581, 13);
+            this.button1.Location = new System.Drawing.Point(285, 16);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 42);
             this.button1.TabIndex = 22;
@@ -76,7 +71,7 @@
             // button2
             // 
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(527, 13);
+            this.button2.Location = new System.Drawing.Point(231, 16);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(48, 42);
             this.button2.TabIndex = 21;
@@ -85,7 +80,7 @@
             // button3
             // 
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(473, 13);
+            this.button3.Location = new System.Drawing.Point(177, 16);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(48, 42);
             this.button3.TabIndex = 20;
@@ -94,7 +89,7 @@
             // btnIrPrimero
             // 
             this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
-            this.btnIrPrimero.Location = new System.Drawing.Point(419, 13);
+            this.btnIrPrimero.Location = new System.Drawing.Point(123, 16);
             this.btnIrPrimero.Name = "btnIrPrimero";
             this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
             this.btnIrPrimero.TabIndex = 19;
@@ -103,7 +98,7 @@
             // btnRefrescar
             // 
             this.btnRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("btnRefrescar.Image")));
-            this.btnRefrescar.Location = new System.Drawing.Point(365, 13);
+            this.btnRefrescar.Location = new System.Drawing.Point(69, 16);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(48, 42);
             this.btnRefrescar.TabIndex = 18;
@@ -113,7 +108,7 @@
             // button6
             // 
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(311, 13);
+            this.button6.Location = new System.Drawing.Point(15, 16);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(48, 42);
             this.button6.TabIndex = 17;
@@ -130,22 +125,6 @@
             this.label2.Size = new System.Drawing.Size(377, 39);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mantenimie Benificiario";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(61, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(209, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Nombre:";
             // 
             // grdFacultad
             // 
@@ -185,8 +164,6 @@
         private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView grdFacultad;
 
 
