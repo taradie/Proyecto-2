@@ -10,9 +10,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Navegador;
 using Filtrado;
+using Seguridad;
 
 namespace Sistema_compras
 {
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+    //   PROGRAMADOR: JOSUE REVOLORIO
+    //   MODULO DE MANTENIMIENTO DE PRODUCTOS
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+
     public partial class frmProducto : Form
     {
         #region Variables
@@ -21,6 +28,7 @@ namespace Sistema_compras
             char[] separador = { '.' };
             char[] diagonal = {'\\'};
             private string codigo, pathe;
+            string boton = "Guardar";
         #endregion
 
         #region Funciones de Inicio
@@ -89,25 +97,31 @@ namespace Sistema_compras
                     _reader = _comando.ExecuteReader();
                     if (_reader.Read())
                         marca = _reader.GetString(0);
-                    cmbMarca.Text = marca;    
+                    cmbMarca.Text = marca;
+                    ConexionODBC.Conexion.CerrarConexion();
 
                     _comando = new OdbcCommand(String.Format("Select CONCAT(codlinea,'.',descripcion)AS Linea FROM linea where descripcion = '{0}'",linea), ConexionODBC.Conexion.ObtenerConexion());
                     _reader = _comando.ExecuteReader();
                     if (_reader.Read())
                         linea = _reader.GetString(0);
+                    ConexionODBC.Conexion.CerrarConexion();
 
                     _comando = new OdbcCommand(String.Format("Select CONCAT(codproveedor,'.',nombre)AS Proveedor FROM proveedor where nombre = '{0}'", proveedor), ConexionODBC.Conexion.ObtenerConexion());
                     _reader = _comando.ExecuteReader();
                     if (_reader.Read())
                         proveedor = _reader.GetString(0);
+                    ConexionODBC.Conexion.CerrarConexion();
 
                     _comando = new OdbcCommand(String.Format("Select imagen FROM producto where codproducto = '{0}'", cod), ConexionODBC.Conexion.ObtenerConexion());
                     _reader = _comando.ExecuteReader();
                     if (_reader.Read())
                         pathe = _reader.GetString(0);
+                    ConexionODBC.Conexion.CerrarConexion();
+
                     try
                     {
                         PictureBox.Image = Image.FromFile(pathe);
+                        txtIMG.Text = pathe;
                     }
                     catch (Exception)
                     {
@@ -179,64 +193,82 @@ namespace Sistema_compras
             {
                 LimpiarTextos();
                 BloqueoNuevo();
+                boton = "Guardar";
             }
 
             private void btnEditar_Click(object sender, EventArgs e)
             {
-                if (rbProducto.Checked)
-                {
-                    if (!txtDescripcion.Text.Equals("") && !txtNombre.Text.Equals("") && !cmbProveedor.Text.Equals("") && !cmbLinea.Text.Equals("")
-                        && !cmbMarca.Text.Equals("") && !txtTamano.Text.Equals("") && !txtComision.Text.Equals("") && !txtExMin.Text.Equals("") && !txtExMax.Text.Equals(""))
-                    {
-                        funActualizar();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                else
-                {
-                    if (!txtDescripcion.Text.Equals("") && !txtNombre.Text.Equals("") && !txtComision.Text.Equals(""))
-                    {
-                        funActualizar();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
+                boton = "Editar";
+                btnEliminar.Enabled = false;
+                btnGuardar.Enabled = true;
+                btnEditar.Enabled = false;
             }
 
             private void btnEliminar_Click(object sender, EventArgs e)
             {
-                funEliminar();
+                boton = "Eliminar";
+                btnEliminar.Enabled = false;
+                btnEditar.Enabled = false;
+                btnGuardar.Enabled = true;
             }
 
             private void btnGuardar_Click(object sender, EventArgs e)
             {
-                if (rbProducto.Checked)
+                if (boton == "Guardar")
                 {
-                    if (!txtDescripcion.Text.Equals("") && !txtNombre.Text.Equals("") && !cmbProveedor.Text.Equals("") && !cmbLinea.Text.Equals("")
-                        && !cmbMarca.Text.Equals("") && !txtTamano.Text.Equals("") && !txtComision.Text.Equals("") && !txtExMin.Text.Equals("") && !txtExMax.Text.Equals(""))
+                    if (rbProducto.Checked)
                     {
-                        funGuardarDatos();
+                        if (!txtDescripcion.Text.Equals("") && !txtNombre.Text.Equals("") && !cmbProveedor.Text.Equals("") && !cmbLinea.Text.Equals("")
+                            && !cmbMarca.Text.Equals("") && !txtTamano.Text.Equals("") && !txtComision.Text.Equals("") && !txtExMin.Text.Equals("") && !txtExMax.Text.Equals(""))
+                        {
+                            funGuardarDatos();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        if (!txtDescripcion.Text.Equals("") && !txtNombre.Text.Equals("") && !txtComision.Text.Equals(""))
+                        {
+                            funGuardarDatos();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
-                else
+                else if (boton == "Editar")
                 {
-                    if (!txtDescripcion.Text.Equals("") && !txtNombre.Text.Equals("") && !txtComision.Text.Equals(""))
+                    if (rbProducto.Checked)
                     {
-                        funGuardarDatos();
+                        if (!txtDescripcion.Text.Equals("") && !txtNombre.Text.Equals("") && !cmbProveedor.Text.Equals("") && !cmbLinea.Text.Equals("")
+                            && !cmbMarca.Text.Equals("") && !txtTamano.Text.Equals("") && !txtComision.Text.Equals("") && !txtExMin.Text.Equals("") && !txtExMax.Text.Equals(""))
+                        {
+                            funActualizar();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        if (!txtDescripcion.Text.Equals("") && !txtNombre.Text.Equals("") && !txtComision.Text.Equals(""))
+                        {
+                            funActualizar();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
+                }
+                else if (boton == "Eliminar")
+                {
+                    funEliminar();
                 }
             }
 
@@ -245,7 +277,8 @@ namespace Sistema_compras
                 if (MessageBox.Show("¿Desea Cancelar La Operacion?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     LimpiarTextos();
-                    BloqueoNuevo();
+                    btnNuevo.Enabled = btnEliminar.Enabled = btnEditar.Enabled = true;
+                    btnGuardar.Enabled = false;
                 }
             }
 
@@ -293,6 +326,7 @@ namespace Sistema_compras
                     string Linea = _reader.GetString(0);
                     cmbLinea.Items.Add(Linea);
                 }
+                ConexionODBC.Conexion.CerrarConexion();
             
                 cmbMarca.Items.Clear();
                 _comando = new OdbcCommand(String.Format("Select CONCAT(codmarca,'.',descripcion)AS Marca FROM marca where estado = 'ACTIVO' and condicion = 1"), ConexionODBC.Conexion.ObtenerConexion());
@@ -302,6 +336,7 @@ namespace Sistema_compras
                     string marca = _reader.GetString(0);
                     cmbMarca.Items.Add(marca);
                 }
+                ConexionODBC.Conexion.CerrarConexion();
 
                 cmbProveedor.Items.Clear();
                 _comando = new OdbcCommand(String.Format("Select CONCAT(codproveedor,'.',nombre)AS Proveedor FROM proveedor where estado = 'ACTIVO' and condicion = 1"), ConexionODBC.Conexion.ObtenerConexion());
@@ -311,6 +346,7 @@ namespace Sistema_compras
                     string proveedor = _reader.GetString(0);
                     cmbProveedor.Items.Add(proveedor);
                 }
+                ConexionODBC.Conexion.CerrarConexion();
             }
 
             private void TomarDatos()
@@ -372,6 +408,7 @@ namespace Sistema_compras
                     cn.AsignarObjetos(sTabla, bPermiso, aDatos);
                     LimpiarTextos();
                     MessageBox.Show("Datos guardados con exito");
+                    claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insert", "producto");
                 }catch (Exception){
                     MessageBox.Show("Ocurrio un error al guardar los datos");
                 }
@@ -385,12 +422,13 @@ namespace Sistema_compras
                     Boolean bPermiso = true;
                     txtCondicion.Text = "1";
                     TextBox[] aDatos = { txtEstado, txtCondicion, txtCosto, txtNombre, txtDescripcion, txtTamano, txtPrecio, 
-                        txtExistencia, txtExMin, txtExMax, txtCosteo,txtTipo, txtCreacion, txtVenta, txtCompra, txtComision, txtIMG, txtMarca, txtLinea, txtProveedor};
+                    txtExistencia, txtExMin, txtExMax, txtCosteo,txtTipo, txtCreacion, txtVenta, txtCompra, txtComision, txtIMG, txtMarca, txtLinea, txtProveedor}; 
                     string sTabla = "producto";
                     string codigoproducto = "codproducto";
                     cn.EditarObjetos(sTabla, bPermiso, aDatos, codigo, codigoproducto);
                     LimpiarTextos();
                     MessageBox.Show("Datos editados con exito");
+                    claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Editar", "producto");
                 }
                 catch (Exception)
                 {
@@ -413,6 +451,7 @@ namespace Sistema_compras
                     cn.EditarObjetos(sTabla, bPermiso, aDatos, codigo, codigopersona);
                     LimpiarTextos();
                     MessageBox.Show("Datos eliminados con exito");
+                    claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Eliminar", "producto");
                 }
                 catch (Exception)
                 {

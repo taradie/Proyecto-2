@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Navegador;
 using System.Data.Odbc;
+using Seguridad;
 
 namespace Sistema_compras
 {
@@ -68,6 +69,7 @@ namespace Sistema_compras
             string sTabla = "linea";
             string codalmacen = "codlinea";
             almacn.EditarObjetos(sTabla, bPermiso, aDatosEdit, sCod, codalmacen);
+            claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Editar", "linea");
         }
 
 
@@ -116,6 +118,7 @@ namespace Sistema_compras
             string sTabla = "linea";
             string codigoalmacen = "codlinea";
             cn.EditarObjetos(sTabla, bPermiso, aDatosEdit, sCod, codigoalmacen);
+            claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Eliminar", "linea");
         }
         
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -146,6 +149,7 @@ namespace Sistema_compras
             linea.funActualizarGrid(); ;
             
             linea.grdInventario.Refresh();
+            claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insert", "linea");
             }
             catch (Exception)
             {

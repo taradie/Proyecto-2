@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
 using Navegador;
+using Seguridad;
 
 namespace Sistema_compras
 {
@@ -99,6 +100,7 @@ namespace Sistema_compras
             string sTabla = "almacen";
             string codalmacen = "codalmacen";
             almacn.EditarObjetos(sTabla, bPermiso, aDatosEdit, sCod, codalmacen);
+            claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Editar", "Almacen");
         }
 
 
@@ -134,7 +136,7 @@ namespace Sistema_compras
             cn.EditarObjetos(sTabla, bPermiso, aDatosEdit, sCod, codigoalmacen);
 
             MessageBox.Show("Proceso realizado exitosamente");
-
+            claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Eliminar", "Almacen");
             }
             catch (Exception)
             {
@@ -177,6 +179,7 @@ namespace Sistema_compras
             cn.AsignarObjetos(sTabla, bPermiso, aDatos);
             funLimpiarTextos();
             MessageBox.Show("Datos guardados con exito");
+            claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insertar", "Almacen");
             }
             catch (Exception)
             {

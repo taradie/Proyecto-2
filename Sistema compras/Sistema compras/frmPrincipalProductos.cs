@@ -11,9 +11,16 @@ using Navegador;
 using FiltradoGrids;
 using System.Data.Odbc;
 using ConexionODBC;
+using Seguridad;
 
 namespace Sistema_compras
 {
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+    //   PROGRAMADOR: JOSUE REVOLORIO
+    //   GRID PRINCIPAL DE CONSULTA DE PRODUCTOS
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+
     public partial class frmPrincipalProductos : Form
     {
         public frmPrincipalProductos()
@@ -100,6 +107,7 @@ namespace Sistema_compras
             {
                 clasnegocio cnegocio = new clasnegocio();
                 cnegocio.funconsultarRegistros("producto", "SELECT * FROM viewproducto", "consulta", grdInventario);
+                //claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Consulta", "producto");
             }
 
             private void grdInventario_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)

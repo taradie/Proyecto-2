@@ -140,9 +140,9 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(73, 81);
+            this.txtNombre.Location = new System.Drawing.Point(100, 81);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(287, 25);
+            this.txtNombre.Size = new System.Drawing.Size(260, 25);
             this.txtNombre.TabIndex = 1;
             this.txtNombre.Tag = "descripcion";
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
@@ -226,9 +226,10 @@
             // txtComision
             // 
             this.txtComision.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComision.Location = new System.Drawing.Point(73, 109);
+            this.txtComision.Location = new System.Drawing.Point(100, 109);
+            this.txtComision.MaxLength = 3;
             this.txtComision.Name = "txtComision";
-            this.txtComision.Size = new System.Drawing.Size(287, 25);
+            this.txtComision.Size = new System.Drawing.Size(260, 25);
             this.txtComision.TabIndex = 4;
             this.txtComision.Tag = "comision";
             this.txtComision.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtComision_KeyPress);
@@ -239,9 +240,9 @@
             this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 17);
+            this.label4.Size = new System.Drawing.Size(91, 17);
             this.label4.TabIndex = 65;
-            this.label4.Text = "Comision:";
+            this.label4.Text = "Comision %:";
             // 
             // frmMarca
             // 

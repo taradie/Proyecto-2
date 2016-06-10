@@ -24,7 +24,8 @@ namespace Sistema_compras
             if(progressBar1.Value==progressBar1.Maximum){
                 timer1.Stop();
                 this.Hide();
-                frmMenuPrincipal temp = new frmMenuPrincipal();
+                frmLogin temp = new frmLogin();
+                //frmMenuPrincipal temp = new frmMenuPrincipal();
                 temp.Show();
             }
         }

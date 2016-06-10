@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Navegador;
 using System.Data.Odbc;
+using Seguridad;
 
 
 namespace Sistema_compras
@@ -24,6 +25,7 @@ namespace Sistema_compras
         {
             clasnegocio cnegocio = new clasnegocio();
             cnegocio.funconsultarRegistros("linea", "SELECT codlinea As 'Codigo de Linea',comision As 'Comision de Linea', estado As 'Estado', descripcion As 'Descripcion Linea'  FROM linea ", "consulta", grdInventario);
+            claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Consulta", "linea");
         }
         private void btnNuevo_Click(object sender, EventArgs e)
         {

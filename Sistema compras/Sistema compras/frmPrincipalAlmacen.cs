@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Navegador;
 using System.Data.Odbc;
+using Seguridad;
 
 
 namespace Sistema_compras
@@ -24,6 +25,7 @@ namespace Sistema_compras
         {
             clasnegocio cnegocio = new clasnegocio();
             cnegocio.funconsultarRegistros("almacen", "SELECT codalmacen As 'Codigo Almacen',codigo_empresa As 'Codigo Empresa' ,nombre As 'Nombre Bodega',tamano As 'Tamano de Bodega',disponibilidad As 'Disponibilidad',estado As 'Estado del Almacen',ubicacion As 'Ubicacion Almacen' FROM almacen ", "consulta", grdInventario);
+            claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Consulta", "almacen");
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

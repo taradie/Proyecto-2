@@ -83,6 +83,7 @@
             this.rbPEPS = new System.Windows.Forms.RadioButton();
             this.rbUEPS = new System.Windows.Forms.RadioButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
             this.btnFilLinea = new System.Windows.Forms.Button();
             this.btnFilMarca = new System.Windows.Forms.Button();
             this.btnFilProv = new System.Windows.Forms.Button();
@@ -99,7 +100,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.General = new System.Windows.Forms.TabControl();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.label17 = new System.Windows.Forms.Label();
             this.grupoFiltrar.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
@@ -709,6 +709,15 @@
             this.tabPage1.Text = "Datos Generales";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(697, 64);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(21, 13);
+            this.label17.TabIndex = 64;
+            this.label17.Text = "m2";
+            // 
             // btnFilLinea
             // 
             this.btnFilLinea.Image = global::Sistema_compras.Properties.Resources.magnifier_zoom;
@@ -862,19 +871,9 @@
             // 
             // helpProvider1
             // 
-            this.helpProvider1.HelpNamespace = "C:\\Users\\Josue\\Desktop\\Proyecto Compras\\Sistema compras - Copy\\Sistema compras\\Pr" +
-    "oductos.chm";
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Josue\\Desktop\\Sistema compras\\Sistema compras\\Productos.chm";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(697, 64);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(21, 13);
-            this.label17.TabIndex = 64;
-            this.label17.Text = "m2";
-            // 
-            // frmRegistroProducto
+            // frmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -882,7 +881,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.General);
             this.Controls.Add(this.grupoFiltrar);
-            this.Name = "frmRegistroProducto";
+            this.Name = "frmProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento de Productos";
             this.grupoFiltrar.ResumeLayout(false);

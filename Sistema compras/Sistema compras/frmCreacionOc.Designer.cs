@@ -39,21 +39,22 @@
             this.txtUbicacion = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.grupoFiltrar = new System.Windows.Forms.GroupBox();
-            this.rbRecepcion = new System.Windows.Forms.RadioButton();
-            this.rbRequisicion = new System.Windows.Forms.RadioButton();
-            this.rbDevoluciones = new System.Windows.Forms.RadioButton();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnRefrescar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnFilProv = new System.Windows.Forms.Button();
             this.cmbProveedor = new System.Windows.Forms.ComboBox();
             this.Productos = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblDisponibles = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.lblExistente = new System.Windows.Forms.Label();
-            this.lblMinima = new System.Windows.Forms.Label();
-            this.lblMaxima = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbProducto = new System.Windows.Forms.ComboBox();
@@ -63,28 +64,28 @@
             this.txtgrdCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtgrdPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtgrdTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEliminarfila = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtTotalGrid = new System.Windows.Forms.TextBox();
             this.Tipo = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.cmbImpuesto = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.rbOrdenCompra = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnFilProv = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnRefrescar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
+            this.rbActivo = new System.Windows.Forms.RadioButton();
+            this.rbInactivo = new System.Windows.Forms.RadioButton();
+            this.grbEstado = new System.Windows.Forms.GroupBox();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblNoOrden = new System.Windows.Forms.Label();
             this.grupoFiltrar.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Productos.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdProducto)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.Tipo.SuspendLayout();
+            this.grbEstado.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -166,9 +167,7 @@
             // 
             // grupoFiltrar
             // 
-            this.grupoFiltrar.Controls.Add(this.rbRecepcion);
-            this.grupoFiltrar.Controls.Add(this.rbRequisicion);
-            this.grupoFiltrar.Controls.Add(this.rbDevoluciones);
+            this.grupoFiltrar.Controls.Add(this.btnImprimir);
             this.grupoFiltrar.Controls.Add(this.button2);
             this.grupoFiltrar.Controls.Add(this.btnRefrescar);
             this.grupoFiltrar.Controls.Add(this.btnCancelar);
@@ -185,38 +184,86 @@
             this.grupoFiltrar.TabStop = false;
             this.grupoFiltrar.Text = "MENU";
             // 
-            // rbRecepcion
+            // btnImprimir
             // 
-            this.rbRecepcion.AutoSize = true;
-            this.rbRecepcion.Location = new System.Drawing.Point(57, 19);
-            this.rbRecepcion.Name = "rbRecepcion";
-            this.rbRecepcion.Size = new System.Drawing.Size(88, 17);
-            this.rbRecepcion.TabIndex = 1;
-            this.rbRecepcion.TabStop = true;
-            this.rbRecepcion.Text = "Recepciones";
-            this.rbRecepcion.UseVisualStyleBackColor = true;
+            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
+            this.btnImprimir.Location = new System.Drawing.Point(380, 12);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(48, 42);
+            this.btnImprimir.TabIndex = 24;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
-            // rbRequisicion
+            // button2
             // 
-            this.rbRequisicion.AutoSize = true;
-            this.rbRequisicion.Location = new System.Drawing.Point(612, 14);
-            this.rbRequisicion.Name = "rbRequisicion";
-            this.rbRequisicion.Size = new System.Drawing.Size(91, 17);
-            this.rbRequisicion.TabIndex = 2;
-            this.rbRequisicion.TabStop = true;
-            this.rbRequisicion.Text = "Requisiciones";
-            this.rbRequisicion.UseVisualStyleBackColor = true;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(482, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(48, 42);
+            this.button2.TabIndex = 23;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // rbDevoluciones
+            // btnRefrescar
             // 
-            this.rbDevoluciones.AutoSize = true;
-            this.rbDevoluciones.Location = new System.Drawing.Point(613, 37);
-            this.rbDevoluciones.Name = "rbDevoluciones";
-            this.rbDevoluciones.Size = new System.Drawing.Size(90, 17);
-            this.rbDevoluciones.TabIndex = 3;
-            this.rbDevoluciones.TabStop = true;
-            this.rbDevoluciones.Text = "Deboluciones";
-            this.rbDevoluciones.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("btnRefrescar.Image")));
+            this.btnRefrescar.Location = new System.Drawing.Point(431, 12);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(48, 42);
+            this.btnRefrescar.TabIndex = 20;
+            this.btnRefrescar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.Location = new System.Drawing.Point(328, 12);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(48, 42);
+            this.btnCancelar.TabIndex = 19;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(277, 12);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(48, 42);
+            this.btnGuardar.TabIndex = 18;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Enabled = false;
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.Location = new System.Drawing.Point(226, 12);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(48, 42);
+            this.btnEliminar.TabIndex = 17;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Enabled = false;
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.Location = new System.Drawing.Point(175, 12);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(48, 42);
+            this.btnEditar.TabIndex = 16;
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.Location = new System.Drawing.Point(124, 12);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(48, 42);
+            this.btnNuevo.TabIndex = 15;
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // panel1
             // 
@@ -238,12 +285,22 @@
             this.groupBox1.Controls.Add(this.txtUbicacion);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(6, 110);
+            this.groupBox1.Location = new System.Drawing.Point(7, 166);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(701, 100);
             this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Proveedor";
+            // 
+            // btnFilProv
+            // 
+            this.btnFilProv.Image = global::Sistema_compras.Properties.Resources.magnifier_zoom;
+            this.btnFilProv.Location = new System.Drawing.Point(272, 19);
+            this.btnFilProv.Name = "btnFilProv";
+            this.btnFilProv.Size = new System.Drawing.Size(27, 23);
+            this.btnFilProv.TabIndex = 62;
+            this.btnFilProv.UseVisualStyleBackColor = true;
+            this.btnFilProv.Click += new System.EventHandler(this.btnFilProv_Click);
             // 
             // cmbProveedor
             // 
@@ -253,16 +310,12 @@
             this.cmbProveedor.Size = new System.Drawing.Size(157, 21);
             this.cmbProveedor.TabIndex = 3;
             this.cmbProveedor.SelectedValueChanged += new System.EventHandler(this.cmbProveedor_SelectedValueChanged);
+            this.cmbProveedor.TextChanged += new System.EventHandler(this.cmbProveedor_TextChanged);
             // 
             // Productos
             // 
-            this.Productos.Controls.Add(this.groupBox2);
             this.Productos.Controls.Add(this.label10);
-            this.Productos.Controls.Add(this.label9);
-            this.Productos.Controls.Add(this.label7);
             this.Productos.Controls.Add(this.lblExistente);
-            this.Productos.Controls.Add(this.lblMinima);
-            this.Productos.Controls.Add(this.lblMaxima);
             this.Productos.Controls.Add(this.button3);
             this.Productos.Controls.Add(this.txtCantidad);
             this.Productos.Controls.Add(this.label8);
@@ -270,85 +323,40 @@
             this.Productos.Controls.Add(this.grdProducto);
             this.Productos.Controls.Add(this.label1);
             this.Productos.Controls.Add(this.btnAgregar);
-            this.Productos.Location = new System.Drawing.Point(7, 212);
+            this.Productos.Location = new System.Drawing.Point(7, 272);
             this.Productos.Name = "Productos";
             this.Productos.Size = new System.Drawing.Size(700, 304);
             this.Productos.TabIndex = 42;
             this.Productos.TabStop = false;
             this.Productos.Text = "Pedido";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lblDisponibles);
-            this.groupBox2.Location = new System.Drawing.Point(542, 16);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(139, 55);
-            this.groupBox2.TabIndex = 70;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Unidades que puede Ingresar:";
-            // 
-            // lblDisponibles
-            // 
-            this.lblDisponibles.AutoSize = true;
-            this.lblDisponibles.Location = new System.Drawing.Point(35, 36);
-            this.lblDisponibles.Name = "lblDisponibles";
-            this.lblDisponibles.Size = new System.Drawing.Size(55, 13);
-            this.lblDisponibles.TabIndex = 67;
-            this.lblDisponibles.Text = "Existentes";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(399, 55);
+            this.label10.Location = new System.Drawing.Point(370, 25);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 13);
+            this.label10.Size = new System.Drawing.Size(103, 13);
             this.label10.TabIndex = 69;
-            this.label10.Text = "En Existencia:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(385, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 13);
-            this.label9.TabIndex = 68;
-            this.label9.Text = "Cantidad Minima:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(385, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 13);
-            this.label7.TabIndex = 67;
-            this.label7.Text = "Cantidad Maxima:";
+            this.label10.Text = "Unidades Existentes";
             // 
             // lblExistente
             // 
             this.lblExistente.AutoSize = true;
-            this.lblExistente.Location = new System.Drawing.Point(482, 55);
+            this.lblExistente.Location = new System.Drawing.Point(370, 52);
             this.lblExistente.Name = "lblExistente";
             this.lblExistente.Size = new System.Drawing.Size(55, 13);
             this.lblExistente.TabIndex = 66;
             this.lblExistente.Text = "Existentes";
             // 
-            // lblMinima
+            // button3
             // 
-            this.lblMinima.AutoSize = true;
-            this.lblMinima.Location = new System.Drawing.Point(482, 35);
-            this.lblMinima.Name = "lblMinima";
-            this.lblMinima.Size = new System.Drawing.Size(49, 13);
-            this.lblMinima.TabIndex = 65;
-            this.lblMinima.Text = "Cant Min";
-            // 
-            // lblMaxima
-            // 
-            this.lblMaxima.AutoSize = true;
-            this.lblMaxima.Location = new System.Drawing.Point(482, 16);
-            this.lblMaxima.Name = "lblMaxima";
-            this.lblMaxima.Size = new System.Drawing.Size(52, 13);
-            this.lblMaxima.TabIndex = 63;
-            this.lblMaxima.Text = "Cant Max";
+            this.button3.Image = global::Sistema_compras.Properties.Resources.magnifier_zoom;
+            this.button3.Location = new System.Drawing.Point(330, 25);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(27, 23);
+            this.button3.TabIndex = 62;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // txtCantidad
             // 
@@ -378,49 +386,54 @@
             // grdProducto
             // 
             this.grdProducto.AllowUserToAddRows = false;
+            this.grdProducto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.txtgrdCodigo,
             this.txtgrdNombre,
             this.txtgrdCantidad,
             this.txtgrdPrecio,
-            this.txtgrdTotal});
-            this.grdProducto.Location = new System.Drawing.Point(6, 90);
+            this.txtgrdTotal,
+            this.btnEliminarfila});
+            this.grdProducto.Location = new System.Drawing.Point(11, 90);
             this.grdProducto.Name = "grdProducto";
-            this.grdProducto.ReadOnly = true;
             this.grdProducto.Size = new System.Drawing.Size(676, 200);
             this.grdProducto.TabIndex = 26;
             this.grdProducto.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProducto_CellContentDoubleClick);
+            this.grdProducto.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProducto_CellValueChanged);
             // 
             // txtgrdCodigo
             // 
             this.txtgrdCodigo.HeaderText = "Codigo";
             this.txtgrdCodigo.Name = "txtgrdCodigo";
-            this.txtgrdCodigo.ReadOnly = true;
             // 
             // txtgrdNombre
             // 
             this.txtgrdNombre.HeaderText = "Nombre";
             this.txtgrdNombre.Name = "txtgrdNombre";
-            this.txtgrdNombre.ReadOnly = true;
             // 
             // txtgrdCantidad
             // 
             this.txtgrdCantidad.HeaderText = "Cantidad";
             this.txtgrdCantidad.Name = "txtgrdCantidad";
-            this.txtgrdCantidad.ReadOnly = true;
             // 
             // txtgrdPrecio
             // 
             this.txtgrdPrecio.HeaderText = "Precio/Unitario";
             this.txtgrdPrecio.Name = "txtgrdPrecio";
-            this.txtgrdPrecio.ReadOnly = true;
             // 
             // txtgrdTotal
             // 
             this.txtgrdTotal.HeaderText = "Total";
             this.txtgrdTotal.Name = "txtgrdTotal";
-            this.txtgrdTotal.ReadOnly = true;
+            // 
+            // btnEliminarfila
+            // 
+            this.btnEliminarfila.HeaderText = "Eliminar";
+            this.btnEliminarfila.Name = "btnEliminarfila";
+            this.btnEliminarfila.Text = "Quitar";
+            this.btnEliminarfila.ToolTipText = "Quitar";
+            this.btnEliminarfila.UseColumnTextForButtonValue = true;
             // 
             // label1
             // 
@@ -441,23 +454,50 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtTotalGrid);
+            this.groupBox2.Location = new System.Drawing.Point(549, 582);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(158, 57);
+            this.groupBox2.TabIndex = 70;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Total Oden Compra";
+            // 
+            // txtTotalGrid
+            // 
+            this.txtTotalGrid.Enabled = false;
+            this.txtTotalGrid.Location = new System.Drawing.Point(12, 22);
+            this.txtTotalGrid.Name = "txtTotalGrid";
+            this.txtTotalGrid.Size = new System.Drawing.Size(135, 20);
+            this.txtTotalGrid.TabIndex = 0;
+            // 
             // Tipo
             // 
             this.Tipo.Controls.Add(this.button1);
             this.Tipo.Controls.Add(this.cmbImpuesto);
             this.Tipo.Controls.Add(this.label11);
-            this.Tipo.Controls.Add(this.rbOrdenCompra);
-            this.Tipo.Location = new System.Drawing.Point(7, 65);
+            this.Tipo.Location = new System.Drawing.Point(7, 116);
             this.Tipo.Name = "Tipo";
-            this.Tipo.Size = new System.Drawing.Size(700, 44);
+            this.Tipo.Size = new System.Drawing.Size(357, 44);
             this.Tipo.TabIndex = 43;
             this.Tipo.TabStop = false;
-            this.Tipo.Text = "Tipo de Documento";
+            this.Tipo.Text = "Orden de Compra";
+            // 
+            // button1
+            // 
+            this.button1.Image = global::Sistema_compras.Properties.Resources.magnifier_zoom;
+            this.button1.Location = new System.Drawing.Point(274, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(27, 23);
+            this.button1.TabIndex = 63;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cmbImpuesto
             // 
             this.cmbImpuesto.FormattingEnabled = true;
-            this.cmbImpuesto.Location = new System.Drawing.Point(374, 20);
+            this.cmbImpuesto.Location = new System.Drawing.Point(111, 17);
             this.cmbImpuesto.Name = "cmbImpuesto";
             this.cmbImpuesto.Size = new System.Drawing.Size(157, 21);
             this.cmbImpuesto.TabIndex = 5;
@@ -465,126 +505,74 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(310, 23);
+            this.label11.Location = new System.Drawing.Point(47, 20);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 13);
             this.label11.TabIndex = 4;
             this.label11.Text = "Impuesto:";
             // 
-            // rbOrdenCompra
+            // rbActivo
             // 
-            this.rbOrdenCompra.AutoSize = true;
-            this.rbOrdenCompra.Location = new System.Drawing.Point(6, 19);
-            this.rbOrdenCompra.Name = "rbOrdenCompra";
-            this.rbOrdenCompra.Size = new System.Drawing.Size(108, 17);
-            this.rbOrdenCompra.TabIndex = 0;
-            this.rbOrdenCompra.TabStop = true;
-            this.rbOrdenCompra.Text = "Orden de Compra";
-            this.rbOrdenCompra.UseVisualStyleBackColor = true;
+            this.rbActivo.AutoSize = true;
+            this.rbActivo.Location = new System.Drawing.Point(10, 20);
+            this.rbActivo.Name = "rbActivo";
+            this.rbActivo.Size = new System.Drawing.Size(64, 17);
+            this.rbActivo.TabIndex = 0;
+            this.rbActivo.TabStop = true;
+            this.rbActivo.Text = "ACTIVO";
+            this.rbActivo.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // rbInactivo
             // 
-            this.button1.Image = global::Sistema_compras.Properties.Resources.magnifier_zoom;
-            this.button1.Location = new System.Drawing.Point(537, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(27, 23);
-            this.button1.TabIndex = 63;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.rbInactivo.AutoSize = true;
+            this.rbInactivo.Location = new System.Drawing.Point(145, 18);
+            this.rbInactivo.Name = "rbInactivo";
+            this.rbInactivo.Size = new System.Drawing.Size(75, 17);
+            this.rbInactivo.TabIndex = 2;
+            this.rbInactivo.TabStop = true;
+            this.rbInactivo.Text = "INACTIVO";
+            this.rbInactivo.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // grbEstado
             // 
-            this.button3.Image = global::Sistema_compras.Properties.Resources.magnifier_zoom;
-            this.button3.Location = new System.Drawing.Point(330, 25);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(27, 23);
-            this.button3.TabIndex = 62;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.grbEstado.Controls.Add(this.rbInactivo);
+            this.grbEstado.Controls.Add(this.rbActivo);
+            this.grbEstado.Location = new System.Drawing.Point(370, 118);
+            this.grbEstado.Name = "grbEstado";
+            this.grbEstado.Size = new System.Drawing.Size(333, 42);
+            this.grbEstado.TabIndex = 44;
+            this.grbEstado.TabStop = false;
+            this.grbEstado.Text = "Estado";
             // 
-            // btnFilProv
+            // label7
             // 
-            this.btnFilProv.Image = global::Sistema_compras.Properties.Resources.magnifier_zoom;
-            this.btnFilProv.Location = new System.Drawing.Point(272, 19);
-            this.btnFilProv.Name = "btnFilProv";
-            this.btnFilProv.Size = new System.Drawing.Size(27, 23);
-            this.btnFilProv.TabIndex = 62;
-            this.btnFilProv.UseVisualStyleBackColor = true;
-            this.btnFilProv.Click += new System.EventHandler(this.btnFilProv_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(149, 64);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(270, 29);
+            this.label7.TabIndex = 71;
+            this.label7.Text = "Orden de Compra No.";
             // 
-            // button2
+            // lblNoOrden
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(482, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 42);
-            this.button2.TabIndex = 23;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnRefrescar
-            // 
-            this.btnRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("btnRefrescar.Image")));
-            this.btnRefrescar.Location = new System.Drawing.Point(431, 12);
-            this.btnRefrescar.Name = "btnRefrescar";
-            this.btnRefrescar.Size = new System.Drawing.Size(48, 42);
-            this.btnRefrescar.TabIndex = 20;
-            this.btnRefrescar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(380, 12);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(48, 42);
-            this.btnCancelar.TabIndex = 19;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(329, 12);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(48, 42);
-            this.btnGuardar.TabIndex = 18;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Enabled = false;
-            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.Location = new System.Drawing.Point(278, 12);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(48, 42);
-            this.btnEliminar.TabIndex = 17;
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Enabled = false;
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.Location = new System.Drawing.Point(227, 12);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(48, 42);
-            this.btnEditar.TabIndex = 16;
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
-            this.btnNuevo.Location = new System.Drawing.Point(176, 12);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(48, 42);
-            this.btnNuevo.TabIndex = 15;
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            this.lblNoOrden.AutoSize = true;
+            this.lblNoOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoOrden.Location = new System.Drawing.Point(425, 64);
+            this.lblNoOrden.Name = "lblNoOrden";
+            this.lblNoOrden.Size = new System.Drawing.Size(54, 29);
+            this.lblNoOrden.TabIndex = 72;
+            this.lblNoOrden.Text = "No.";
             // 
             // frmCreacionOc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 515);
+            this.ClientSize = new System.Drawing.Size(715, 651);
+            this.Controls.Add(this.lblNoOrden);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.grbEstado);
             this.Controls.Add(this.Tipo);
             this.Controls.Add(this.Productos);
             this.Controls.Add(this.groupBox1);
@@ -593,17 +581,19 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Creacion de Ordenes de compra";
             this.grupoFiltrar.ResumeLayout(false);
-            this.grupoFiltrar.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.Productos.ResumeLayout(false);
             this.Productos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdProducto)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdProducto)).EndInit();
             this.Tipo.ResumeLayout(false);
             this.Tipo.PerformLayout();
+            this.grbEstado.ResumeLayout(false);
+            this.grbEstado.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -633,31 +623,31 @@
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmbProducto;
-        private System.Windows.Forms.DataGridView grdProducto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.GroupBox Tipo;
-        private System.Windows.Forms.RadioButton rbDevoluciones;
-        private System.Windows.Forms.RadioButton rbRequisicion;
-        private System.Windows.Forms.RadioButton rbRecepcion;
-        private System.Windows.Forms.RadioButton rbOrdenCompra;
         private System.Windows.Forms.Button btnFilProv;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label lblMinima;
-        private System.Windows.Forms.Label lblMaxima;
         private System.Windows.Forms.Label lblExistente;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label lblDisponibles;
         private System.Windows.Forms.ComboBox cmbImpuesto;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.DataGridView grdProducto;
+        private System.Windows.Forms.RadioButton rbActivo;
+        private System.Windows.Forms.RadioButton rbInactivo;
+        private System.Windows.Forms.GroupBox grbEstado;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtgrdCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtgrdNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtgrdCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtgrdPrecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtgrdTotal;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEliminarfila;
+        private System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.TextBox txtTotalGrid;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblNoOrden;
     }
 }

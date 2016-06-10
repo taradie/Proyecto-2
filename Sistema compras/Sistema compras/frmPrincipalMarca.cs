@@ -102,6 +102,13 @@ namespace Sistema_compras
             }
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            //string debug = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+            //String ruta = debug + @"\Proveedores.chm";
+            //Help.ShowHelp(this, ruta, HelpNavigator.Topic, "Manual de usuario");
+        }
+
        
 
     }

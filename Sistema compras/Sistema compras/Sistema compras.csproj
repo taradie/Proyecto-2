@@ -59,6 +59,10 @@
     <Reference Include="Microsoft.VisualStudio.VSHelp80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="MultiBD, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MultiBD.dll</HintPath>
+    </Reference>
     <Reference Include="Multilenguaje, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Multilenguaje.dll</HintPath>
@@ -77,6 +81,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
@@ -90,6 +97,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComboItem.cs" />
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmIngresoEgreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngresoEgreso.Designer.cs">
+      <DependentUpon>frmIngresoEgreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +118,18 @@
     </Compile>
     <Compile Include="frmPrincipalOrdenCompra.Designer.cs">
       <DependentUpon>frmPrincipalOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaReporteGrid.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaReporteGrid.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaWs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebaWs.Designer.cs">
+      <DependentUpon>PruebaWs.cs</DependentUpon>
     </Compile>
     <Compile Include="Recursos Localizables\StringResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -141,12 +170,6 @@
     </Compile>
     <Compile Include="frmPrincipalExistencias.Designer.cs">
       <DependentUpon>frmPrincipalExistencias.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmIngresoEgreso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmIngresoEgreso.Designer.cs">
-      <DependentUpon>frmIngresoEgreso.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLinea.cs">
       <SubType>Form</SubType>
@@ -237,6 +260,12 @@
       <DependentUpon>ReporteMarca.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ReporteMovimientos.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteMovimientos.rpt</DependentUpon>
+    </Compile>
     <Compile Include="ReporteOrdenCompra1.cs">
       <DependentUpon>ReporteOrdenCompra.rpt</DependentUpon>
       <SubType>Component</SubType>
@@ -249,11 +278,26 @@
       <DependentUpon>ReporteProductos.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Web References\net.azurewebsites.wslogistica\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmIngresoEgreso.resx">
+      <DependentUpon>frmIngresoEgreso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalOrdenCompra.resx">
       <DependentUpon>frmPrincipalOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PruebaReporteGrid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PruebaReporteGrid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PruebaWs.resx">
+      <DependentUpon>PruebaWs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Recursos Localizables\StringResources.ES-US.resx" />
     <EmbeddedResource Include="Recursos Localizables\StringResources.resx">
@@ -275,9 +319,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalExistencias.resx">
       <DependentUpon>frmPrincipalExistencias.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmIngresoEgreso.resx">
-      <DependentUpon>frmIngresoEgreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLinea.resx">
       <DependentUpon>frmLinea.cs</DependentUpon>
@@ -334,6 +375,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteMarca.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMovimientos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteMovimientos.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteOrdenCompra.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteOrdenCompra1.cs</LastGenOutput>
@@ -356,6 +401,7 @@
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -365,6 +411,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Web References\net.azurewebsites.wslogistica\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\net.azurewebsites.wslogistica\WsLogistica.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -413,6 +464,7 @@
     <Content Include="bin\Debug\Sistema compras.vshost.exe" />
     <Content Include="Iconos\1461052482_penguin.ico" />
     <Content Include="Iconos\1461052753_Percent.ico" />
+    <None Include="Web References\net.azurewebsites.wslogistica\WsLogistica.disco" />
     <None Include="Iconos\magnifier-zoom.png" />
     <None Include="Iconos\report.png" />
     <None Include="Iconos\printer.png" />
@@ -439,6 +491,25 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://wslogistica.azurewebsites.net/WsLogistica.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\net.azurewebsites.wslogistica\</RelPath>
+      <UpdateFromURL>http://wslogistica.azurewebsites.net/WsLogistica.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Sistema_compras_net_azurewebsites_wslogistica_WsLogistica</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

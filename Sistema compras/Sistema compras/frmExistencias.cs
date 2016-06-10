@@ -10,9 +10,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Navegador;
 using Filtrado;
+using Seguridad;
 
 namespace Sistema_compras
 {
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+    //   PROGRAMADOR: JOSUE REVOLORIO
+    //   MODULO DE MANTENIMIENTO DE EXISTENCIAS
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+
     public partial class frmExistencias : Form
     {
         
@@ -21,6 +28,7 @@ namespace Sistema_compras
         public static OdbcDataReader _reader;
         char[] separador = { '.' };
         private string codigo="",codalmacen;
+        string boton = "Guardar";
         #endregion
 
         #region Funcioens de Inicio
@@ -37,7 +45,6 @@ namespace Sistema_compras
                 InitializeComponent();
                 LlenadoCombos();
                 BloqueoEdicion();
-                txtCantidad.Text = existencias;
                 txtIngreso.Text = ingreso;
                 txtEgreso.Text = egreso;
 
@@ -46,13 +53,13 @@ namespace Sistema_compras
                 if (_reader.Read())
                     codalmacen = _reader.GetString(0);
                 ConexionODBC.Conexion.CerrarConexion();
-
-                _comando = new OdbcCommand(String.Format("Select codExistencias FROM existencias where codproducto = '{0}' AND codalmacen = '{0}'", producto, almacen), ConexionODBC.Conexion.ObtenerConexion());
+                
+                _comando = new OdbcCommand(String.Format("Select codExistencias FROM existencias where codproducto = '{0}' AND codalmacen = '{1}'", producto, codalmacen), ConexionODBC.Conexion.ObtenerConexion());
                 _reader = _comando.ExecuteReader();
                 if (_reader.Read())
                     codigo = _reader.GetString(0);
                 ConexionODBC.Conexion.CerrarConexion();
-
+                
                 _comando = new OdbcCommand(String.Format("Select CONCAT(codalmacen,'.',nombre)AS Almacen FROM almacen where nombre = '{0}'", almacen), ConexionODBC.Conexion.ObtenerConexion());
                 _reader = _comando.ExecuteReader();
                 if (_reader.Read())
@@ -67,6 +74,12 @@ namespace Sistema_compras
                 cmbProducto.Text = producto;
                 ConexionODBC.Conexion.CerrarConexion();
 
+                _comando = new OdbcCommand(String.Format("Select cantidad FROM existencias where codexistencias = '{0}'", codigo), ConexionODBC.Conexion.ObtenerConexion());
+                _reader = _comando.ExecuteReader();
+                if (_reader.Read())
+                    existencias = _reader.GetString(0);
+                ConexionODBC.Conexion.CerrarConexion();
+                txtCantidad.Text = existencias;
                 
             }
 
@@ -97,7 +110,7 @@ namespace Sistema_compras
             private void LimpiarTextos()
         {
             txtCantidad.Text = "";
-            cmbProducto.SelectedIndex = cmbAlmacen.SelectedIndex;
+            cmbProducto.Text = cmbAlmacen.Text = "";
         }
 
         #endregion
@@ -106,7 +119,7 @@ namespace Sistema_compras
 
             private void btnAyuda_Click(object sender, EventArgs e)
             {
-
+                Help.ShowHelp(this, helpProvider1.HelpNamespace);
             }
 
             private void btnRefrescar_Click(object sender, EventArgs e)
@@ -119,20 +132,36 @@ namespace Sistema_compras
                 if (MessageBox.Show("¿Desea Cancelar La Operacion?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     LimpiarTextos();
-                    BloqueoNuevo();
+                    btnNuevo.Enabled = btnEditar.Enabled = true;
+                    btnGuardar.Enabled = false;
                 }
             }
 
             private void btnGuardar_Click(object sender, EventArgs e)
             {
-                if (!cmbProducto.Text.Equals("") && !cmbAlmacen.Text.Equals(""))
+                if (boton == "Guardar")
                 {
-                    funGuardarDatos();
+                    if (!cmbProducto.Text.Equals("") && !cmbAlmacen.Text.Equals(""))
+                    {
+                        funGuardarDatos();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else
+                else if (boton == "Editar")
                 {
-                    MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (!cmbProducto.Text.Equals("") && !cmbAlmacen.Text.Equals(""))
+                    {
+                        funActualizar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
+                
             }
 
             private void btnEliminar_Click(object sender, EventArgs e)
@@ -142,20 +171,16 @@ namespace Sistema_compras
 
             private void btnEditar_Click(object sender, EventArgs e)
             {
-                if (!cmbProducto.Text.Equals("") && !cmbAlmacen.Text.Equals(""))
-                {
-                    funActualizar();
-                }
-                else
-                {
-                    MessageBox.Show("Todos campos habilitados deben estar llenos", "Datos no Guardados", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                boton = "Editar";
+                btnGuardar.Enabled = true;
+                btnEditar.Enabled = false;
             }
 
             private void btnNuevo_Click(object sender, EventArgs e)
             {
                 LimpiarTextos();
                 BloqueoNuevo();
+                boton = "Guardar";
             }
 
         #endregion
@@ -183,6 +208,8 @@ namespace Sistema_compras
                     cmbAlmacen.Items.Add(almacen);
                 }
                 ConexionODBC.Conexion.CerrarConexion();
+                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Consulta", "producto");
+                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Consulta", "almacen");
             }
 
             public void funGuardarDatos()
@@ -202,6 +229,7 @@ namespace Sistema_compras
                     if (_reader.Read())
                     {
                         MessageBox.Show("Este producto ya esta registrado en este almacen");
+                        LimpiarTextos();
                     }
                     else
                     {
@@ -210,15 +238,14 @@ namespace Sistema_compras
                         TextBox[] aDatos = { txtEstado, txtCantidad, txtAlmacen, txtProducto };
                         string sTabla = "existencias";
                         cn.AsignarObjetos(sTabla, bPermiso, aDatos);
-                        funCommit();
                         MessageBox.Show("Datos guardados con exito");
                         LimpiarTextos();
+                        claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insert", "existencias");
                     }
                     ConexionODBC.Conexion.CerrarConexion();
                 }
                 catch (Exception)
                 {
-                    funRollback();
                     MessageBox.Show("Ocurrio un error al guardar los datos");
                 }
             }
@@ -227,15 +254,20 @@ namespace Sistema_compras
             {
                 try
                 {
-                    TextBox txtEstado = new TextBox(); txtEstado.Text = "ACTIVO";
-                    TextBox txtProducto = new TextBox(); txtProducto.Text = cmbProducto.Text;
-                    TextBox txtAlmacen = new TextBox(); txtAlmacen.Text = cmbAlmacen.Text;
+                TextBox txtEstado = new TextBox(); txtEstado.Text = "ACTIVO"; txtEstado.Tag = "estado";
+                TextBox txtProducto = new TextBox(); txtProducto.Tag = "codproducto";
+                TextBox txtAlmacen = new TextBox(); txtAlmacen.Tag = "codalmacen";
+                string[] producto = cmbProducto.Text.Split(separador);
+                txtProducto.Text = producto[0];
+                string[] almacen = cmbAlmacen.Text.Split(separador);
+                txtAlmacen.Text = almacen[0];
 
                     _comando = new OdbcCommand(String.Format("Select codExistencias FROM existencias where codproducto = '{0}' AND codalmacen = '{0}'", txtProducto.Text, txtAlmacen.Text), ConexionODBC.Conexion.ObtenerConexion());
                     _reader = _comando.ExecuteReader();
                     if (_reader.Read())
                     {
                         MessageBox.Show("Este producto ya esta registrado en este almacen");
+                        LimpiarTextos();
                     }
                     else
                     {
@@ -243,34 +275,20 @@ namespace Sistema_compras
                         Boolean bPermiso = true;
                         TextBox[] aDatos = { txtEstado, txtCantidad, txtAlmacen, txtProducto };
                         string sTabla = "existencias";
-                        string codigoexistencia = "codexistencia";
+                        string codigoexistencia = "codexistencias";
                         cn.EditarObjetos(sTabla, bPermiso, aDatos, codigo, codigoexistencia);
-                        funCommit();
                         LimpiarTextos();
                         MessageBox.Show("Datos editados con exito");
+                        claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Editar", "existencia");
                     }
                     ConexionODBC.Conexion.CerrarConexion();
                 }
                 catch (Exception)
                 {
-                    funRollback();
                     MessageBox.Show("Ocurrio un error al editar los datos");
                 }
             }
 
-            private void funCommit()
-            {
-                _comando = new OdbcCommand(String.Format("COMMIT"), ConexionODBC.Conexion.ObtenerConexion());
-                _reader = _comando.ExecuteReader();
-                ConexionODBC.Conexion.CerrarConexion();
-            }
-
-            private void funRollback()
-            {
-                _comando = new OdbcCommand(String.Format("ROLLBACK TO SAVEPOINT antesGuardar"), ConexionODBC.Conexion.ObtenerConexion());
-                _reader = _comando.ExecuteReader();
-                ConexionODBC.Conexion.CerrarConexion();
-            }
 
         #endregion
     }

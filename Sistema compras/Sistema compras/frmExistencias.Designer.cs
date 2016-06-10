@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExistencias));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtEgreso = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtIngreso = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.cmbAlmacen = new System.Windows.Forms.ComboBox();
             this.cmbProducto = new System.Windows.Forms.ComboBox();
@@ -44,10 +48,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.txtIngreso = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtEgreso = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.groupBox1.SuspendLayout();
             this.grupoFiltrar.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +72,42 @@
             this.groupBox1.TabIndex = 46;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Principal";
+            // 
+            // txtEgreso
+            // 
+            this.txtEgreso.Enabled = false;
+            this.txtEgreso.Location = new System.Drawing.Point(127, 131);
+            this.txtEgreso.Name = "txtEgreso";
+            this.txtEgreso.Size = new System.Drawing.Size(390, 20);
+            this.txtEgreso.TabIndex = 65;
+            this.txtEgreso.Tag = "fechaegreso";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 135);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 13);
+            this.label5.TabIndex = 64;
+            this.label5.Text = "Ultimo Egreso:";
+            // 
+            // txtIngreso
+            // 
+            this.txtIngreso.Enabled = false;
+            this.txtIngreso.Location = new System.Drawing.Point(127, 105);
+            this.txtIngreso.Name = "txtIngreso";
+            this.txtIngreso.Size = new System.Drawing.Size(390, 20);
+            this.txtIngreso.TabIndex = 63;
+            this.txtIngreso.Tag = "fechaingreso";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 109);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 13);
+            this.label4.TabIndex = 62;
+            this.label4.Text = "Ultimo Ingreso:";
             // 
             // txtCantidad
             // 
@@ -213,41 +250,9 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // txtIngreso
+            // helpProvider1
             // 
-            this.txtIngreso.Enabled = false;
-            this.txtIngreso.Location = new System.Drawing.Point(127, 105);
-            this.txtIngreso.Name = "txtIngreso";
-            this.txtIngreso.Size = new System.Drawing.Size(390, 20);
-            this.txtIngreso.TabIndex = 63;
-            this.txtIngreso.Tag = "fechaingreso";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 109);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 13);
-            this.label4.TabIndex = 62;
-            this.label4.Text = "Ultimo Ingreso:";
-            // 
-            // txtEgreso
-            // 
-            this.txtEgreso.Enabled = false;
-            this.txtEgreso.Location = new System.Drawing.Point(127, 131);
-            this.txtEgreso.Name = "txtEgreso";
-            this.txtEgreso.Size = new System.Drawing.Size(390, 20);
-            this.txtEgreso.TabIndex = 65;
-            this.txtEgreso.Tag = "fechaegreso";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 135);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 13);
-            this.label5.TabIndex = 64;
-            this.label5.Text = "Ultimo Egreso:";
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Josue\\Desktop\\Sistema compras\\Sistema compras\\bin\\Debug\\Existencias.chm";
             // 
             // frmExistencias
             // 
@@ -287,5 +292,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtIngreso;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

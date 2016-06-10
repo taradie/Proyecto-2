@@ -11,9 +11,16 @@ using Navegador;
 using FiltradoGrids;
 using System.Data.Odbc;
 using ConexionODBC;
+using Seguridad;
 
 namespace Sistema_compras
 {
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+    //   PROGRAMADOR: JOSUE REVOLORIO
+    //   GRID PRINCIPAL DE CONSULTA DE EXISTENCIAS
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+
     public partial class frmPrincipalExistencias : Form
     {
         public frmPrincipalExistencias()
@@ -39,6 +46,7 @@ namespace Sistema_compras
             {
                 clasnegocio cnegocio = new clasnegocio();
                 cnegocio.funconsultarRegistros("existencias", "SELECT * FROM viewexistencias", "consulta", grdExistencias);
+                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Consulta", "existencias");
             }
 
             private void grdExistencias_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)

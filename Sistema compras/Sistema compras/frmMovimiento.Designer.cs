@@ -41,12 +41,6 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.grupoFiltrar = new System.Windows.Forms.GroupBox();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdInventario)).BeginInit();
             this.grupoFiltrar.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +72,7 @@
             this.btnImprimir.Size = new System.Drawing.Size(48, 42);
             this.btnImprimir.TabIndex = 23;
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnIrUltimo
             // 
@@ -87,6 +82,7 @@
             this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
             this.btnIrUltimo.TabIndex = 22;
             this.btnIrUltimo.UseVisualStyleBackColor = true;
+            this.btnIrUltimo.Click += new System.EventHandler(this.btnIrUltimo_Click_1);
             // 
             // btnSiguiente
             // 
@@ -96,6 +92,7 @@
             this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
             this.btnSiguiente.TabIndex = 21;
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click_1);
             // 
             // btnAnterior
             // 
@@ -105,18 +102,13 @@
             this.btnAnterior.Size = new System.Drawing.Size(48, 42);
             this.btnAnterior.TabIndex = 20;
             this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click_1);
             // 
             // grdInventario
             // 
+            this.grdInventario.AllowUserToAddRows = false;
             this.grdInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdInventario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Codigo,
-            this.Descripcion,
-            this.Proveedor,
-            this.Concepto,
-            this.Costo,
-            this.Fecha});
             this.grdInventario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdInventario.Location = new System.Drawing.Point(0, 61);
             this.grdInventario.Name = "grdInventario";
@@ -133,6 +125,7 @@
             this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
             this.btnIrPrimero.TabIndex = 19;
             this.btnIrPrimero.UseVisualStyleBackColor = true;
+            this.btnIrPrimero.Click += new System.EventHandler(this.btnIrPrimero_Click_1);
             // 
             // btnRefrescar
             // 
@@ -142,6 +135,7 @@
             this.btnRefrescar.Size = new System.Drawing.Size(48, 42);
             this.btnRefrescar.TabIndex = 18;
             this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // btnNuevo
             // 
@@ -184,42 +178,6 @@
             this.grupoFiltrar.TabStop = false;
             this.grupoFiltrar.Text = "MENU";
             // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.Name = "Codigo";
-            this.Codigo.ReadOnly = true;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            // 
-            // Proveedor
-            // 
-            this.Proveedor.HeaderText = "Proveedor/Cliente";
-            this.Proveedor.Name = "Proveedor";
-            this.Proveedor.ReadOnly = true;
-            // 
-            // Concepto
-            // 
-            this.Concepto.HeaderText = "Concepto";
-            this.Concepto.Name = "Concepto";
-            this.Concepto.ReadOnly = true;
-            // 
-            // Costo
-            // 
-            this.Costo.HeaderText = "Costo";
-            this.Costo.Name = "Costo";
-            this.Costo.ReadOnly = true;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            // 
             // frmMovimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +187,7 @@
             this.Controls.Add(this.grupoFiltrar);
             this.Name = "frmMovimiento";
             this.Text = "PRODUCTOS";
+            this.Load += new System.EventHandler(this.frmMovimiento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdInventario)).EndInit();
             this.grupoFiltrar.ResumeLayout(false);
             this.grupoFiltrar.PerformLayout();
@@ -250,11 +209,5 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox grupoFiltrar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Proveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Concepto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
     }
 }

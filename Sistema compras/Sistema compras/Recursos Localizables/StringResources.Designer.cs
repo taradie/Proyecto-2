@@ -59,5 +59,221 @@ namespace Sistema_compras.Recursos_Localizables {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Almacen.
+        /// </summary>
+        internal static string msAlmacen {
+            get {
+                return ResourceManager.GetString("msAlmacen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ayuda.
+        /// </summary>
+        internal static string msAyuda {
+            get {
+                return ResourceManager.GetString("msAyuda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Base de Datos.
+        /// </summary>
+        internal static string msBasedeDatos {
+            get {
+                return ResourceManager.GetString("msBasedeDatos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bitacora.
+        /// </summary>
+        internal static string msBitacora {
+            get {
+                return ResourceManager.GetString("msBitacora", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cerrar Secion.
+        /// </summary>
+        internal static string msCerrarSesion {
+            get {
+                return ResourceManager.GetString("msCerrarSesion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Compras.
+        /// </summary>
+        internal static string msCompras {
+            get {
+                return ResourceManager.GetString("msCompras", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conceptos.
+        /// </summary>
+        internal static string msConceptos {
+            get {
+                return ResourceManager.GetString("msConceptos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configuraciones.
+        /// </summary>
+        internal static string msConfiguraciones {
+            get {
+                return ResourceManager.GetString("msConfiguraciones", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creacion de Usuario.
+        /// </summary>
+        internal static string msCreacionUsuario {
+            get {
+                return ResourceManager.GetString("msCreacionUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Existencia.
+        /// </summary>
+        internal static string msExistencia {
+            get {
+                return ResourceManager.GetString("msExistencia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Idioma.
+        /// </summary>
+        internal static string msIdioma {
+            get {
+                return ResourceManager.GetString("msIdioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Impuesto.
+        /// </summary>
+        internal static string msImpuesto {
+            get {
+                return ResourceManager.GetString("msImpuesto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inicio.
+        /// </summary>
+        internal static string msInicio {
+            get {
+                return ResourceManager.GetString("msInicio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inventario.
+        /// </summary>
+        internal static string msInventario {
+            get {
+                return ResourceManager.GetString("msInventario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Linea.
+        /// </summary>
+        internal static string msLinea {
+            get {
+                return ResourceManager.GetString("msLinea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marca.
+        /// </summary>
+        internal static string msMarca {
+            get {
+                return ResourceManager.GetString("msMarca", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Moneda.
+        /// </summary>
+        internal static string msMoneda {
+            get {
+                return ResourceManager.GetString("msMoneda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Movimiento Inventario.
+        /// </summary>
+        internal static string msMovInv {
+            get {
+                return ResourceManager.GetString("msMovInv", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MultiEmpresa.
+        /// </summary>
+        internal static string msMultiEmpresa {
+            get {
+                return ResourceManager.GetString("msMultiEmpresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orden de Compra.
+        /// </summary>
+        internal static string msOrdComp {
+            get {
+                return ResourceManager.GetString("msOrdComp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Producto.
+        /// </summary>
+        internal static string msProducto {
+            get {
+                return ResourceManager.GetString("msProducto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proveedor.
+        /// </summary>
+        internal static string msProveedor {
+            get {
+                return ResourceManager.GetString("msProveedor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reportes.
+        /// </summary>
+        internal static string msReporte {
+            get {
+                return ResourceManager.GetString("msReporte", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seguridad.
+        /// </summary>
+        internal static string msSeguridad {
+            get {
+                return ResourceManager.GetString("msSeguridad", resourceCulture);
+            }
+        }
     }
 }

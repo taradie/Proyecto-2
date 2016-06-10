@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SeguridadGrafico;
 using Seguridad;
 
 namespace Sistema_compras
@@ -18,7 +19,7 @@ namespace Sistema_compras
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             if (claseUsuario.Autentificar(txtUser.Text, txtPass.Text) == true)
             {
@@ -38,5 +39,6 @@ namespace Sistema_compras
                 txtPass.Clear();
             }
         }
+
     }
 }

@@ -118,6 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnImprimir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAohJREFUOE99k81LW0EUxZ/QkoILEQldtRT9A6JGNG1NoilqEiPJy5daVEiEWDX2
+        mSBJxBiCZlEolVoq3XTRjVQRoYUuFAW/urMLN+KyEBc1agzRdBHxHXpnqJBSzcCPex9v7pkzd2YEoWBU
+        VlY+TCaTv4qh1WqfFNb8k6vV6qcnJycoht1uf36rgMvuihwcHKAYoVD4w60CougIb21toRiSFPxP4G55
+        efkDhtPhTiwvL6MYkhT4dD2fnNwTqqqqrF1dXXmv15s3GJ5d1dTUoK6uDg0NDdBoNNA8JijW19eDegS9
+        Xn81ODiY93g8+dra2peCxWKJzs/PyxsbG/LU1JTs8/kwNjaGWCyG6elpJBIJxONxRCIR+P1+RKNReX9/
+        /2p7e1seHh7+KJD6635vPwKBAMiJbDKZ0NHRAZsowuF0wuVyobOzk0eHw4He3l6Mj4/LJCh3d3cvCWTt
+        ndFohCjaYLVa0draira2NphMRpjNZpBDLsj+MagIAwMDGPGPwO12fxUaGxvf22w2vgrlcnV1NW5CpVKB
+        Qb2Rh4aGEAwG0dfX902ghs2ylZi6VqtDS0sLmpubYTAYeGQ0NTXxb+ZOp9PjBTmQJIlt6wtz8Io1jtma
+        nIyBmomVlRXO6uoqZ319HWtra9jc3MTc3BxfPRQKgZx/FnQ6nTQxMYFwOAw6DeRyORwdHSGVSnEK88vL
+        S+zsfAcdI9g2yNmMUFpaer+iosJaVlYmLiwsHGazWV54fHyM8/NzpNNpXFxccNjY29v7rVQq7TTfplAo
+        HhVe6zuLi0s/WdHZ2Rnn9PSUx0wmwyMbu7s/clSkuOk9lLS3t7voPrwhZv7yliJndHR0ltHT0+Oh4pJr
+        gT8BWwkZU9F0FQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABKJJREFUWEft
@@ -377,6 +394,9 @@
   <metadata name="txtgrdTotal.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="btnEliminarfila.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="txtgrdCodigo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -391,5 +411,11 @@
   </metadata>
   <metadata name="txtgrdTotal.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="btnEliminarfila.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>
