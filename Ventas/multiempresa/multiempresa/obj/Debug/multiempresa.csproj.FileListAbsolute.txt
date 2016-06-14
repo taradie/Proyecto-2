@@ -1,0 +1,6 @@
+c:\users\gomez\documents\visual studio 2013\Projects\multiempresa\multiempresa\bin\Debug\multiempresa.dll
+c:\users\gomez\documents\visual studio 2013\Projects\multiempresa\multiempresa\bin\Debug\multiempresa.pdb
+c:\users\gomez\documents\visual studio 2013\Projects\multiempresa\multiempresa\bin\Debug\ConexionODBC.dll
+c:\users\gomez\documents\visual studio 2013\Projects\multiempresa\multiempresa\obj\Debug\multiempresa.csprojResolveAssemblyReference.cache
+c:\users\gomez\documents\visual studio 2013\Projects\multiempresa\multiempresa\obj\Debug\multiempresa.dll
+c:\users\gomez\documents\visual studio 2013\Projects\multiempresa\multiempresa\obj\Debug\multiempresa.pdb
