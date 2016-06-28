@@ -1,0 +1,11 @@
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\bin\Debug\Multilenguaje.dll
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\bin\Debug\Multilenguaje.pdb
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\bin\Debug\ConexionODBC.dll
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\obj\Debug\Multilenguaje.frmMultilenguaje.resources
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\obj\Debug\Multilenguaje.csproj.GenerateResource.Cache
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\obj\Debug\Multilenguaje.dll
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\obj\Debug\Multilenguaje.pdb
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\obj\Debug\Multilenguaje.Recursos_Localizables.StringResources.resources
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\bin\Debug\ES-US\Multilenguaje.resources.dll
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\obj\Debug\Multilenguaje.Recursos_Localizables.StringResources.ES-US.resources
+C:\Users\DylanIsaac\Documents\Multilenguaje\Multilenguaje\Multilenguaje\obj\Debug\ES-US\Multilenguaje.resources.dll
