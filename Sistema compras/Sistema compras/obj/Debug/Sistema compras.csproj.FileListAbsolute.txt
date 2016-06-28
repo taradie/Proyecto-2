@@ -329,3 +329,34 @@ C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras
 C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Recursos_Localizables.StringResources.ES-US.resources
 C:\Users\Josue\Desktop\Sistema compras\Sistema compras\bin\Debug\ES-US\Sistema compras.resources.dll
 C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Debug\ES-US\Sistema compras.resources.dll
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe.config
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\bin\Debug\Sistema compras.exe
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\bin\Debug\Sistema compras.pdb
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\bin\Debug\ES-US\Sistema compras.resources.dll
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmIngresoEgreso.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmLogin.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalOrdenCompra.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.PruebaWs.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Recursos_Localizables.StringResources.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmAlmacen.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmCreacionOc.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmExistencias.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalExistencias.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.txtcondi.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMarca.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMensaje.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalLinea.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalMarca.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalProductos.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmMovimiento.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmProducto.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.frmVistaReporte.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Properties.Resources.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema_compras.Recursos_Localizables.StringResources.ES-US.resources
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\UMG\Proyecto 2 Logistica\Sistema compras\Sistema compras\obj\Debug\ES-US\Sistema compras.resources.dll

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://compra.azurewebsites.net/wsCompras.asmx?wsdl" docRef="http://compra.azurewebsites.net/wsCompras.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://compra.azurewebsites.net/wsCompras.asmx" xmlns:q1="http://compra.azurewebsites.net/" binding="q1:wsComprasSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://compra.azurewebsites.net/wsCompras.asmx" xmlns:q2="http://compra.azurewebsites.net/" binding="q2:wsComprasSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

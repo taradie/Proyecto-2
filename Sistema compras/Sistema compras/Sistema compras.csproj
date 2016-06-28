@@ -34,7 +34,7 @@
   <ItemGroup>
     <Reference Include="ClaseProveedor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DllProveedores\dllProveedor\ClaseProveedor\bin\Debug\ClaseProveedor.dll</HintPath>
+      <HintPath>bin\Debug\ClaseProveedor.dll</HintPath>
     </Reference>
     <Reference Include="ConexionODBC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

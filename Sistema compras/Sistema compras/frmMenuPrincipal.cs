@@ -94,11 +94,11 @@ namespace Sistema_compras
 
         private void ordenesDeCompraFacturadasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //frmProveedor oc = new frmProveedor();
+            /*frmProveedor oc = new frmProveedor();
             PrincipalDllProveedor oc = new PrincipalDllProveedor();
             oc.WindowState = FormWindowState.Maximized;
             oc.MdiParent = this;
-            oc.Show();
+            oc.Show();*/
         }
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -190,10 +190,10 @@ namespace Sistema_compras
 
         private void conceptosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrincipalConcepto ax = new frmPrincipalConcepto();
+            /*frmPrincipalConcepto ax = new frmPrincipalConcepto();
             ax.WindowState = FormWindowState.Maximized;
             ax.MdiParent = this;
-            ax.Show();
+            ax.Show();*/
         }
 
         private void existenciasToolStripMenuItem_Click(object sender, EventArgs e)

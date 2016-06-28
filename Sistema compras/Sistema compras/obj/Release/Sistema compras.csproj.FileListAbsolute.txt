@@ -1,0 +1,27 @@
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\bin\Release\Sistema compras.exe.config
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema compras.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmIngresoEgreso.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmLogin.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmPrincipalOrdenCompra.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.PruebaWs.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.Recursos_Localizables.StringResources.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmAlmacen.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmCreacionOc.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmExistencias.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmPrincipalExistencias.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.txtcondi.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmMarca.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmMensaje.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmMenuPrincipal.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmPrincipalLinea.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmPrincipalMarca.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmPrincipalProductos.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmPrincipalAlmacen.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmMovimiento.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmProducto.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.frmVistaReporte.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.Properties.Resources.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema_compras.Recursos_Localizables.StringResources.ES-US.resources
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema compras.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema compras.exe
+C:\Users\Josue\Desktop\Sistema compras\Sistema compras\obj\Release\Sistema compras.pdb
